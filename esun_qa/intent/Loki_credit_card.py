@@ -51,6 +51,30 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
+    if utterance == "[TWQR跨機構購物交易][疑似]遭冒用[可以]怎麼處理":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "[TWQR跨機構購物交易][疑似]遭冒用或消費[爭議][可以]怎麼處理":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "[TWQR跨機構購物交易]是在哪[一家][商店]消費":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
     if utterance == "[信用卡][利息]如何計算":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -131,7 +155,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "[個人]信貸撥款[時間]要多[久]":
+    if utterance == "[個人信貸]撥款[時間]要多[久]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -139,7 +163,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "[個人]信貸有哪些撥款[方式]":
+    if utterance == "[個人信貸]有哪些撥款[方式]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -163,6 +187,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
+    if utterance == "信貸申訴陳情":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
     if utterance == "信貸繳款有哪些[方式]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -172,6 +204,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             pass
 
     if utterance == "哪裡[可以]查詢[信用卡][優惠][活動內容]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "如何使用[信用卡]約定扣繳":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -299,7 +339,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "如何查詢[個人]信貸申辦[進度]":
+    if utterance == "如何查詢[個人信貸]申辦[進度]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -331,7 +371,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "如何查詢推薦[好友]辦卡[是]否符合[資格]":
+    if utterance == "如何查詢推薦[好友]辦卡([MGM])[是]否符合[資格]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -371,14 +411,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "如何申請[個人]信貸":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
-
     if utterance == "如何申請提[前]還款結清貸款":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -403,6 +435,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
+    if utterance == "如何補寄[簡訊]/[電子][帳單]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
     if utterance == "如何補寄[電子][帳單]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -411,7 +451,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "如何計算預借[現金][手續][費]":
+    if utterance == "如何計算預借[現金][手續費]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -467,6 +507,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
+    if utterance == "拾獲[玉山][信用卡][該][怎麼]做":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
     if utterance == "拾獲本行[信用卡][該][怎麼]做":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -483,7 +531,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "提[前]還款[是]否[須]負擔提[前]清償違約金":
+    if utterance == "提[前]還款[是]否[須]負擔[提前清償違約金]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -515,7 +563,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "申請[個人]信貸的[流程]為何":
+    if utterance == "申請[個人信貸]的[流程]為何":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -523,7 +571,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "申請[個人]信貸需要有[玉山][帳戶]嗎":
+    if utterance == "申請[個人信貸]需要有[玉山][帳戶]嗎":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -531,7 +579,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "申請[個人]信貸需要準備哪些[文件]":
+    if utterance == "申請[個人信貸]需要準備哪些[文件]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
