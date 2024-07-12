@@ -331,7 +331,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "[數位帳戶]至[臨櫃]辦理[業務]需要支付[手續][費]嗎":
+    if utterance == "[數位帳戶]至[臨櫃]辦理[業務]需要支付[手續費]嗎":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
