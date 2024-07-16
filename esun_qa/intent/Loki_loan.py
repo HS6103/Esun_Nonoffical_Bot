@@ -243,6 +243,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
+    if utterance == "[家屬][可][否]代為申請[所得清單]及[留學生]入出國[紀錄文件]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            # resultDICT[key].append(value)
+            pass
+
     if utterance == "[家屬][可][否]代為申請入出國[紀錄文件]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -563,7 +571,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "已[先]申請到[留學貸款][者]，[是]否[可以]報考或申請[我][國][政府]提供之各項[公費]或留學[獎助學金]":
+    if utterance == "已[先]申請到[留學貸款][者][是]否[可以]報考或申請[我][國][政府]提供之各項[公費]或留學[獎助學金]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

@@ -115,7 +115,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "[海外][ETF]/[股票][交易][時間]為何":
+    if utterance == "[海外ETF]/[股票][交易][時間]為何":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -123,7 +123,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "[海外][ETF]/[股票]有哪些[投資市場][可]提供選擇":
+    if utterance == "[海外ETF]/[股票]有哪些[投資市場][可]提供選擇":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -131,7 +131,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "[海外][ETF][交易][時間]為何":
+    if utterance == "[海外ETF][交易][時間]為何":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -139,15 +139,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "[海外][ETF]有哪些[投資市場][可]提供選擇":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
-
-    if utterance == "[海外債券]的[交易][時間]為何":
+    if utterance == "[海外ETF]有哪些[投資市場][可]提供選擇":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -315,7 +307,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "如何決定[海外][ETF]/[股票]的委託[價格]":
+    if utterance == "如何決定[海外ETF]/[股票]的委託[價格]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -339,7 +331,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "如何買賣[海外][ETF]":
+    if utterance == "如何買賣[海外ETF]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -379,7 +371,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "投資[海外][ETF]/[股票]所需負擔的[稅]負為何":
+    if utterance == "投資[海外ETF]/[股票]所需負擔的[稅]負為何":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -387,7 +379,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "投資[海外][ETF]所需負擔的[稅]負為何":
+    if utterance == "投資[海外ETF]所需負擔的[稅]負為何":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

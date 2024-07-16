@@ -51,7 +51,7 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
-    if utterance == "LINE個人化通知服務提供哪些通知[內容]":
+    if utterance == "[LINE]個人化通知服務提供哪些通知[內容]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -59,7 +59,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "[可以]設定幾[個]LINE[帳號]":
+    if utterance == "[可以]設定幾[個][LINE][帳號]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -67,7 +67,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "如何取消LINE個人化通知服務":
+    if utterance == "如何取消[LINE]個人化通知服務":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -75,7 +75,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "如何於LINE查看通知[訊息]":
+    if utterance == "如何於[LINE]查看通知[訊息]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -91,7 +91,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "如何設定LINE個人化通知服務":
+    if utterance == "如何設定[LINE]個人化通知服務":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

@@ -51,7 +51,7 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
-    if utterance == "[小型]企業貸款適用申請[對]象":
+    if utterance == "[公司]貸款跟[個人]貸款有什麼不[一樣]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -59,7 +59,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "公司貸款跟個人貸款有什麼不[一樣]":
+    if utterance == "[小型][企業]貸款適用申請[對][象]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -67,7 +67,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "如何申請[小型]企業貸款":
+    if utterance == "如何申請[小型][企業]貸款":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -75,7 +75,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "如何知道哪種貸款模式最適合[我]":
+    if utterance == "如何知道哪種貸款[模式]最適合[我]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -83,7 +83,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "申請[小型]企業貸款需要準備哪些文件呢":
+    if utterance == "申請[小型][企業]貸款需要準備哪些[文件]呢":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -91,7 +91,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "貸款申請到撥款[會]經過哪些流程":
+    if utterance == "貸款申請到撥款[會]經過哪些[流程]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

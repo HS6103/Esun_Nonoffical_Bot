@@ -83,7 +83,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "[行動]無[卡]提款之[無卡交易][密碼]和刷臉提款之[無卡交易][密碼][一樣]嗎":
+    if utterance == "[行動][無卡提款]之[無卡交易][密碼]和刷臉提款之[無卡交易][密碼][一樣]嗎":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -115,7 +115,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "刷臉辨識時如何操作[可]提升辨識成功率":
+    if utterance == "刷臉辨識時如何操作[可]提升辨識[成功率]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

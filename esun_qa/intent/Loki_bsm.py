@@ -75,7 +75,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "[是]否還[會]收到理財或[保險]對[帳單]":
+    if utterance == "[是]否還[會]收到理財或[保險][對帳單]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -123,7 +123,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "什麼[時間][點][會]收到[綜合對帳單]":
+    if utterance == "什麼[時間點][會]收到[綜合對帳單]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

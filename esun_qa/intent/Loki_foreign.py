@@ -115,7 +115,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "[外幣][現鈔][可][否]存入[我]在[玉山][銀行]的[外幣][帳戶]呢":
+    if utterance == "[外幣][現鈔][可][否]存入[我]在[玉山銀行]的[外幣][帳戶]呢":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -219,7 +219,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "從[國外]匯入[款項]至[我]的[玉山][銀行][帳戶][我][該]提供什麼[資料]":
+    if utterance == "從[國外]匯入[款項]至[我]的[玉山銀行][帳戶][我][該]提供什麼[資料]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

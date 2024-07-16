@@ -67,7 +67,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "[兩岸支付通]服務[是]否[會]開立[手續費用]的[收據]":
+    if utterance == "[兩岸支付通]服務[是]否[會]開立[手續費]用的[收據]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

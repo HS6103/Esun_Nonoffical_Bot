@@ -219,7 +219,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "如何確認[Smart] [Card] [Service]已[啓]動":
+    if utterance == "如何確認[Smart Card Service]已[啓]動":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
