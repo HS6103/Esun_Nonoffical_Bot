@@ -90,66 +90,70 @@ if __name__ == "__main__":
             os.mkdir(replyPATH)
 
         # 讀取 intent utterance
-        for intentSTR in chatbotDICT:
-            filePath = os.path.join(BASE_PATH, "intent", "Loki_{}.py".format(intentSTR))
-            if os.path.exists(filePath):
-                textSTR = open(filePath, encoding="utf-8").read()
-                if "CHATBOT_MODE = True" not in textSTR:
-                    continue
-
-                utteranceLIST = [gg.group(1) for gg in UTTERANCE_PAT.finditer(textSTR)]
-                if utteranceLIST:
-                    print("[Intent] {} generating...".format(intentSTR))
-                    promptDICT = {
-                        "system": [],
-                        "assistant": [],
-                        "user": []
-                    }
-
-                    # 讀取 prompt, document
-                    intentDICT = chatbotDICT[intentSTR]
-                    if intentDICT["prompt"]["system"]:
-                        promptDICT["system"] = [{"role": "system", "content": intentDICT["prompt"]["system"]}]
-
-                    if intentDICT["document"]:
-                        if intentDICT["prompt"]["assistant"] == "":
-                            keyLIST = ["「{{" + x + "}}」" for x in intentDICT["document"][0]["content"]]
-                            intentDICT["prompt"]["assistant"] = "請閱讀內容：{{}}".format("，".join(keyLIST))
-
-                        promptDICT["assistant"] = [[]]
-                        for document_d in intentDICT["document"]:
-                            contentSTR = intentDICT["prompt"]["assistant"]
-                            for k in document_d["content"]:
-                                contentSTR = contentSTR.replace("{{" + k + "}}", document_d["content"][k])
-                            if contentSTR:
-                                if promptDICT["assistant"][-1] and sum(len(assistant_d["content"]) for assistant_d in promptDICT["assistant"][-1]) + len(contentSTR) >= MESSAGE_LIMIT:
-                                    promptDICT["assistant"].append([])
-                                promptDICT["assistant"][-1].append({"role": "assistant", "content": contentSTR})
-
-                    # 生成回覆
-                    try:
-                        resultDICT = json.load(open(os.path.join(replyPATH, "reply_{}.json".format(intentSTR)), encoding="utf-8"))
-                    except:
-                        resultDICT = {}
-                    for utterance in utteranceLIST:
-                        contentSTR = intentDICT["prompt"]["user"].replace("{{UTTERANCE}}", re.sub("[\[\]]", "", utterance))
-                        if contentSTR:
-                            promptDICT["user"] = [{"role": "user", "content": contentSTR}]
-
-                            responseLIST = getResponse(intentSTR, promptDICT["system"], promptDICT["assistant"], promptDICT["user"])
-                            if utterance in resultDICT:
-                                resultDICT[utterance].extend(responseLIST)
-                                resultDICT[utterance] = list(set(resultDICT[utterance]))
-                            else:
-                                resultDICT[utterance] = responseLIST
-                            print("[Utterance] {}".format(utterance))
-
-                    # 儲存 reply
-                    with open(os.path.join(replyPATH, "reply_{}.json".format(intentSTR)), "w", encoding="utf-8") as replyFile:
-                        json.dump(resultDICT, replyFile, ensure_ascii=False, indent=4)
-                        print("[Success] reply_{}.json".format(intentSTR))
-
+        while True:
+            intentSTR = input('Enter intent: ').lower()
+            if intentSTR == 'q':
+                break
             else:
-                print("[ERROR] {} is not found".format(intentSTR))
+                filePath = os.path.join(BASE_PATH, "intent", "Loki_{}.py".format(intentSTR))
+                if os.path.exists(filePath):
+                    textSTR = open(filePath, encoding="utf-8").read()
+                    if "CHATBOT_MODE = True" not in textSTR:
+                        continue
+        
+                    utteranceLIST = [gg.group(1) for gg in UTTERANCE_PAT.finditer(textSTR)]
+                    if utteranceLIST:
+                        print("[Intent] {} generating...".format(intentSTR))
+                        promptDICT = {
+                            "system": [],
+                            "assistant": [],
+                            "user": []
+                        }
+        
+                        # 讀取 prompt, document
+                        intentDICT = chatbotDICT[intentSTR]
+                        if intentDICT["prompt"]["system"]:
+                            promptDICT["system"] = [{"role": "system", "content": intentDICT["prompt"]["system"]}]
+        
+                        if intentDICT["document"]:
+                            if intentDICT["prompt"]["assistant"] == "":
+                                keyLIST = ["「{{" + x + "}}」" for x in intentDICT["document"][0]["content"]]
+                                intentDICT["prompt"]["assistant"] = "請閱讀內容：{{}}".format("，".join(keyLIST))
+        
+                            promptDICT["assistant"] = [[]]
+                            for document_d in intentDICT["document"]:
+                                contentSTR = intentDICT["prompt"]["assistant"]
+                                for k in document_d["content"]:
+                                    contentSTR = contentSTR.replace("{{" + k + "}}", document_d["content"][k])
+                                if contentSTR:
+                                    if promptDICT["assistant"][-1] and sum(len(assistant_d["content"]) for assistant_d in promptDICT["assistant"][-1]) + len(contentSTR) >= MESSAGE_LIMIT:
+                                        promptDICT["assistant"].append([])
+                                    promptDICT["assistant"][-1].append({"role": "assistant", "content": contentSTR})
+        
+                        # 生成回覆
+                        try:
+                            resultDICT = json.load(open(os.path.join(replyPATH, "reply_{}.json".format(intentSTR)), encoding="utf-8"))
+                        except:
+                            resultDICT = {}
+                        for utterance in utteranceLIST:
+                            contentSTR = intentDICT["prompt"]["user"].replace("{{UTTERANCE}}", re.sub("[\[\]]", "", utterance))
+                            if contentSTR:
+                                promptDICT["user"] = [{"role": "user", "content": contentSTR}]
+        
+                                responseLIST = getResponse(intentSTR, promptDICT["system"], promptDICT["assistant"], promptDICT["user"])
+                                if utterance in resultDICT:
+                                    resultDICT[utterance].extend(responseLIST)
+                                    resultDICT[utterance] = list(set(resultDICT[utterance]))
+                                else:
+                                    resultDICT[utterance] = responseLIST
+                                print("[Utterance] {}".format(utterance))
+        
+                        # 儲存 reply
+                        with open(os.path.join(replyPATH, "reply_{}.json".format(intentSTR)), "w", encoding="utf-8") as replyFile:
+                            json.dump(resultDICT, replyFile, ensure_ascii=False, indent=4)
+                            print("[Success] reply_{}.json".format(intentSTR))
+        
+                else:
+                    print("[ERROR] {} is not found".format(intentSTR))
     else:
         print("[Error] Invalid Chatbot Config")
