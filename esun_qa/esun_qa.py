@@ -400,11 +400,23 @@ if __name__ == "__main__":
     #testIntent()
 
     # 測試其它句子
-    filterLIST = []
+    filterLIST = ['trust_fund']
     splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
     # 設定參考資料
     refDICT = { # value 必須為 list
         #"key": []
     }
-    resultDICT = execLoki("可以設定幾個LINE帳號", filterLIST=filterLIST, refDICT=refDICT)                      # output => {"key": ["今天天氣"]}
-    print(resultDICT['response'][0])
+    
+    while True:
+        try:
+            inputSTR = input("Test input: ")
+            if inputSTR == 'q':
+                print("Exiting...")
+                break
+            else:
+                resultDICT = execLoki(inputSTR, filterLIST=filterLIST, refDICT=refDICT)             # output => {[intent] inputSTR ===> utterance}
+                print(resultDICT['response'][0])                                                    #顯示回覆訊息
+                print('')
+        
+        except KeyError:
+            print('No reply\n')
