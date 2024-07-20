@@ -51,130 +51,126 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
-    if utterance == "[企業]辦理[員工]持股/儲蓄[信託]之[優點]為何":
+
+    if utterance == "[應]於何時辦理[其]發行股票之簽證":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
-    if utterance == "[何]謂[信託]":
+    if utterance == "[有價]證券信託的定義及[特色]":
         if CHATBOT_MODE:
-            if args[0] == '信託':          
+            if args[0] == '有價':
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+        
+    if utterance == "[有價]證券信託的[定義]":
+        if CHATBOT_MODE:
+            if args[0] == '有價':
+                if args[1] in ['特色', '特點']:
+                    resultDICT["response"] = getResponse('[有價]證券信託的[特色]', args)
+                elif args[1] in ['定義']:
+                    resultDICT["response"] = getResponse(utterance, args)
+                else:
+                    pass
+        else:
+            pass
+        
+    if utterance == "[財產]交付信託[業者]有什麼保障":
+        if CHATBOT_MODE:
+            if args[1] == '業者':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
-    if utterance == "[何]謂[信託]借券":
+    if utterance == "何謂信託":
         if CHATBOT_MODE:
-            if args[0] == '信託':          
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+
+    if utterance == "何謂信託借券":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+
+    if utterance == "來臺從事[證券]投資或[期貨]交易之大陸地區投資人以何為限":
+        if CHATBOT_MODE:
+            if args[0] in ['證券', '期貨', '股票']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
-    if utterance == "[公司][應]於何時辦理[其]發行[股票]之[簽證]":
+    if utterance == "儲蓄信託最大[特色]為何":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
-
-    if utterance == "[員工]持股/儲蓄[信託]最大[特色]為何":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
-
-    if utterance == "[員工]持股最大[特色]為何":
-        if CHATBOT_MODE:
-            if args[0] == '員工' and args[1] == '特色':          
-                resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
-
-    if utterance == "[有價][證券][信託]的定義及[特色]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
-
-    if utterance == "[財產]交付[信託][業者]有什麼保障":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
-
-    if utterance == "來臺從事[證券]投資或[期貨][交易]之大陸[地區][投資人]以[何]為限":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
-
-    if utterance == "儲蓄[信託]最大[特色]為何":
-        if CHATBOT_MODE:
-            if args[0] == '信託' and args[1] == '特色':          
+            if args[0] in ['特色', '特點']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
-    if utterance == "如欲辦理[股票簽證][業務][該]如何辦理":
+    if utterance == "員工持股/儲蓄信託之[優點]為何":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
-
-    if utterance == "本行[信託][業務]包含哪些":
-        if CHATBOT_MODE:
-            if args[0] == '信託' and args[1] == '業務':          
+            if args[0] in ['優點', '好處', '優勢']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "員工持股/儲蓄信託最大[特色]為何":
+        if CHATBOT_MODE:
+            if args[0] in ['特色', '特點']:
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+
+    if utterance == "員工持股最大[特色]為何":
+        if CHATBOT_MODE:
+            if args[0] in ['特色', '特點']:
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+
+    if utterance == "如欲辦理股票簽證[業務][該]如何辦理":
+        if CHATBOT_MODE:
+            if args[0] == '業務':
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
             pass
 
     if utterance == "本行[目前][可]辦理哪些保管[業務]":
         if CHATBOT_MODE:
-            if args[1] == '業務':          
+            if args[2] == '業務':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
-    if utterance == "為何[外資]或[陸資]欲進行[國內]投資需指定保管[機構]為[代理人]":
+    if utterance == "本行信託[業務]包含哪些":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '業務':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
-    if utterance == "為何[外資]欲進行[國內]投資需指定保管[機構]為[代理人]":
+    if utterance == "為何[外資]或[陸資]欲進行[國內]投資需指定保管[機構]為代理人":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] in ['外資', '陸資', '中資'] and args[1] in ['外資', '陸資', '中資'] and args[2] == '國內':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
-    if utterance == "符合什麼[條件]之[公司]需辦理[其][股票][簽證][業務]":
+    if utterance == "為何[外資]欲進行[國內]投資需指定保管[機構]為代理人":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] in ['外資', '陸資', '中資'] and args[1] == '國內':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
+            pass
+
+    if utterance == "符合什麼[條件]之[公司]需辦理[其]股票簽證":
+        if CHATBOT_MODE:
+            if args[0] in ['條件', '標準'] and args[1] in ['公司', '企業']:
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
             pass
 
     return resultDICT
