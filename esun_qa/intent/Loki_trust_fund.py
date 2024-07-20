@@ -52,16 +52,9 @@ def getResponse(utterance, args):
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
 
-    if utterance == "[應]於何時辦理[其]發行股票之簽證":
+    if utterance == "[公司][應]於何時辦理[其]發行股票之簽證":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass
-
-    if utterance == "[有價]證券信託的定義及[特色]":
-        if CHATBOT_MODE:
-            if args[0] == '有價':
-                resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
         
@@ -84,7 +77,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "何謂信託":
+    if utterance == "何謂[信託]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -112,7 +105,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "員工持股/儲蓄信託之[優點]為何":
         if CHATBOT_MODE:
-            if args[0] in ['優點', '好處', '優勢']:
+            if args[0] in ['優點', '好處', '優勢', '利多']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
