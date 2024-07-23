@@ -30,7 +30,6 @@
             "勞動保障卡",
             "協定",
             "台幣",
-            "國外",
             "基金保管機構",
             "報酬率",
             "定存",
@@ -129,7 +128,9 @@
             "數位",
             "通訊地址",
             "幣別",
-            "特店"
+            "特店",
+            "*",
+            "-"
         ],
         "insurance": [
             "強制汽/機車責任保險",
@@ -1502,7 +1503,7 @@
             ]
         },
         "怎樣將款項匯給國外親友": {
-            "id": "aac055b6-793f-4067-bb3f-7a8dc99e0924",
+            "id": "73f1d926-cae0-4f75-9a5d-4cc1a2b6567e",
             "argument": [
                 {
                     "pos": "CLAUSE_HowQ",
@@ -1586,10 +1587,16 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "UserDefined",
-                    "text": "國外",
+                    "pos": "ENTITY_nouny",
+                    "text": "國",
                     "checked": true,
                     "checkbox": true
+                },
+                {
+                    "pos": "RANGE_locality",
+                    "text": "外",
+                    "checked": true,
+                    "checkbox": false
                 },
                 {
                     "pos": "ENTITY_noun",
@@ -3528,19 +3535,19 @@
                 }
             ]
         },
-        "e 化通路承作外匯交易是否有時間限制": {
-            "id": "7bc548d4-1467-4dbf-9a27-df5d52011007",
+        "e化通路承作外匯交易是否有時間限制": {
+            "id": "6b15e0c4-ce1d-41cb-af63-62531813149e",
             "argument": [
                 {
                     "pos": "ENTITY_oov",
-                    "text": "e ",
+                    "text": "e",
                     "checked": true,
                     "checkbox": true
                 },
                 {
                     "pos": "ENTITY_oov",
                     "text": "化",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -3673,22 +3680,22 @@
                             "checked": false
                         },
                         {
-                            "text": "有同",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "含有",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -3827,22 +3834,12 @@
                             "checked": false
                         },
                         {
+                            "text": "允許",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "限縮",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "規定",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "規範",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "約束",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -3852,22 +3849,32 @@
                             "checked": false
                         },
                         {
-                            "text": "允許",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "拘束",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "阻礙",
+                            "text": "規定",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "約束",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "容許",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "規範",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "阻礙",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -4071,7 +4078,7 @@
             ]
         },
         "日期處有註記「*」符號是代表什麼意思": {
-            "id": "0ae15f14-aaf9-4f05-ae8a-b195bacfe845",
+            "id": "edbc72a2-3831-433c-9969-6762bd4a3bd5",
             "argument": [
                 {
                     "pos": "ENTITY_nouny",
@@ -4175,10 +4182,10 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "PUNCTUATION",
+                    "pos": "UserDefined",
                     "text": "*",
-                    "checked": false,
-                    "checkbox": false
+                    "checked": true,
+                    "checkbox": true
                 },
                 {
                     "pos": "PUNCTUATION",
@@ -4241,7 +4248,7 @@
             ]
         },
         "金額前有標明「-」符號是代表什麼意思": {
-            "id": "a559c5bf-e2a4-4ad9-bb36-430cea02b379",
+            "id": "d2ce5248-5851-4d2b-8fb5-b9e9035e4034",
             "argument": [
                 {
                     "pos": "ENTITY_noun",
@@ -4309,22 +4316,22 @@
                             "checked": false
                         },
                         {
-                            "text": "含有",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "有同",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -4462,17 +4469,17 @@
                             "checked": false
                         },
                         {
+                            "text": "加註",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "寫明",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "標出",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "加註",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -4493,10 +4500,10 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "PUNCTUATION",
+                    "pos": "UserDefined",
                     "text": "-",
-                    "checked": false,
-                    "checkbox": false
+                    "checked": true,
+                    "checkbox": true
                 },
                 {
                     "pos": "PUNCTUATION",
@@ -5454,8 +5461,8 @@
                 }
             ]
         },
-        "玉山銀行外幣帳戶提領外幣現鈔是否需支付手續費": {
-            "id": "a9855bb3-ecab-4b39-931e-8ca1238487f5",
+        "玉山銀行外幣帳戶提領外幣現鈔是否需支付手續費呢": {
+            "id": "a08674c1-684a-4884-8fd5-7fbd0612bdce",
             "argument": [
                 {
                     "pos": "UserDefined",
@@ -5498,7 +5505,7 @@
                             "checked": false
                         },
                         {
-                            "text": "匯款",
+                            "text": "轉帳",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -5508,12 +5515,12 @@
                             "checked": false
                         },
                         {
-                            "text": "轉帳",
+                            "text": "盜領",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "開戶",
+                            "text": "匯款",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -5523,22 +5530,22 @@
                             "checked": false
                         },
                         {
+                            "text": "詐得",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "開戶",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "取款",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "盜領",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "領取",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "詐得",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -5589,17 +5596,7 @@
                             "checked": false
                         },
                         {
-                            "text": "需預",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "需約",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "允許",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -5609,12 +5606,22 @@
                             "checked": false
                         },
                         {
-                            "text": "需經過",
+                            "text": "允許",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "要",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "需經過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "需預",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -5712,7 +5719,12 @@
                             "checked": false
                         },
                         {
-                            "text": "收取",
+                            "text": "繳費",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "代付",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -5727,12 +5739,7 @@
                             "checked": false
                         },
                         {
-                            "text": "繳費",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "代付",
+                            "text": "收取",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -5746,6 +5753,12 @@
                     "text": "手續費",
                     "checked": true,
                     "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_particle",
+                    "text": "呢",
+                    "checked": false,
+                    "checkbox": false
                 }
             ]
         },
