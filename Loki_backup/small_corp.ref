@@ -1,0 +1,1903 @@
+{
+    "language": "zh-tw",
+    "type": "basic",
+    "version": {
+        "atk": "v270",
+        "intent": "1.0"
+    },
+    "user_defined": {
+        "loan": [
+            "提前清償違約金",
+            "指數型房貸",
+            "定儲利率指數",
+            "理財型房貸",
+            "月繳月省房貸",
+            "誠信COUPON房貸",
+            "自購住宅補貼貸款",
+            "個人信貸",
+            "信用貸款",
+            "留學貸款"
+        ],
+        "as_noun": [
+            "Internet Explorer 11",
+            "PayPal",
+            "windows 7",
+            "他益信託",
+            "信託",
+            "全權委託保管機構",
+            "兩岸支付通",
+            "利息",
+            "勞動保障卡",
+            "協定",
+            "台幣",
+            "國外",
+            "基金保管機構",
+            "報酬率",
+            "定存",
+            "密碼",
+            "對帳單",
+            "帳單",
+            "平台",
+            "抵用金",
+            "支付寶",
+            "收件地址",
+            "新台幣",
+            "明細",
+            "樂享優惠專區",
+            "模式",
+            "注意事項",
+            "海外ETF",
+            "海外債券",
+            "淘寶網",
+            "無卡交易",
+            "獨樂樂",
+            "玉山",
+            "玉山銀行",
+            "玉山Wallet",
+            "玉山全球通",
+            "玉山掃碼通",
+            "玉山理財電子週報",
+            "現鈔",
+            "眾樂樂",
+            "綜合對帳單",
+            "綜存",
+            "網路銀行",
+            "網銀",
+            "繳費交易",
+            "自益信託",
+            "臺幣",
+            "行動銀行",
+            "購物金",
+            "跨境手機掃碼支付",
+            "轉出交易",
+            "選單",
+            "陸資",
+            "隨行理專",
+            "餘額",
+            "簡訊密碼",
+            "圖形密碼",
+            "系統",
+            "使用者名稱",
+            "台灣Pay",
+            "指紋",
+            "Touch ID",
+            "Face ID",
+            "數位帳戶",
+            "自然人憑證",
+            "照片",
+            "街口支付",
+            "一卡通Money",
+            "Apple Pay",
+            "Samsung Pay",
+            "Google Pay",
+            "悠遊簽帳金融卡",
+            "活期存款",
+            "定期存款",
+            "遠期信用狀賣斷",
+            "出口信用狀",
+            "時間點",
+            "年金",
+            "年金受益人",
+            "身故受益人",
+            "手續費",
+            "MyData",
+            "信用貸款契約",
+            "conditional offer",
+            "有條件式入學許可",
+            "保證人",
+            "註冊證明",
+            "在學證明",
+            "手機號碼",
+            "店家",
+            "無卡提款",
+            "新式統一證號",
+            "晶片卡",
+            "全方位代收網",
+            "甲",
+            "乙",
+            "晶片金融卡",
+            "Smart Card Service",
+            "精簡模式",
+            "完整模式",
+            "TWQR跨機構購物交易",
+            "全支付",
+            "付款碼",
+            "付款碼(台灣Pay)/TWQR",
+            "台灣Pay/TWQR",
+            "樂享優惠",
+            "定義",
+            "數位",
+            "通訊地址",
+            "幣別",
+            "特店"
+        ],
+        "insurance": [
+            "強制汽/機車責任保險",
+            "旅行平安保險",
+            "強制汽機車責任保險",
+            "年金首期",
+            "續期每月定額",
+            "旅行綜合險",
+            "利率變動型年金保險",
+            "終身醫療保險",
+            "中國人壽",
+            "凱基人壽",
+            "旅行平安險"
+        ]
+    },
+    "utterance": {
+        "如何申請小型企業貸款": {
+            "id": "cc7f5059-1f7f-4353-9ccf-f4bd31e64069",
+            "argument": [
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "如何",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "申辦",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "申領",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "請求",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "應徵",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "應聘",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "註冊",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "聲請",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "核發",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申訴",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦理",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申報",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "登記",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "領取",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "申請",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "小型",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "企業",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "貸到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "借款",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "借錢",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "借到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "還款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "放款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "融資",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "擔保",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "借貸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "抵押",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "信貸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "按揭",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "補貼",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "貸款",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "小型企業貸款適用申請對象": {
+            "id": "403d6245-c78a-442c-8528-ab419f5f0c83",
+            "argument": [
+                {
+                    "pos": "MODIFIER",
+                    "text": "小型",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "企業",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "貸到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "借款",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "借錢",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "借到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "補貼",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "抵押",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "擔保",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "還款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "信貸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "融資",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "放款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "借貸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "按揭",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "貸款",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "侷限",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "受限",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "限於",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "屬",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "局限",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "取決",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "等同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "基",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "明訂",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "依賴",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "適用",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "申辦",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "申領",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "請求",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "應徵",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "應聘",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "登記",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "聲請",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "註冊",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦理",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申報",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申訴",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "核發",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "領取",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "申請",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "對",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nounHead",
+                    "text": "象",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "如何知道哪種貸款模式最適合我": {
+            "id": "e30a548d-823c-47f9-b615-125114c82dc7",
+            "argument": [
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "如何",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "得知",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "明知",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "深知",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "獲知",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "知悉",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "知情",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "知曉",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "知足",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "確知",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "了解",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "得悉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "懂得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "掌握",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "曉得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "熟悉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "熟諳",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "熟識",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "獲悉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "看懂",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "看穿",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "瞭解",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "確信",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "聽得懂",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "聽懂",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "記得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "認出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "認得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "認識",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "識得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "辨認出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "知",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "驚覺",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "發覺",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "知道了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "意識到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "明白了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "明白",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "知道",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "哪種",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "貸到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "借款",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "借錢",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "借到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "還款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "放款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "融資",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "擔保",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "借貸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "抵押",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "信貸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "按揭",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "補貼",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "貸款",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "模式",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "DegreeP",
+                    "text": "最適合",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "我",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "貸款申請到撥款會經過哪些流程": {
+            "id": "540f0690-53b3-4e31-9514-285f4df31969",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "貸到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "借款",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "借錢",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "借到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "補貼",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "抵押",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "擔保",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "還款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "信貸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "融資",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "放款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "借貸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "按揭",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "貸款",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "申辦",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "申領",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "請求",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "應徵",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "應聘",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "登記",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "聲請",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "註冊",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦理",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申報",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申訴",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "核發",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "領取",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "申請",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "到了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到約",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到受",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到離",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到包",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到經過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到回",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到隨",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到死",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到愛",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到經",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "到",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "劃撥",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "撥出",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "撥給",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "分配",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "調用",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "補助",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "資助",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "批出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "核撥",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "捐助",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "捐款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "注資",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "編列",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "撥付",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "撥款",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "會",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "VerbP",
+                    "lexy": [
+                        {
+                            "text": "走過",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "經歷了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "經歷",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "來經過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進行了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "歷經了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "經由",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有經過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "經",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "要經過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "歷經",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "要經",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "來經",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進行",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有經",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "經過",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "哪些",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "流程",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "公司貸款跟個人貸款有什麼不一樣": {
+            "id": "f09dd7d7-ffa7-44a1-9896-3bb560f0815a",
+            "argument": [
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "公司",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "貸到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "借款",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "借錢",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "借到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "還款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "放款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "融資",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "擔保",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "借貸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "抵押",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "信貸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "按揭",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "補貼",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "貸款",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_conjunction",
+                    "text": "跟",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "個人",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "貸到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "借款",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "借錢",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "借到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "還款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "放款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "融資",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "擔保",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "借貸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "抵押",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "信貸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "按揭",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "補貼",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "貸款",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "什麼",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_negation",
+                    "text": "不",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "一樣",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "申請小型企業貸款需要準備哪些文件呢": {
+            "id": "9af5cb92-0e36-4bd0-936c-adc7ac7503ef",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "申辦",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "申領",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "請求",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "應徵",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "應聘",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "登記",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "聲請",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "註冊",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦理",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申報",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申訴",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "核發",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "領取",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "申請",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "小型",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "企業",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "貸到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "借款",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "借錢",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "借到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "補貼",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "抵押",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "擔保",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "還款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "信貸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "融資",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "放款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "借貸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "按揭",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "貸款",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "想要",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "索要",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "要求",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "需求",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想拿",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "想買",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "索求",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "索討",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "允許",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "願意",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "需",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "要",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "需要",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "備戰",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "預備",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "企劃",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "意指",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "意謂",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "打算",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "預演",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "預約",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "等待",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "趕著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "鋪墊",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "籌劃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "決定",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "安排",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "正要",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "趕",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "準備",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "哪些",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "文件",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_particle",
+                    "text": "呢",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        }
+    },
+    "alias": {},
+    "prompt": {
+        "user": "請依上文產生五個回答「{{UTTERANCE}}」的句子",
+        "system": "你是一個使用「台灣繁體中文」的「銀行客服」，負責和善的回答銀行相關問題",
+        "assistant": "問題「{{Q}}」，答案「{{A}}」"
+    },
+    "document": [
+        {
+            "title": "對象",
+            "content": {
+                "A": "依法辦理登記之獨資、合夥、有限公司與股份有限公司，財務結構健全、業務經營正常且近一年營業額伍仟萬元以下。",
+                "Q": "小型企業貸款適用申請對象？"
+            }
+        },
+        {
+            "title": "與個人貸款差別",
+            "content": {
+                "A": "以公司名義申請貸款，除了可將公司財務與私人財務分開管理外，更可以培養公司與銀行建立良好的往來關係，透過適度的財務槓桿規劃，提高資金運用的靈活度，另為公司未來成長所需的資金週轉預做準備。",
+                "Q": "公司貸款跟個人貸款有什麼不一樣？"
+            }
+        },
+        {
+            "title": "申請",
+            "content": {
+                "A": "小型企業貸款申請流程簡單又容易，可透過分行親洽、24小時電話客服詢問(服務專線：(02)2182-1313；0800-30-1313)、智能文字客服詢問或「專人與我聯絡」留言板，將有專人與您聯繫。",
+                "Q": "要如何申請小型企業貸款？"
+            }
+        },
+        {
+            "title": "模式",
+            "content": {
+                "A": "小型企業貸款可選擇是否以不動產抵押方式申請。\n不動產擔保貸款，貸款年限相對長且利率較低，但需以不動產進行設定；若無不動產，可選擇呈送信用保證基金方式，不需設定不動產，取得資金簡便又快速。",
+                "Q": "要如何知道哪種貸款模式最適合我？"
+            }
+        },
+        {
+            "title": "文件",
+            "content": {
+                "A": "申請貸款需要準備的文件，主要在於提供銀行授信審核時的重要參考資料。除了銀行另有要求外，依據事業體型式明列如下：\n\n公司行號登記證件\n公司章程、董監事名冊、股東名冊\n非公司之商戶行號：可提供商業抄本、合夥契約書\n最近三年度稅務報表及資產負債表、近一年401/403/405/406表\n負責人及保證人身分證\n公司、負責人、保證人及關係企業於金融機構近一年往來之主要存摺\n其他文件(如：合約、DM……等)",
+                "Q": "申請小型企業貸款需要準備哪些文件呢"
+            }
+        },
+        {
+            "title": "流程",
+            "content": {
+                "A": "(一) \n申請：\n \t顧客提出貸款申請後，鄰近分行同仁將至公司進行初步訪談，同時進行貸款申請書填寫及資料收件作業。\n(二)\n估價：\n \t若申請不動產擔保貸款，銀行將參酌市場行情，依據不動產坪數、座落區域等因素進行估價，以決定可申貸的額度。 \n(三) \n審核：\n \t銀行取得公司及保證人資料後，將進行案件審核作業，通常會根據顧客的基本條件、還款來源、資金用途、不動產估價、未來展望等因素，決定案件准駁及貸款條件。\n(四) \n簽約：\n \t貸款核准後，銀行行員將與借款人約定時間簽訂借款契約。\n(五)\t設定：\n \t若申請不動產擔保貸款，簽約完成至撥款前，還需要經過抵押權設定的流程，抵押權設定的金額為貸款金額的1.2倍\n(六) \t撥款：\n \t銀行行員事先與顧客確認撥款細節，並於約定之撥款日將款項撥入公司帳戶；若為代償案件，另應進行相關代償事宜。\n撥款後借款人與銀行的權利與義務關係開始生效，借款人只要每個月定期將應繳金額存入約定帳戶，貸款本息將從帳戶中自動扣繳。",
+                "Q": "貸款申請到撥款會經過哪些流程？"
+            }
+        }
+    ]
+}

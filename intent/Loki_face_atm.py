@@ -53,7 +53,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
     if utterance == "[別人]拿[我]的[照片]來使用刷臉提款怎麼辦":
         if CHATBOT_MODE:
-            if args[0] != '我' and args[1] == '我' and args[2] in ['照片', '相片']:
+            if args[1] == '我' and args[2] in ['照片', '相片']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
