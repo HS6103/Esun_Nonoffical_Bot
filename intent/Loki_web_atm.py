@@ -53,218 +53,194 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
     if utterance == "[Edge][瀏覽器]無法[正常]顯示[玉山][WebATM]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0].lower() == 'edge' and '玉山' in args[2] and args[3].lower() in userDefinedDICT['webatm']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[Linux][上]使用[玉山][WebATM]服務的[基本][需求]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '玉山' in args[2] and args[3].lower() in userDefinedDICT['webatm'] and args[4] in ['需求', '條件']:          
+                if args[0].lower() == 'linux':
+                    resultDICT["response"] = getResponse(utterance, args)
+                elif 'mac' or 'ios' in args[0].lower():
+                    resultDICT["response"] = getResponse('[mac][上]使用[玉山][WebATM]服務的[基本][需求]', args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[TLS]加密通訊[協定]調整教學":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0].lower() == 'tls':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[WebATM]轉帳[成功][對方]卻表示未入帳怎麼辦":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0].lower() in userDefinedDICT['webatm'] and args[1] == '完成':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[消費者]透過[金融卡][交易]的[流程]有哪些":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[1] == '金融卡' and args[2] == '交易' and args[3] in ['流程', '程序', '步驟']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[系統][一直]提示[我]插入[晶片卡]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[3] == '晶片卡':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[金融卡][可以][一直]插在[讀卡機][上]嗎":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '金融卡' and args[3] == '讀卡機' and args[4] in ['上', '裡']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
-    if utterance == "[金融卡]在[國外][可]使用嗎":
+    if utterance == "[金融卡]在[國][外][可]使用嗎":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '金融卡' and args[1] in ['國', '境', '海'] and args[2] == '外':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[金融卡]被鎖住[該]怎麼辦":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '金融卡':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
-    if utterance == "「[玉山][WebATM]」[可以]在[國外]使用嗎":
+    if utterance == "「[玉山][WebATM]」[可以]在[國][外]使用嗎":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[1].lower() in userDefinedDICT['webatm'] and args[3] in ['國', '境', '海'] and args[2] == '外':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "「[玉山][WebATM]」有轉帳[金額]的[限制]嗎":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '玉山' in args[0] and args[1].lower() in userDefinedDICT['webatm'] and args[2] == '金額' and '限' in args[3]:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "「[繳費交易]」和「[轉出交易]」有什麼[不同]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] in ['繳費交易', '轉出交易'] and args[1] in ['繳費交易', '轉出交易']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
-    if utterance == "下拉[選單][中]沒有看到所安裝的[讀卡機][型][號]時[應]如何處理":
+    if utterance == "下拉[選單][中]沒有看到所安裝的[讀卡機][型號]時[應]如何處理":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[2] == '讀卡機' and args[3] == '型號':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "什麼是[玉山][WebATM]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '玉山' in args[0] and args[1].lower() in userDefinedDICT['webatm']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "什麼是「[勞動保障卡]開卡」":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '勞動保障卡':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "使用[Internet Explorer 11]為何[WebATM][網頁]無法[正常]顯示[網頁]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0].lower() in userDefinedDICT['ie']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "使用[Windows 7]時[元件]出現[亂碼]要怎麼排除":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0].lower in userDefinedDICT['windows 7'] and args[1] == '元件' and args[2] == '亂碼':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "使用[玉山][WebATM]服務的[基本][條件]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '玉山' in args[0] and args[1].lower() in userDefinedDICT['webatm']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "如何安裝[pcscd]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0].lower() == 'pcscd':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "如何確定[WebATM][元件]已安裝[成功]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0].lower() in userDefinedDICT['webatm'] and args[1] == '元件' and args[2] == None or '成功':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "如何確定[WebATM][讀卡機][是]否安裝[成功]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0].lower() in userDefinedDICT['webatm'] and args[1] == '讀卡機' and args[3] == '成功':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "如何確認[Smart Card Service]已[啓]動":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if 'smart card device' in args[0].lower():
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "如何確認[讀卡機][是]否[可][正常]運作":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '讀卡機':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "忘記[密碼][該]怎麼辦":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '密碼':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "為什麼[我]不[能]進行非約定[帳戶]轉帳":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[2] == '帳戶':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "登入[WebATM][時]出現[元件]未更新":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0].lower == 'webatm' and args[2] == '元件':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "透過[金融卡][交易]的[流程]有哪些":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '金融卡' and args[1] == '交易' and args[2] == '流程':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     return resultDICT

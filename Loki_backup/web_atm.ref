@@ -6,6 +6,10 @@
         "intent": "1.0"
     },
     "user_defined": {
+        "ie": [
+            "internet explorer 11",
+            "ie 11"
+        ],
         "loan": [
             "提前清償違約金",
             "指數型房貸",
@@ -18,10 +22,11 @@
             "信用貸款",
             "留學貸款"
         ],
+        "webatm": [
+            "web atm"
+        ],
         "as_noun": [
-            "Internet Explorer 11",
             "PayPal",
-            "windows 7",
             "他益信託",
             "信託",
             "全權委託保管機構",
@@ -30,10 +35,10 @@
             "勞動保障卡",
             "協定",
             "台幣",
-            "國外",
             "基金保管機構",
             "報酬率",
             "定存",
+            "型號",
             "密碼",
             "對帳單",
             "帳單",
@@ -51,8 +56,6 @@
             "淘寶網",
             "無卡交易",
             "獨樂樂",
-            "玉山",
-            "玉山銀行",
             "玉山Wallet",
             "玉山全球通",
             "玉山掃碼通",
@@ -129,7 +132,9 @@
             "數位",
             "通訊地址",
             "幣別",
-            "特店"
+            "特店",
+            "*",
+            "-"
         ],
         "insurance": [
             "強制汽/機車責任保險",
@@ -143,6 +148,9 @@
             "中國人壽",
             "凱基人壽",
             "旅行平安險"
+        ],
+        "windows 7": [
+            "win 7"
         ]
     },
     "utterance": {
@@ -420,7 +428,7 @@
             ]
         },
         "金融卡在國外可使用嗎": {
-            "id": "fa4db295-b21c-413f-a480-af05f1edb257",
+            "id": "e6b01fcf-3020-46d9-a1d9-ab40093a9572",
             "argument": [
                 {
                     "pos": "ENTITY_noun",
@@ -435,10 +443,16 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "UserDefined",
-                    "text": "國外",
+                    "pos": "ENTITY_nouny",
+                    "text": "國",
                     "checked": true,
                     "checkbox": true
+                },
+                {
+                    "pos": "RANGE_locality",
+                    "text": "外",
+                    "checked": true,
+                    "checkbox": false
                 },
                 {
                     "pos": "MODAL",
@@ -500,7 +514,7 @@
                             "checked": false
                         },
                         {
-                            "text": "使用了",
+                            "text": "選用",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -510,17 +524,7 @@
                             "checked": false
                         },
                         {
-                            "text": "選用",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "用到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "改用",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -530,7 +534,17 @@
                             "checked": false
                         },
                         {
+                            "text": "改用",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "使用過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "使用了",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -2576,7 +2590,7 @@
             ]
         },
         "「玉山WebATM」可以在國外使用嗎": {
-            "id": "542cba6f-694d-48d7-ad77-0a0276f53fbc",
+            "id": "e5b12730-b373-40f4-89b0-1994cf113622",
             "argument": [
                 {
                     "pos": "PUNCTUATION",
@@ -2615,10 +2629,16 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "UserDefined",
-                    "text": "國外",
+                    "pos": "ENTITY_nouny",
+                    "text": "國",
                     "checked": true,
                     "checkbox": true
+                },
+                {
+                    "pos": "RANGE_locality",
+                    "text": "外",
+                    "checked": true,
+                    "checkbox": false
                 },
                 {
                     "pos": "ACTION_verb",
@@ -6287,7 +6307,7 @@
             ]
         },
         "下拉選單中沒有看到所安裝的讀卡機型號時應如何處理": {
-            "id": "7c482e18-9794-492b-8446-aea5ae4e4db6",
+            "id": "7adb23f7-5165-4224-9a5b-330d39ca72fd",
             "argument": [
                 {
                     "pos": "ACTION_verb",
@@ -6499,14 +6519,8 @@
                     "checkbox": true
                 },
                 {
-                    "pos": "ENTITY_nounHead",
-                    "text": "型",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "號",
+                    "pos": "UserDefined",
+                    "text": "型號",
                     "checked": true,
                     "checkbox": true
                 },
