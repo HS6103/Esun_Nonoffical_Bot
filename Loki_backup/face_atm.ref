@@ -6,6 +6,13 @@
         "intent": "1.0"
     },
     "user_defined": {
+        "ie": [
+            "internet explorer 11",
+            "ie 11"
+        ],
+        "atm": [
+            "自動櫃員機"
+        ],
         "loan": [
             "提前清償違約金",
             "指數型房貸",
@@ -18,10 +25,11 @@
             "信用貸款",
             "留學貸款"
         ],
+        "webatm": [
+            "web atm"
+        ],
         "as_noun": [
-            "Internet Explorer 11",
             "PayPal",
-            "windows 7",
             "他益信託",
             "信託",
             "全權委託保管機構",
@@ -30,10 +38,10 @@
             "勞動保障卡",
             "協定",
             "台幣",
-            "國外",
             "基金保管機構",
             "報酬率",
             "定存",
+            "型號",
             "密碼",
             "對帳單",
             "帳單",
@@ -49,10 +57,10 @@
             "海外ETF",
             "海外債券",
             "淘寶網",
+            "身份證字號",
             "無卡交易",
             "獨樂樂",
             "玉山",
-            "玉山銀行",
             "玉山Wallet",
             "玉山全球通",
             "玉山掃碼通",
@@ -129,7 +137,9 @@
             "數位",
             "通訊地址",
             "幣別",
-            "特店"
+            "特店",
+            "*",
+            "-"
         ],
         "insurance": [
             "強制汽/機車責任保險",
@@ -143,6 +153,9 @@
             "中國人壽",
             "凱基人壽",
             "旅行平安險"
+        ],
+        "windows 7": [
+            "win 7"
         ]
     },
     "utterance": {
@@ -1094,256 +1107,6 @@
                 }
             ]
         },
-        "變更無卡交易密碼": {
-            "id": "2f5c0ea6-e27f-46e0-a670-0d74782419d8",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "改變",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "更換",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "更改",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "變動",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "變換",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "變樣",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "變造",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "修改",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "刪改",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "合用",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "吻合",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "塗改",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "改動",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "改換",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "改編",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "改裝",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "整治",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "磨練",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "竄改",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "裝修",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "調製",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "配合",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "配製",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "調整",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "編定",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "修正",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "微調",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "轉換",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "變更",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "無卡交易",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "密碼",
-                    "checked": false,
-                    "checkbox": true
-                }
-            ]
-        },
-        "重設無卡交易密碼": {
-            "id": "28e48af0-c1ae-416d-a012-4e5158c0e902",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "撤除",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "撤消",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "撤去",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "關閉了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "廢止了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "改稱",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "停用",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "改設",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "升級為",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "復用",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "關閉",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "廢止",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "重設",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "無卡交易",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "密碼",
-                    "checked": false,
-                    "checkbox": true
-                }
-            ]
-        },
         "如何使用刷臉來提款": {
             "id": "233fe62e-e579-40c2-84fb-de0d67a082c5",
             "argument": [
@@ -2232,273 +1995,6 @@
                     "text": "注意事項",
                     "checked": true,
                     "checkbox": true
-                }
-            ]
-        },
-        "無卡交易密碼錯誤上限是幾次": {
-            "id": "cd87dbc1-1395-4c07-9de6-587f4412deb7",
-            "argument": [
-                {
-                    "pos": "UserDefined",
-                    "text": "無卡交易",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "密碼",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "錯誤",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "RANGE_locality",
-                    "text": "上",
-                    "checked": true,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "限",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "AUX",
-                    "text": "是",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "幾",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_eventQuantifier",
-                    "text": "次",
-                    "checked": true,
-                    "checkbox": false
-                }
-            ]
-        },
-        "無卡交易密碼該如何重新設定呢": {
-            "id": "636ec717-87b5-489b-97e7-c97aaa172848",
-            "argument": [
-                {
-                    "pos": "UserDefined",
-                    "text": "無卡交易",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "密碼",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "MODAL",
-                    "text": "該",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "如何",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "MODIFIER",
-                    "text": "重新",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "固定",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "埋設",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "安設",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "擺設",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "裝設",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "訂定",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "設攤",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "設立",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "設置",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "鋪設",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "創記錄",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "創造",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "安排",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "安放",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "安裝",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "擺放",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "編製",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "置放",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "興辦",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "配裝",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "開站",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "開辦",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "開闢",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "設計",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "重製",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "配置",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "原作",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "預設",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "切換",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "架構",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "加載",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "定位",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "定義",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "設定",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_particle",
-                    "text": "呢",
-                    "checked": false,
-                    "checkbox": false
                 }
             ]
         },
@@ -3671,240 +3167,6 @@
                     "text": "成功率",
                     "checked": true,
                     "checkbox": true
-                }
-            ]
-        },
-        "無卡交易密碼錯誤達到上限後應該怎麼辦": {
-            "id": "b1052bd5-b12b-45da-8b89-945df6a8df68",
-            "argument": [
-                {
-                    "pos": "UserDefined",
-                    "text": "無卡交易",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "密碼",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "錯誤",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "做到",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "到達",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "得到",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "抵達",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "拿到",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦到",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "達成",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "達標",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "達致",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "取得",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "拾獲",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "獲得",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "謀取",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "贏得",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "超過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "超過了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "突破",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "達",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "達到了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "高達",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "降到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "低於",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "超",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "達到",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "RANGE_locality",
-                    "text": "上",
-                    "checked": true,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "限",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "RANGE_locality",
-                    "text": "後",
-                    "checked": true,
-                    "checkbox": false
-                },
-                {
-                    "pos": "MODAL",
-                    "text": "應該",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "怎麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "籌辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "承辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "主辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦副",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦說",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "合辦",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "辦",
-                    "checked": false,
-                    "checkbox": false
                 }
             ]
         },

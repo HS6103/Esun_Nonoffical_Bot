@@ -6,6 +6,13 @@
         "intent": "1.0"
     },
     "user_defined": {
+        "ie": [
+            "internet explorer 11",
+            "ie 11"
+        ],
+        "atm": [
+            "自動櫃員機"
+        ],
         "loan": [
             "提前清償違約金",
             "指數型房貸",
@@ -18,10 +25,11 @@
             "信用貸款",
             "留學貸款"
         ],
+        "webatm": [
+            "web atm"
+        ],
         "as_noun": [
-            "Internet Explorer 11",
             "PayPal",
-            "windows 7",
             "他益信託",
             "信託",
             "全權委託保管機構",
@@ -30,10 +38,10 @@
             "勞動保障卡",
             "協定",
             "台幣",
-            "國外",
             "基金保管機構",
             "報酬率",
             "定存",
+            "型號",
             "密碼",
             "對帳單",
             "帳單",
@@ -49,10 +57,10 @@
             "海外ETF",
             "海外債券",
             "淘寶網",
+            "身份證字號",
             "無卡交易",
             "獨樂樂",
             "玉山",
-            "玉山銀行",
             "玉山Wallet",
             "玉山全球通",
             "玉山掃碼通",
@@ -129,7 +137,9 @@
             "數位",
             "通訊地址",
             "幣別",
-            "特店"
+            "特店",
+            "*",
+            "-"
         ],
         "insurance": [
             "強制汽/機車責任保險",
@@ -143,6 +153,9 @@
             "中國人壽",
             "凱基人壽",
             "旅行平安險"
+        ],
+        "windows 7": [
+            "win 7"
         ]
     },
     "utterance": {
@@ -216,7 +229,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "無卡提款",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -290,7 +303,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "無卡交易",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -455,7 +468,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "無卡交易",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -540,7 +553,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "無卡交易",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -563,7 +576,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "無卡提款",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -644,7 +657,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "無卡提款",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -746,7 +759,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "無卡提款",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -922,7 +935,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "無卡提款",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -933,7 +946,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "無卡提款",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1099,7 +1112,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "無卡提款",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1330,7 +1343,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "無卡提款",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1570,7 +1583,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "無卡提款",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -1581,7 +1594,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "無卡交易",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1593,7 +1606,7 @@
                 {
                     "pos": "ENTITY_oov",
                     "text": "錯誤",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1605,7 +1618,7 @@
                 {
                     "pos": "ENTITY_oov",
                     "text": "限",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1628,8 +1641,222 @@
                 }
             ]
         },
+        "無卡交易密碼該如何重新設定呢": {
+            "id": "7f229cfc-7b8f-4932-951d-45d05a0a9ad8",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "無卡交易",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "密碼",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "該",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "如何",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "重新",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "固定",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "埋設",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "安設",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擺設",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "裝設",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "訂定",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "設攤",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "設立",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "設置",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "鋪設",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "創記錄",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "創造",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "安排",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "安放",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "安裝",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "擺放",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "編製",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "置放",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "興辦",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "配裝",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "開站",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "開辦",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "開闢",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "重製",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "定義",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "原作",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "配置",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "切換",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "預設",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "定位",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "加載",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "架構",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "設計",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "設定",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_particle",
+                    "text": "呢",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "玉山ATM可以進行跨行無卡提款嗎": {
-            "id": "73d985cb-030e-416b-a3f7-4756ca3d9040",
+            "id": "09f06416-05ba-472c-856c-a8a281bf5bbf",
             "argument": [
                 {
                     "pos": "UserDefined",
@@ -1638,7 +1865,7 @@
                     "checkbox": true
                 },
                 {
-                    "pos": "ENTITY_oov",
+                    "pos": "UserDefined",
                     "text": "ATM",
                     "checked": true,
                     "checkbox": true
@@ -1663,37 +1890,7 @@
                             "checked": false
                         },
                         {
-                            "text": "進行了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "展開",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "完成",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "實施",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "進行過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "作出",
+                            "text": "進行著",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1703,7 +1900,37 @@
                             "checked": false
                         },
                         {
-                            "text": "進行著",
+                            "text": "展開",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進行了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦理",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "作出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "實施",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進行過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "完成",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1778,7 +2005,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "無卡提款",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1951,7 +2178,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "無卡提款",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1980,7 +2207,7 @@
                 {
                     "pos": "ENTITY_oov",
                     "text": "預",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -2010,7 +2237,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "無卡提款",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -2022,18 +2249,18 @@
             ]
         },
         "身份證字號重號能否使用行動無卡提款": {
-            "id": "0761f999-6d7f-467a-b58e-6ece4675dd8e",
+            "id": "8bc622a5-4d4c-4650-86ec-a066692c4b72",
             "argument": [
                 {
-                    "pos": "ENTITY_noun",
-                    "text": "身份證",
-                    "checked": true,
+                    "pos": "UserDefined",
+                    "text": "身份證字號",
+                    "checked": false,
                     "checkbox": true
                 },
                 {
-                    "pos": "ENTITY_nounHead",
-                    "text": "字號重號",
-                    "checked": true,
+                    "pos": "ENTITY_nouny",
+                    "text": "重號",
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -2144,7 +2371,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "無卡提款",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -2155,7 +2382,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "無卡交易",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -2167,7 +2394,7 @@
                 {
                     "pos": "ENTITY_oov",
                     "text": "錯誤",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -2302,7 +2529,7 @@
                 {
                     "pos": "ENTITY_oov",
                     "text": "限",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -2389,7 +2616,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "金融卡",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -2518,7 +2745,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "無卡提款",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -2703,7 +2930,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "無卡提款",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -2784,7 +3011,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "無卡提款",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -2814,7 +3041,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "金融卡",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -2895,7 +3122,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "金融卡",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -3045,7 +3272,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "無卡提款",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -3213,7 +3440,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "金融卡",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -3363,7 +3590,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "無卡提款",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -3471,7 +3698,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "金融卡",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -3621,7 +3848,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "無卡提款",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -3756,7 +3983,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "無卡提款",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -3941,188 +4168,6 @@
                 }
             ]
         },
-        "行動無卡提款之無卡交易密碼和刷臉提款之無卡交易密碼一樣嗎": {
-            "id": "c5ce6335-dcef-4609-99e4-803184992264",
-            "argument": [
-                {
-                    "pos": "MODIFIER",
-                    "text": "行動",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "無卡提款",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "之",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "無卡交易",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "密碼",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "FUNC_conjunction",
-                    "text": "和",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "VerbP",
-                    "lexy": [
-                        {
-                            "text": "靠卡",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "訂餐",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "刷卡",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "充值",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "刷臉",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "取款",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "提出",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "提取",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "提現",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "提留",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "提領",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "撤款",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "匯款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "領錢",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "付款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "轉帳",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "開戶",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "儲值",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "預付",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "結帳",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "提款",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "之",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "無卡交易",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "密碼",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "MODIFIER",
-                    "text": "一樣",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_YesNoQ",
-                    "text": "嗎",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
         "開通時使用的金融卡會影響行動無卡提款時能選擇的提領帳戶嗎": {
             "id": "23487b19-4ec4-4703-ba73-994d96106189",
             "argument": [
@@ -4292,7 +4337,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "金融卡",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -4618,7 +4663,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "無卡提款",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
