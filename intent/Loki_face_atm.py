@@ -58,27 +58,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "[無卡交易]密碼[該]如何[重新]設定呢":
-        if CHATBOT_MODE:
-            if args[0] == '無卡交易':
-                resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass
-
-    if utterance == "[無卡交易]密碼[錯誤][上]限是幾[次]":
-        if CHATBOT_MODE:
-            if args[0] == '無卡交易' and args[1] == '錯誤' and args[2] == '上':
-                resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass
-
-    if utterance == "[無卡交易]密碼[錯誤]達到[上]限[後][應該]怎麼辦":
-        if CHATBOT_MODE:
-            if args[0] == '無卡交易' and args[1] == '錯誤' and args[2] == '上':
-                resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass
-
     if utterance == "[行動]無卡提款之無卡交易密碼和刷臉提款之無卡交易密碼[一樣]嗎":
         if CHATBOT_MODE:
             if args[1] in ['一樣', '相同']:
@@ -160,20 +139,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     if utterance == "設定刷臉[ID]有無[特殊][注意事項]":
         if CHATBOT_MODE:
             if args[0].lower() == 'id' and args[2] in ['注意事項', '規定']:
-                resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass
-
-    if utterance == "變更[無卡交易]密碼":
-        if CHATBOT_MODE:
-            if args[0] == '無卡交易':
-                resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass
-
-    if utterance == "重設[無卡交易]密碼":
-        if CHATBOT_MODE:
-            if args[0] == '無卡交易':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
