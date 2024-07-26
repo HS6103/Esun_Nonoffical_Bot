@@ -63,15 +63,19 @@ for modulePath in glob("{}/intent/Loki_*.py".format(BASE_PATH)):
     lokiIntentDICT[moduleNameSTR] = globals()[moduleNameSTR]
 
 LOKI_URL = "https://api.droidtown.co/Loki/BulkAPI/"
-try:
-    accountInfo = json.load(open(os.path.join(BASE_PATH, "account.info"), encoding="utf-8"))
-    USERNAME = accountInfo["username"]
-    LOKI_KEY = accountInfo["loki_key"]
-except Exception as e:
-    print("[ERROR] AccountInfo => {}".format(str(e)))
-    USERNAME = ""
-    LOKI_KEY = ""
 
+# 載入 username 和 loki_key
+# 若找不到 account.info 則設為 None
+try:
+    with open("account.info", encoding="utf-8") as f:
+        accountDICT = json.load(f)
+        username = accountDICT['username']
+        loki_key = accountDICT['loki_key']
+        
+except Exception:
+    username = None
+    loki_key = None
+    
 # 意圖過濾器說明
 # INTENT_FILTER = []        => 比對全部的意圖 (預設)
 # INTENT_FILTER = [intentN] => 僅比對 INTENT_FILTER 內的意圖
@@ -96,13 +100,21 @@ class LokiResult():
             filterLIST = INTENT_FILTER
 
         try:
-            result = post(LOKI_URL, json={
-                "username": USERNAME,
-                "input_list": inputLIST,
-                "loki_key": LOKI_KEY,
-                "filter_list": filterLIST
-            })
-
+            if username == None and loki_key == None:                 # 若 username 和 loki_key 為 None 則從 .env 載入  
+                result = post(LOKI_URL, json={
+                    "username": os.environ.get('loki_username'),
+                    "input_list": inputLIST,
+                    "loki_key": os.environ.get('loki_key'),
+                    "filter_list": filterLIST
+                })
+            else:
+                result = post(LOKI_URL, json={
+                    "username": username, 
+                    "input_list": inputLIST,
+                    "loki_key": loki_key,
+                    "filter_list": filterLIST
+                })
+                
             if result.status_code == codes.ok:
                 result = result.json()
                 self.status = result["status"]
@@ -397,10 +409,10 @@ def testIntent():
 
 if __name__ == "__main__":
     # 測試所有意圖
-    testIntent()
+    #testIntent()
 
     # 測試其它句子
-    filterLIST = ['trust_fund']
+    filterLIST = []
     splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
     # 設定參考資料
     refDICT = { # value 必須為 list
@@ -418,5 +430,5 @@ if __name__ == "__main__":
                 print(resultDICT['response'][0])                                                    #顯示回覆訊息
                 print('')
         
-        except KeyError:
-            print('No reply\n')
+        except Exception as e:
+            print(e)
