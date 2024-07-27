@@ -6,6 +6,13 @@
         "intent": "1.0"
     },
     "user_defined": {
+        "ie": [
+            "internet explorer 11",
+            "ie 11"
+        ],
+        "atm": [
+            "自動櫃員機"
+        ],
         "loan": [
             "提前清償違約金",
             "指數型房貸",
@@ -18,10 +25,11 @@
             "信用貸款",
             "留學貸款"
         ],
+        "webatm": [
+            "web atm"
+        ],
         "as_noun": [
-            "Internet Explorer 11",
             "PayPal",
-            "windows 7",
             "他益信託",
             "信託",
             "全權委託保管機構",
@@ -30,10 +38,11 @@
             "勞動保障卡",
             "協定",
             "台幣",
-            "國外",
             "基金保管機構",
             "報酬率",
             "定存",
+            "活存",
+            "型號",
             "密碼",
             "對帳單",
             "帳單",
@@ -49,6 +58,7 @@
             "海外ETF",
             "海外債券",
             "淘寶網",
+            "身份證字號",
             "無卡交易",
             "獨樂樂",
             "玉山",
@@ -129,7 +139,9 @@
             "數位",
             "通訊地址",
             "幣別",
-            "特店"
+            "特店",
+            "*",
+            "-"
         ],
         "insurance": [
             "強制汽/機車責任保險",
@@ -143,6 +155,9 @@
             "中國人壽",
             "凱基人壽",
             "旅行平安險"
+        ],
+        "windows 7": [
+            "win 7"
         ]
     },
     "utterance": {
@@ -479,7 +494,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "利率",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -491,177 +506,6 @@
                 {
                     "pos": "CLAUSE_HowQ",
                     "text": "多少",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "匯到大陸的時間要多久": {
-            "id": "67fb3082-6aca-4655-8adf-feb19caaa732",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "存入",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "匯進",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "私吞",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "匯給",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "付給",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "匯回",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "花掉",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "募到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "欠下",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "匯到",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "LOCATION",
-                    "text": "大陸",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "的",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "時間",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "想要",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "需要",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "想拿",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "想買",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "渴望",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "渴求",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "真要",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "得照",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "更要",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "要去",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "想",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "需",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "餓了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "餓",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "要",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "多",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "MODIFIER",
-                    "text": "久",
                     "checked": false,
                     "checkbox": false
                 }
@@ -1422,8 +1266,557 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "信用狀",
+                    "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
+        "全方位代收網停止支援TLS": {
+            "id": "ac073947-5d62-44b5-9766-541bd0f10248",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "全方位代收網",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "中止",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "休止",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "停下",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "停下來",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "停住",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "停息",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "停歇",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "停步",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "停用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "停留",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "停頓",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "制止",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "廢止",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "截止",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "終止",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "中斷",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "切斷",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "截斷",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "打住",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "拖住",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "禁令",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "禁運",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "終結",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "停止了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "中止了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "暫停了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "結束",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "暫停",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "取消",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "中止",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "停止",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "援助",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "援救",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "支應",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "支持",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "支撐",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "救援",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "聲援",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "互助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "供給",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "促進",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "倚靠",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "力挺",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "協助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "協辦",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶給",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "幫助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "幫忙",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "幫辦",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "後蓋",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "扶助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "扶持",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "提供",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁護",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "救助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "濟助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "發放",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "相助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "紓解",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "緩解",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "補給",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "解救",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "貢獻",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "資助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "贊助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "輔佐",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "輔助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "顛倒",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "增援",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "掩護",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "配合",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "掃雷",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "支援",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "TLS",
+                    "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
+        "匯到大陸的時間需要多久": {
+            "id": "465db3b9-7a0f-471f-ae8f-fc16c1ce593e",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "存入",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "匯進",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "私吞",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "匯給",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "付給",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "匯回",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "花掉",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "募到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "欠下",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "匯到",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "LOCATION",
+                    "text": "大陸",
                     "checked": true,
                     "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "時間",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "想要",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "索要",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "要求",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "需求",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想拿",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "想買",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "索求",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "索討",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "允許",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "願意",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "需",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "要",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "需要",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "多",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "久",
+                    "checked": false,
+                    "checkbox": false
                 }
             ]
         },
@@ -1821,7 +2214,7 @@
                 {
                     "pos": "ENTITY_oov",
                     "text": "銷帳",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -2158,7 +2551,7 @@
             ]
         },
         "如何辦理公司代表人變更": {
-            "id": "edb08373-d772-4e49-bcea-e22bef2b6797",
+            "id": "6e9c7cfc-2ad9-4e5a-a3dc-0607cb78dee3",
             "argument": [
                 {
                     "pos": "CLAUSE_HowQ",
@@ -2592,13 +2985,13 @@
                 {
                     "pos": "ENTITY_oov",
                     "text": "起",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
                     "pos": "ENTITY_nouny",
                     "text": "存額",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -2889,401 +3282,159 @@
                 }
             ]
         },
-        "「全方位代收網」停止支援TLS": {
-            "id": "7080681e-4a9d-4cb7-b4b1-0461a98eb2f8",
+        "是否有承作遠期信用狀賣斷": {
+            "id": "d4e97c02-7d03-4091-a0ca-7a3b1f8ba889",
             "argument": [
                 {
-                    "pos": "PUNCTUATION",
-                    "text": "「",
+                    "pos": "CLAUSE_AnotAQ",
+                    "text": "是否",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "核貸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "放款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "承做",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "結匯",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "發卡",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申貸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "提領",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "轉存",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "按揭",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "詐得",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "承作",
                     "checked": false,
                     "checkbox": false
                 },
                 {
                     "pos": "UserDefined",
-                    "text": "全方位代收網",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "PUNCTUATION",
-                    "text": "」",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "中止",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "休止",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "停下",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "停下來",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "停住",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "停息",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "停歇",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "停步",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "停用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "停留",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "停頓",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "制止",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "廢止",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "截止",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "終止",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "中斷",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "切斷",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "截斷",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "打住",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "拖住",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "禁令",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "禁運",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "終結",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "停止了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "中止了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "暫停了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "結束",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "暫停",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "取消",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "中止",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "停止",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "援助",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "援救",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "支應",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "支持",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "支撐",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "救援",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "聲援",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "互助",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "供給",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "促進",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "倚靠",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "力挺",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "協助",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "協辦",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶給",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "幫助",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "幫忙",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "幫辦",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "後蓋",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "扶助",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "扶持",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "提供",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "擁護",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "救助",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "濟助",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "發放",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "相助",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "紓解",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "緩解",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "補給",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "解救",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "貢獻",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "資助",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "贊助",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "輔佐",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "輔助",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "顛倒",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "增援",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "掩護",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "配合",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "掃雷",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "支援",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "TLS",
+                    "text": "遠期信用狀賣斷",
                     "checked": true,
                     "checkbox": true
                 }
@@ -3439,16 +3590,16 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "信用狀",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
         },
         "國外票據託收有受理的限制嗎": {
-            "id": "ae210a66-cd80-446a-9a28-438acbbd8e3c",
+            "id": "c4321fb2-e619-43dc-bd3d-c17b01b344ce",
             "argument": [
                 {
-                    "pos": "UserDefined",
+                    "pos": "LOCATION",
                     "text": "國外",
                     "checked": true,
                     "checkbox": true
@@ -3725,7 +3876,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "限制",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -4067,884 +4218,8 @@
                 }
             ]
         },
-        "匯款至國外一般需多久才能入帳": {
-            "id": "c8c71e46-3f79-454e-864f-ccbf5c00cc1a",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "匯錢",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "匯出",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "匯進",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "轉帳",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "轉賬",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "電匯",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "匯回",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "匯寄",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "劃撥",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "提領",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "提款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "郵寄",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "借款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "收款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "付款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "開戶",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "取款",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "匯款",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "至",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "國外",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "MODIFIER",
-                    "text": "一般",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "需要",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "想拿",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "想要",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "想買",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "需約",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "需另",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "允許",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "要",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "需經過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "需預",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "需經",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "需",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "多",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "MODIFIER",
-                    "text": "久",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "MODAL",
-                    "text": "才能",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "認列",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "付清",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "結清",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "匯出",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "還款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "償付",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "交屋",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "到期",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "挹注",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "兌付",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "入帳",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "是否有承作遠期信用狀賣斷業務": {
-            "id": "e21e1038-8702-4843-a9a1-48a1c773aaf8",
-            "argument": [
-                {
-                    "pos": "CLAUSE_AnotAQ",
-                    "text": "是否",
-                    "checked": true,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "具有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "兼有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "存有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "懷有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "持有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "擁有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "有了",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "有著",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "保留",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "有同",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "含有",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "有",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "核貸",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "放款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "承做",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "結匯",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "發卡",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "申貸",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "提領",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "轉存",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "按揭",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "詐得",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "承作",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "遠期信用狀賣斷",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "業務",
-                    "checked": true,
-                    "checkbox": true
-                }
-            ]
-        },
-        "買賣外幣現鈔需要收多少手續費": {
-            "id": "3939af25-6873-4303-a1dd-c5104d4ca212",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "販賣",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "炒賣",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "申購",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "倒賣",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "售屋",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "租賃",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "轉讓",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "抵押",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "結匯",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "買入",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "買賣",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "外幣",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "現鈔",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "想要",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "索要",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "要求",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "需求",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "想拿",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "想買",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "索求",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "索討",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "允許",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "願意",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "需",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "要",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "需要",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "收取",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "交納",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "收了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "加收",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "酌收",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "還本",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "預繳",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳交",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "收",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "多少",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_classifier",
-                    "text": "手",
-                    "checked": true,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "續費",
-                    "checked": true,
-                    "checkbox": true
-                }
-            ]
-        },
-        "法人外幣帳戶開戶需準備什麼文件": {
-            "id": "62db1516-7ac6-462d-9785-afae503755c6",
-            "argument": [
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "法人",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_nounHead",
-                    "text": "外幣帳戶",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "轉帳",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "匯款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦卡",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "付款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "換匯",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "取款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "提領",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "轉賬",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "領錢",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "退款",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "開戶",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "需要",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "想拿",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "想要",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "想買",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "需約",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "需另",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "允許",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "要",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "需經過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "需預",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "需經",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "需",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "備戰",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "預備",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "企劃",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "意指",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "意謂",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "打算",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "預演",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "預約",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "正要",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "鋪墊",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "籌劃",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "等待",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "決定",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "安排",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "趕著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "趕",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "準備",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_WhatQ",
-                    "text": "什麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "文件",
-                    "checked": true,
-                    "checkbox": true
-                }
-            ]
-        },
-        "可以透過哪些方式辦理匯出匯款交易": {
-            "id": "8324095a-7177-4fd0-8ced-ef3b6e1aeb6b",
+        "可以透過哪些方式辦理匯出匯款": {
+            "id": "bce48e1d-c763-4cb6-adcb-009217a56890",
             "argument": [
                 {
                     "pos": "MODAL",
@@ -5285,10 +4560,726 @@
                     "text": "匯款",
                     "checked": false,
                     "checkbox": false
+                }
+            ]
+        },
+        "買賣外幣現鈔需要收多少手續費": {
+            "id": "e045d396-061d-4dcf-a164-c8458ac02e8b",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "販賣",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "炒賣",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申購",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "倒賣",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "售屋",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "租賃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "轉讓",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "抵押",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "結匯",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "買入",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "買賣",
+                    "checked": false,
+                    "checkbox": false
                 },
                 {
+                    "pos": "ENTITY_nouny",
+                    "text": "外幣",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "現鈔",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "想要",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "索要",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "要求",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "需求",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想拿",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "想買",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "索求",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "索討",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "允許",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "願意",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "需",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "要",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "需要",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "收取",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "交納",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "收了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "加收",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "酌收",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "還本",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "預繳",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳交",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "收",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "多少",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "手續費",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "匯款至國外一般需要多久才能入帳": {
+            "id": "2422c5b6-5567-445e-9c5d-b4bbd220a75e",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "匯錢",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "匯出",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "匯進",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "轉帳",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "轉賬",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "電匯",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "匯回",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "匯寄",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "劃撥",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "提領",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "提款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "郵寄",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "借款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "收款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "付款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "開戶",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "取款",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "匯款",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "至",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "國",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "RANGE_locality",
+                    "text": "外",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "一般",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "想要",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "索要",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "要求",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "需求",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想拿",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "想買",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "索求",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "索討",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "允許",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "願意",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "需",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "要",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "需要",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "多",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "久",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "才能",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "認列",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "付清",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "結清",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "匯出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "還款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "償付",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "交屋",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到期",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "挹注",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "兌付",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "入帳",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "法人外幣帳戶開戶需要準備什麼文件": {
+            "id": "a0f4b99a-8618-4915-b895-5a5612b0a319",
+            "argument": [
+                {
                     "pos": "ENTITY_noun",
-                    "text": "交易",
+                    "text": "法人",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_nounHead",
+                    "text": "外幣帳戶",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "轉帳",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "匯款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦卡",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "付款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "換匯",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "取款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "提領",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "轉賬",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "領錢",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退款",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "開戶",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "想要",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "索要",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "要求",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "需求",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想拿",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "想買",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "索求",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "索討",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "允許",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "願意",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "需",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "要",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "需要",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "備戰",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "預備",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "企劃",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "意指",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "意謂",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "打算",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "預演",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "預約",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "正要",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "鋪墊",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "籌劃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "等待",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "決定",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "安排",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "趕著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "趕",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "準備",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "什麼",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "文件",
                     "checked": true,
                     "checkbox": true
                 }
@@ -5324,13 +5315,13 @@
                 {
                     "pos": "ENTITY_oov",
                     "text": "起",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
                     "pos": "ENTITY_nouny",
                     "text": "存額",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -5696,495 +5687,6 @@
                 }
             ]
         },
-        "是否有承作Forfaiting (遠期信用狀賣斷)業務": {
-            "id": "bcc9e36b-64fd-460e-aa6c-537ac18c9f0a",
-            "argument": [
-                {
-                    "pos": "CLAUSE_AnotAQ",
-                    "text": "是否",
-                    "checked": true,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "具有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "兼有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "存有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "懷有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "持有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "擁有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "有了",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "有著",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "保留",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "含有",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有同",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "有",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "核貸",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "放款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "承做",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "結匯",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "發卡",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "申貸",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "提領",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "轉存",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "按揭",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "詐得",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "承作",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "Forfaiting ",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "PUNCTUATION",
-                    "text": "(",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "遠期信用狀賣斷",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "PUNCTUATION",
-                    "text": ")",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "業務",
-                    "checked": true,
-                    "checkbox": true
-                }
-            ]
-        },
-        "從玉山銀行外幣帳戶提領外幣現鈔是否需支付費用": {
-            "id": "3ee418aa-7baf-4832-b2a2-76793588c720",
-            "argument": [
-                {
-                    "pos": "FUNC_inner",
-                    "text": "從",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "玉山",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "銀行",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_nounHead",
-                    "text": "外幣帳戶",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "提出",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "提取",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "提款",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "提現",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "提留",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "轉帳",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "領錢",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "盜領",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "匯款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "儲值",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "詐得",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "開戶",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "取款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "領取",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "提領",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "外幣",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "現鈔",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "CLAUSE_AnotAQ",
-                    "text": "是否",
-                    "checked": true,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "需要",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "想拿",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "想要",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "想買",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "需約",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "需另",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "允許",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "要",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "需經過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "需預",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "需經",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "需",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "付出",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "付款",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "付清",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "付現",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "付給",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "付費",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "付錢",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "償付",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "給付",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳付",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "賠付",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "預付",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "預支",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "交納",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳交",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳納",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳費",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "代付",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳稅",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "償還",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "收取",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "支付",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nounHead",
-                    "text": "費用",
-                    "checked": true,
-                    "checkbox": true
-                }
-            ]
-        },
         "如何辦理公司、法人、團體（含管委會）代表人變更": {
             "id": "6103a958-a109-4272-bfe5-1108bc15ff1f",
             "argument": [
@@ -6265,7 +5767,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "公司",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -6277,7 +5779,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "法人",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -6289,7 +5791,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "團體",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -6384,7 +5886,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "管委會",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -6623,7 +6125,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "出口信用狀",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -6663,7 +6165,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "出口",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -6932,7 +6434,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "授信額度",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -6973,7 +6475,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "授信額度",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -6996,11 +6498,6 @@
                             "checked": false
                         },
                         {
-                            "text": "辦理了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "受理",
                             "level": "word2vec",
                             "checked": false
@@ -7011,22 +6508,17 @@
                             "checked": false
                         },
                         {
+                            "text": "辦理了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "試辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "承辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "實施",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "自辦",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -7036,12 +6528,22 @@
                             "checked": false
                         },
                         {
+                            "text": "自辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "申請",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "試辦",
+                            "text": "實施",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -7111,7 +6613,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "信用狀",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {

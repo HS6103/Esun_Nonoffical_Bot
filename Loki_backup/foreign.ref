@@ -6,6 +6,13 @@
         "intent": "1.0"
     },
     "user_defined": {
+        "ie": [
+            "internet explorer 11",
+            "ie 11"
+        ],
+        "atm": [
+            "自動櫃員機"
+        ],
         "loan": [
             "提前清償違約金",
             "指數型房貸",
@@ -18,10 +25,11 @@
             "信用貸款",
             "留學貸款"
         ],
+        "webatm": [
+            "web atm"
+        ],
         "as_noun": [
-            "Internet Explorer 11",
             "PayPal",
-            "windows 7",
             "他益信託",
             "信託",
             "全權委託保管機構",
@@ -33,6 +41,8 @@
             "基金保管機構",
             "報酬率",
             "定存",
+            "活存",
+            "型號",
             "密碼",
             "對帳單",
             "帳單",
@@ -48,6 +58,7 @@
             "海外ETF",
             "海外債券",
             "淘寶網",
+            "身份證字號",
             "無卡交易",
             "獨樂樂",
             "玉山",
@@ -144,6 +155,9 @@
             "中國人壽",
             "凱基人壽",
             "旅行平安險"
+        ],
+        "windows 7": [
+            "win 7"
         ]
     },
     "utterance": {
@@ -605,10 +619,10 @@
             ]
         },
         "國外的支票如何使用": {
-            "id": "71aedb94-0dc1-46dd-a389-11271a80d9fb",
+            "id": "c292480a-de70-40c0-88a9-ed9f8e9c2ca4",
             "argument": [
                 {
-                    "pos": "UserDefined",
+                    "pos": "LOCATION",
                     "text": "國外",
                     "checked": true,
                     "checkbox": true
@@ -685,7 +699,7 @@
                             "checked": false
                         },
                         {
-                            "text": "使用了",
+                            "text": "選用",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -695,17 +709,7 @@
                             "checked": false
                         },
                         {
-                            "text": "選用",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "用到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "改用",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -715,7 +719,17 @@
                             "checked": false
                         },
                         {
+                            "text": "改用",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "使用過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "使用了",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -3547,7 +3561,7 @@
                 {
                     "pos": "ENTITY_oov",
                     "text": "化",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -5763,7 +5777,7 @@
             ]
         },
         "從國外匯入款項至我的玉山銀行帳戶我該提供什麼資料": {
-            "id": "558edbf4-16d6-4924-bb13-4087480faf43",
+            "id": "a4faf824-be90-40c3-a90f-e66c6d644999",
             "argument": [
                 {
                     "pos": "FUNC_inner",
@@ -5772,10 +5786,10 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "UserDefined",
+                    "pos": "MODIFIER",
                     "text": "國外",
-                    "checked": true,
-                    "checkbox": true
+                    "checked": false,
+                    "checkbox": false
                 },
                 {
                     "pos": "ACTION_verb",
@@ -5801,32 +5815,7 @@
                             "checked": false
                         },
                         {
-                            "text": "幹流",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "接上",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "流入",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "跨過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "流經",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "流向",
+                            "text": "下穿",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -5836,12 +5825,37 @@
                             "checked": false
                         },
                         {
-                            "text": "下穿",
+                            "text": "流向",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "幹流",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "匯出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "流入",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "流經",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "接上",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "跨過",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -6002,12 +6016,12 @@
                             "checked": false
                         },
                         {
-                            "text": "提供了",
+                            "text": "收取",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "給予",
+                            "text": "收集",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -6022,17 +6036,17 @@
                             "checked": false
                         },
                         {
-                            "text": "收集",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "收取",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "發送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "給予",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "提供了",
                             "level": "word2vec",
                             "checked": false
                         },
