@@ -140,8 +140,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "[玉山銀行][外幣帳戶]提領[外幣][現鈔][是]否需支付[手續費]":
         if CHATBOT_MODE:
-            if '玉山' in args[0] and '外幣' in args[1] and args[2] not in ['台幣','新台幣','臺幣','新臺幣'] and args[5] in ['費用', '手續費']:
-                resultDICT["response"] = getResponse(utterance, args)
+            if args[0] in ['玉山', '玉山銀行']:
+                if args[1] not in ['台幣','新台幣','臺幣','新臺幣'] and ('鈔' or '金' in args[2]):
+                    resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
