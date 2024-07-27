@@ -167,9 +167,10 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "[國外]票據託收有受理的限制嗎":
+    if utterance == "[國外][票據]託收有受理的限制嗎":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '國外' and args[1] == '票據':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
