@@ -6,6 +6,14 @@
         "intent": "1.0"
     },
     "user_defined": {
+        "ie": [
+            "internet explorer 11",
+            "ie 11"
+        ],
+        "atm": [
+            "自動櫃員機",
+            "atm"
+        ],
         "loan": [
             "提前清償違約金",
             "指數型房貸",
@@ -18,22 +26,28 @@
             "信用貸款",
             "留學貸款"
         ],
+        "webatm": [
+            "web atm",
+            "webatm"
+        ],
         "as_noun": [
-            "Internet Explorer 11",
             "PayPal",
-            "windows 7",
             "他益信託",
             "信託",
+            "存款帳戶",
+            "存戶",
             "全權委託保管機構",
             "兩岸支付通",
             "利息",
             "勞動保障卡",
             "協定",
             "台幣",
-            "國外",
             "基金保管機構",
             "報酬率",
             "定存",
+            "活存",
+            "交易額度",
+            "型號",
             "密碼",
             "對帳單",
             "帳單",
@@ -49,6 +63,7 @@
             "海外ETF",
             "海外債券",
             "淘寶網",
+            "身份證字號",
             "無卡交易",
             "獨樂樂",
             "玉山",
@@ -129,7 +144,9 @@
             "數位",
             "通訊地址",
             "幣別",
-            "特店"
+            "特店",
+            "*",
+            "-"
         ],
         "insurance": [
             "強制汽/機車責任保險",
@@ -143,6 +160,10 @@
             "中國人壽",
             "凱基人壽",
             "旅行平安險"
+        ],
+        "windows 7": [
+            "win 7",
+            "windows 7"
         ]
     },
     "utterance": {
@@ -1071,8 +1092,250 @@
                 }
             ]
         },
+        "開戶是否可委託他人辦理": {
+            "id": "89cf8d65-41a5-4e94-83f5-1096bd496e10",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "轉帳",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "匯款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦卡",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "付款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "換匯",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "取款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "提領",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "轉賬",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "領錢",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退款",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "開戶",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_AnotAQ",
+                    "text": "是否",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "可",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "信託",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "委任",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "委派",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "託付",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "信靠",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "憑信",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "批准",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "核准",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "聘請",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "轉交",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "交給",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "指派",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "委託了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "交予",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "邀請",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "委請",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "受託",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "委託",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "他人",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "處理",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "做買賣",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦理了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "受理",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "開展",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "承辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "實施",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "自辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉行",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申請",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "試辦",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "辦理",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "如何使用金融卡在國外提款": {
-            "id": "39c052da-daee-492b-ba04-a8123cfcedb6",
+            "id": "297e8ec2-23a2-460e-900e-18bbef20dfb9",
             "argument": [
                 {
                     "pos": "CLAUSE_HowQ",
@@ -1186,10 +1449,16 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "UserDefined",
-                    "text": "國外",
+                    "pos": "ENTITY_nouny",
+                    "text": "國",
                     "checked": true,
                     "checkbox": true
+                },
+                {
+                    "pos": "RANGE_locality",
+                    "text": "外",
+                    "checked": true,
+                    "checkbox": false
                 },
                 {
                     "pos": "ACTION_verb",
@@ -2286,7 +2555,7 @@
             ]
         },
         "金融卡在國外提款手續費為何": {
-            "id": "a03863e5-eb9c-4a10-adf2-bfd2e8d99ba6",
+            "id": "919da091-62ff-42fd-94f1-b6ad050f9ec1",
             "argument": [
                 {
                     "pos": "ENTITY_noun",
@@ -2301,10 +2570,16 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "UserDefined",
-                    "text": "國外",
+                    "pos": "ENTITY_nouny",
+                    "text": "國",
                     "checked": true,
                     "checkbox": true
+                },
+                {
+                    "pos": "RANGE_locality",
+                    "text": "外",
+                    "checked": true,
+                    "checkbox": false
                 },
                 {
                     "pos": "ACTION_verb",
@@ -2345,12 +2620,7 @@
                             "checked": false
                         },
                         {
-                            "text": "轉帳",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "預付",
+                            "text": "匯款",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2360,12 +2630,17 @@
                             "checked": false
                         },
                         {
-                            "text": "結帳",
+                            "text": "付款",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "匯款",
+                            "text": "轉帳",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "開戶",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2375,12 +2650,12 @@
                             "checked": false
                         },
                         {
-                            "text": "付款",
+                            "text": "預付",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "開戶",
+                            "text": "結帳",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -2404,7 +2679,7 @@
             ]
         },
         "如何辦理臺幣一般存款帳戶開戶": {
-            "id": "cb4358e8-d27f-46d2-b119-660d4e3d279e",
+            "id": "f8c4f272-d6b4-46f0-b179-06d3149ddd10",
             "argument": [
                 {
                     "pos": "CLAUSE_HowQ",
@@ -2493,14 +2768,8 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nounHead",
-                    "text": "存款帳",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "戶",
+                    "pos": "UserDefined",
+                    "text": "存款帳戶",
                     "checked": true,
                     "checkbox": true
                 },
@@ -3279,329 +3548,6 @@
                 {
                     "pos": "CLAUSE_YesNoQ",
                     "text": "嗎",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "沒時間到分行開戶是否可委託他人辦理": {
-            "id": "a696832f-dadb-42e0-a162-fc17ca76cddf",
-            "argument": [
-                {
-                    "pos": "FUNC_negation",
-                    "text": "沒",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "時間",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "到了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "到約",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "到受",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "到離",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "到包",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "到經過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "到回",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "到隨",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "到死",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "到愛",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "到經",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "到",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "分行",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "轉帳",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "匯款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦卡",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "付款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "換匯",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "取款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "提領",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "轉賬",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "領錢",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "退款",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "開戶",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_AnotAQ",
-                    "text": "是否",
-                    "checked": true,
-                    "checkbox": false
-                },
-                {
-                    "pos": "MODAL",
-                    "text": "可",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "信託",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "委任",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "委派",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "託付",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "信靠",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "憑信",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "批准",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "核准",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "邀請",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "交給",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "轉交",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "聘請",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "交予",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "受託",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "委託了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "委請",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "指派",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "委託",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_pronoun",
-                    "text": "他人",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "處理",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "做買賣",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "受理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "開展",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "試辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "承辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉行",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "自辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "申請",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "實施",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "辦理",
                     "checked": false,
                     "checkbox": false
                 }
@@ -4390,7 +4336,7 @@
             ]
         },
         "金融卡在國外提款每日限額及手續費為何": {
-            "id": "071a246e-3a32-4640-8df1-f4ab96569c14",
+            "id": "63ee4781-6cde-42e9-abc8-5249c0a8fb3c",
             "argument": [
                 {
                     "pos": "ENTITY_noun",
@@ -4405,10 +4351,16 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "UserDefined",
-                    "text": "國外",
+                    "pos": "ENTITY_nouny",
+                    "text": "國",
                     "checked": true,
                     "checkbox": true
+                },
+                {
+                    "pos": "RANGE_locality",
+                    "text": "外",
+                    "checked": true,
+                    "checkbox": false
                 },
                 {
                     "pos": "ACTION_verb",
@@ -4449,32 +4401,7 @@
                             "checked": false
                         },
                         {
-                            "text": "匯款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "領錢",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "付款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "轉帳",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "開戶",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "儲值",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -4484,7 +4411,32 @@
                             "checked": false
                         },
                         {
+                            "text": "領錢",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "結帳",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "匯款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "儲值",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "付款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "開戶",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -5332,7 +5284,7 @@
                 {
                     "pos": "ENTITY_oov",
                     "text": "存款",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -5544,7 +5496,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "利息",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -5650,7 +5602,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "人口",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -5720,7 +5672,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "新式統一證號",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -5732,7 +5684,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "資料",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -5959,13 +5911,13 @@
                 {
                     "pos": "ENTITY_nounHead",
                     "text": "事項",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
         },
         "下午6點至網路銀行買賣外幣交易額度是算在明天嗎": {
-            "id": "abe5d0a0-c12d-44ac-9678-e9583bf1e74c",
+            "id": "a5b384da-34a1-4afb-94c4-0f1b405c3b82",
             "argument": [
                 {
                     "pos": "TIME_day",
@@ -6051,13 +6003,13 @@
                 },
                 {
                     "pos": "ENTITY_nouny",
-                    "text": "外幣交易",
+                    "text": "外幣",
                     "checked": true,
                     "checkbox": true
                 },
                 {
-                    "pos": "ENTITY_noun",
-                    "text": "額度",
+                    "pos": "UserDefined",
+                    "text": "交易額度",
                     "checked": true,
                     "checkbox": true
                 },
@@ -6156,7 +6108,7 @@
             ]
         },
         "下午6點至網路銀行買/賣外幣交易額度是算在明天嗎": {
-            "id": "87ae1fb8-61bf-4a06-a5c5-2d3fafa6b210",
+            "id": "0b0817f2-2023-4ab4-9967-8eec036dcc0c",
             "argument": [
                 {
                     "pos": "TIME_day",
@@ -6216,6 +6168,16 @@
                             "checked": false
                         },
                         {
+                            "text": "買到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "買不到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "買東西",
                             "level": "word2vec",
                             "checked": false
@@ -6226,12 +6188,17 @@
                             "checked": false
                         },
                         {
-                            "text": "賣",
+                            "text": "買來",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "買不起",
+                            "text": "想買",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "賣",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -6241,22 +6208,7 @@
                             "checked": false
                         },
                         {
-                            "text": "買不到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "買來",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "買到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "想買",
+                            "text": "買不起",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -6331,13 +6283,13 @@
                 },
                 {
                     "pos": "ENTITY_nouny",
-                    "text": "外幣交易",
+                    "text": "外幣",
                     "checked": true,
                     "checkbox": true
                 },
                 {
-                    "pos": "ENTITY_noun",
-                    "text": "額度",
+                    "pos": "UserDefined",
+                    "text": "交易額度",
                     "checked": true,
                     "checkbox": true
                 },
@@ -6424,392 +6376,6 @@
                 {
                     "pos": "TIME_day",
                     "text": "明天",
-                    "checked": true,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_YesNoQ",
-                    "text": "嗎",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "營業日下午6點使用PayPal提領入新臺幣帳戶之交易額度是算於明日嗎": {
-            "id": "3eb0e6f8-d1af-4649-91b0-5521939e0f32",
-            "argument": [
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "營業日",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "TIME_day",
-                    "text": "下午",
-                    "checked": true,
-                    "checkbox": false
-                },
-                {
-                    "pos": "TIME_justtime",
-                    "text": "6點",
-                    "checked": true,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "利用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "動用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "應用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "採用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "施用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "沿用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "活用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "運用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "假借",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "憑靠",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "選用",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "用",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "用到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "使用著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "改用",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "使用過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "使用了",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "使用",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "PayPal",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "提出",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "提取",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "提款",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "提現",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "提留",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "轉帳",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "領錢",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "盜領",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "匯款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "儲值",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "詐得",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "開戶",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "取款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "領取",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "提領",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "入了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "進",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "總入",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有入",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "進了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "入處",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "進入",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "攻入",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "誇下",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "入進",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "入",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "MODIFIER",
-                    "text": "新",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "臺幣",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "帳戶",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "之",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "交易",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "額度",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "AUX",
-                    "text": "是",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "算輸",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "算數",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "算真",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "行了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "夠了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "算做",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "願屈",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "算想",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "算了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "算用",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "行",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "夠",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "算",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "於",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "TIME_day",
-                    "text": "明日",
                     "checked": true,
                     "checkbox": false
                 },
