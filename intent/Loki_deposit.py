@@ -18,7 +18,7 @@
 
 from random import sample
 from ArticutAPI import Articut
-from datetime import datetime
+import datetime
 import json
 import os
 import re
@@ -61,7 +61,7 @@ def getResponse(utterance, args):
 
     return resultSTR
 
-def getCorrectTime(inputSTR):
+def argToDatetime(arg="", mode=""):
     try:
         with open("account.info", encoding="utf-8") as f:
             accountDICT = json.load(f)
@@ -71,61 +71,108 @@ def getCorrectTime(inputSTR):
     except Exception:
         username = os.environ.get('loki_username')
         api_key = os.environ.get('articut_key')
-                
-    articut = Articut(username=username, apikey=api_key)
-    resultDICT = articut.parse(inputSTR, level='lv3', timeRef=str(datetime.now())[0:19])
-    # ##### to be modified below #######
-    timeDICT = {}
-    if resultDICT["time"][0] != []:
-        timeDICT = {
-            #'delta_day': datetime.date(resultDICT),
-            'hour': resultDICT["time"][0][0]["time_span"]["hour"][0],
-            'minute': resultDICT["time"][0][0]["time_span"]["minute"][0]
-        }
-    else:
-        pass
+        
+    articut = Articut(username=username, apikey=api_key)    
+    resultDICT = articut.parse(arg, level='lv3', timeRef=str(datetime.datetime.now())[0:19])    # 取得 resultDICT
     
-    return timeDICT
+    datetimeArg = datetime.datetime(                                                              # 把 resultDICT 的時間變成 datetime 物件
+        resultDICT["time"][0][0]["time_span"]["year"][0],
+        resultDICT["time"][0][0]["time_span"]["month"][0],
+        resultDICT["time"][0][0]["time_span"]["day"][0],
+        resultDICT["time"][0][0]["time_span"]["hour"][0],
+        resultDICT["time"][0][0]["time_span"]["minute"][0],
+        resultDICT["time"][0][0]["time_span"]["second"][0],
+    )
+    
+    if mode == "time":
+        datetimeArg = datetimeArg.time()
+    
+    return datetimeArg
+    
+def getCorrectTime(time1="", time2="", openTime=None, closeTime=None, weekendOff=True):
+    """
+    Calculates correct deal time
+
+    Input:
+        time1                str,
+        time2                str,
+        openTime             datetime.time() instance,
+        closeTime            datetime.time() instance,
+        weekendOff           bool
+
+    Output:
+        compareResultDICT    dict
+    """
+    if time2 in ['當天', '當日']:                                                                             # special case handling
+        time2 = time1
+            
+    datetime1 = argToDatetime(time1)
+    datetime2 = argToDatetime(time2)
+    
+    # 跟營業時間比較
+    if datetime1.time() > closeTime:                                                                
+        datetimeTmp = datetime1 + datetime.timedelta(days=1)
+        correctDate = datetimeTmp.date()
+        t = 't+N'
+    elif datetime1.time() < openTime:
+        correctDate = None
+        t = None
+    else:
+        if weekendOff == True and datetime1.isoweekday() in [6, 7]:
+            datetimeTmp = datetime1 + datetime.timedelta(days=8-int(datetime1.isoweekday()))
+            correctDate = datetimeTmp.date()
+            t = 't+N'
+        else:
+            correctDate = datetime1.date()
+            t = 't' 
+    
+    # 將比較結果放入 compareResultDICT
+    compareResultDICT = {
+        "ans": '',
+        "correctDate": correctDate,
+        "t": t
+    }
+    if correctDate == datetime2.date():
+        compareResultDICT["ans"] = 'correct'
+    else:
+        compareResultDICT["ans"] = 'incorrect'
+    
+    return compareResultDICT
         
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
     if utterance == "[下午6點]至[網路銀行]買/賣[外幣][交易額度]是算在[明天]嗎":
         if CHATBOT_MODE:
             if args[1] in ['網路銀行', '網銀'] and '額度' in args[3]:
-                timeDICT = getCorrectTime(inputSTR)
-                if timeDICT != {}:
-                    if (timeDICT['hour'] < 23) or (timeDICT['hour'] == 23 and timeDICT['minute'] == 0):
-                        if args[4] in ['今天', '今日', '當日']:
-                            tmpResponse = getResponse(utterance, args).format(args[0], '今天')
-                            resultDICT["response"] = "是的! " + tmpResponse
-                        else:
-                            tmpResponse = getResponse(utterance, args).format(args[0], '明日')
-                            resultDICT["response"] = "不是喔! " + tmpResponse
+                compareResultDICT = getCorrectTime(args[0], args[4], datetime.time(9, 0, 0), datetime.time(23, 0, 0))
+                if compareResultDICT["ans"] == "correct":
+                    resultDICT["response"] = "是的！" + getResponse(utterance, args).format(args[0], args[4])
+                else:
+                    if compareResultDICT["correctDate"] == None:
+                        resultDICT["response"] = "營業時段為 9:00 開始，時段外恕不提供服務哦！"
                     else:
-                        if args[4] in ['今天', '今日', '當日']:
-                            resultDICT["response"] = "不是喔!" + getResponse(utterance, args).format(args[0], '明日')
+                        if compareResultDICT["t"] == 't':
+                            resultDICT["response"] = "不是喔！" + getResponse(utterance, args).format(args[0], '交易當日')
                         else:
-                            resultDICT["response"] = "是的!" + getResponse(utterance, args).format(args[0], '今天')
+                            resultDICT["response"] = "不是喔！" + getResponse(utterance, args).format(args[0], '下個營業日')
+                            
         else:
             pass
 
     if utterance == "[下午6點]至[網路銀行]買賣[外幣][交易額度]是算在[明天]嗎":
         if CHATBOT_MODE:
             if args[1] in ['網路銀行', '網銀'] and '額度' in args[3]:
-                timeDICT = getCorrectTime(args[0])
-                if timeDICT != {}:
-                    if (timeDICT['hour'] < 23) or (timeDICT['hour'] == 23 and timeDICT['minute'] == 0):
-                        if args[4] in ['今天', '今日', '當日']:
-                            tmpResponse = getResponse(utterance, args).format(args[0], '今天')
-                            resultDICT["response"] = "是的! " + tmpResponse
-                        else:
-                            tmpResponse = getResponse(utterance, args).format(args[0], '明日')
-                            resultDICT["response"] = "不是喔! " + tmpResponse
+                compareResultDICT = getCorrectTime(args[0], args[4], datetime.time(9, 0, 0), datetime.time(23, 0, 0))
+                if compareResultDICT["ans"] == "correct":
+                    resultDICT["response"] = "是的！" + getResponse(utterance, args).format(args[0], args[4])
+                else:
+                    if compareResultDICT["correctDate"] == None:
+                        resultDICT["response"] = "營業時段為 9:00 開始，時段外恕不提供服務哦！"
                     else:
-                        if args[4] in ['今天', '今日', '當日']:
-                            resultDICT["response"] = "不是喔!" + getResponse(utterance, args).format(args[0], '明日')
+                        if compareResultDICT["t"] == 't':
+                            resultDICT["response"] = "不是喔！" + getResponse(utterance, args).format(args[0], '交易當日')
                         else:
-                            resultDICT["response"] = "是的!" + getResponse(utterance, args).format(args[0], '今天')
+                            resultDICT["response"] = "不是喔！" + getResponse(utterance, args).format(args[0], '下個營業日')
         else:
             pass
 
@@ -166,44 +213,45 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     if utterance == "[晚上8點]至[ATM]存款到[玉山][帳戶][會]從[當日]計算利息嗎":
         if CHATBOT_MODE:
             if args[1].lower() in userDefinedDICT['atm'] and args[2] in ['玉山', '玉山銀行']:
-                timeDICT = getCorrectTime(args[0])
-                if timeDICT != {}:
-                    if args[5] in ['今天', '今日', '當日']:
-                        resultDICT["response"] = "是的! " + getResponse(utterance, args)
+                compareResultDICT = getCorrectTime(args[0], args[5], datetime.time(0, 0, 0), datetime.time(23, 59, 59), weekendOff=False)
+                if compareResultDICT["ans"] == "correct":
+                    resultDICT["response"] = "是的！" + getResponse(utterance, args).format(args[5])
+                else:
+                    if compareResultDICT["correctDate"] == None:
+                        resultDICT["response"] = "營業時段為 9:00 開始，時段外恕不提供服務哦！"
                     else:
-                        resultDICT["response"] = "不會，" + getResponse(utterance, args)
+                        if compareResultDICT["t"] == 't':
+                            resultDICT["response"] = "不是喔！" + getResponse(utterance, args).format('存款當日')
+                        else:
+                            resultDICT["response"] = "不是喔！" + getResponse(utterance, args).format('存款隔日')
         else:
             pass
 
     if utterance == "[晚上8點]還[能]用[行動銀行]作[外幣][定存]嗎":
         if CHATBOT_MODE:
             if args[2] in ['行動銀行'] and args[3] == '外幣' and args[4] in ['定存', '定期存款']:
-                timeDICT = getCorrectTime(args[0])
-                if timeDICT != {}:
-                    if (9 < timeDICT['hour'] < 23) or (timeDICT['hour'] in [23, 9] and timeDICT['minute'] == 0):
-                        resultDICT["response"] = "可以!" + getResponse(utterance, args)
-                    else:
-                        resultDICT["response"] = "不行喔!"
+                argDatetime = argToDatetime(args[0])
+                if datetime.time(9, 0, 0) < argDatetime.time() < datetime.time(23, 0, 0) and argDatetime.isoweekday() <= 5:
+                    resultDICT["response"] = "可以！" + getResponse(utterance, args).format(args[3], args[4],'皆')
+                else:
+                    resultDICT["response"] = "不行喔！" + getResponse(utterance, args).format(args[3], args[4],'恕')
         else:
             pass
 
     if utterance == "[下午6點]使用[PayPal]提領入[新][臺幣][帳戶]之交易額度是算於[明日]嗎":
         if CHATBOT_MODE:
             if args[1].lower().strip(' ') == 'paypal' and args[3] in ['台幣', '臺幣'] and args[4] in ['帳戶', '戶頭', '帳號']:
-                timeDICT = getCorrectTime(args[0])
-                if timeDICT != {}:
-                    if (timeDICT['hour'] < 23) or (timeDICT['hour'] == 23 and timeDICT['minute'] == 0):
-                        if args[5] in ['今天', '今日', '當日']:
-                            tmpResponse = getResponse(utterance, args).format('明日', '今日')
-                            resultDICT["response"] = "是的! " + tmpResponse
-                        else:
-                            tmpResponse = getResponse(utterance, args).format('今日', '明日')
-                            resultDICT["response"] = "不是喔! " + tmpResponse
+                compareResultDICT = getCorrectTime(args[0], args[4], datetime.time(9, 0, 0), datetime.time(23, 0, 0))
+                if compareResultDICT["ans"] == "correct":
+                    resultDICT["response"] = "是的！" + getResponse(utterance, args).format(args[0], args[4])
+                else:
+                    if compareResultDICT["correctDate"] == None:
+                        resultDICT["response"] = "營業時段為 9:00 開始，時段外恕不提供服務哦！"
                     else:
-                        if args[5] in ['今天', '今日', '當日']:
-                            resultDICT["response"] = "不是喔!" + getResponse(utterance, args).format('今日', '明日')
+                        if compareResultDICT["t"] == 't':
+                            resultDICT["response"] = "不是喔！" + getResponse(utterance, args).format(args[0], '交易當日')
                         else:
-                            resultDICT["response"] = "是的!" + getResponse(utterance, args).format('明日', '今日')
+                            resultDICT["response"] = "不是喔！" + getResponse(utterance, args).format(args[0], '下個營業日')
         else:
             pass
 
