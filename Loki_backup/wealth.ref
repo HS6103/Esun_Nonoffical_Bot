@@ -6,6 +6,14 @@
         "intent": "1.0"
     },
     "user_defined": {
+        "ie": [
+            "internet explorer 11",
+            "ie 11"
+        ],
+        "atm": [
+            "自動櫃員機",
+            "atm"
+        ],
         "loan": [
             "提前清償違約金",
             "指數型房貸",
@@ -18,22 +26,28 @@
             "信用貸款",
             "留學貸款"
         ],
+        "webatm": [
+            "web atm",
+            "webatm"
+        ],
         "as_noun": [
-            "Internet Explorer 11",
             "PayPal",
-            "windows 7",
             "他益信託",
             "信託",
+            "存款帳戶",
+            "存戶",
             "全權委託保管機構",
             "兩岸支付通",
             "利息",
             "勞動保障卡",
             "協定",
             "台幣",
-            "國外",
             "基金保管機構",
             "報酬率",
             "定存",
+            "活存",
+            "交易額度",
+            "型號",
             "密碼",
             "對帳單",
             "帳單",
@@ -46,9 +60,8 @@
             "樂享優惠專區",
             "模式",
             "注意事項",
-            "海外ETF",
-            "海外債券",
             "淘寶網",
+            "身份證字號",
             "無卡交易",
             "獨樂樂",
             "玉山",
@@ -56,7 +69,6 @@
             "玉山Wallet",
             "玉山全球通",
             "玉山掃碼通",
-            "玉山理財電子週報",
             "現鈔",
             "眾樂樂",
             "綜合對帳單",
@@ -109,6 +121,7 @@
             "在學證明",
             "手機號碼",
             "店家",
+            "淨值",
             "無卡提款",
             "新式統一證號",
             "晶片卡",
@@ -127,9 +140,12 @@
             "樂享優惠",
             "定義",
             "數位",
+            "視窗",
             "通訊地址",
             "幣別",
-            "特店"
+            "特店",
+            "*",
+            "-"
         ],
         "insurance": [
             "強制汽/機車責任保險",
@@ -143,11 +159,15 @@
             "中國人壽",
             "凱基人壽",
             "旅行平安險"
+        ],
+        "windows 7": [
+            "win 7",
+            "windows 7"
         ]
     },
     "utterance": {
         "什麼是海外債券": {
-            "id": "a1b69393-9266-419c-9585-783956e9330e",
+            "id": "b4ecf13c-fd66-4b2f-9d4c-1feec2f70e8f",
             "argument": [
                 {
                     "pos": "CLAUSE_WhatQ",
@@ -162,7 +182,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "UserDefined",
+                    "pos": "ENTITY_nouny",
                     "text": "海外債券",
                     "checked": true,
                     "checkbox": true
@@ -282,7 +302,7 @@
             ]
         },
         "如何買賣海外ETF": {
-            "id": "fad14cfc-2867-4cd3-b4b5-4bf130f6a99f",
+            "id": "14e95c0d-23d8-48db-9a30-722538c3f1cc",
             "argument": [
                 {
                     "pos": "CLAUSE_HowQ",
@@ -349,8 +369,14 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "UserDefined",
-                    "text": "海外ETF",
+                    "pos": "ENTITY_nouny",
+                    "text": "海外",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "ETF",
                     "checked": true,
                     "checkbox": true
                 }
@@ -863,6 +889,203 @@
                 }
             ]
         },
+        "基金之轉換有何限制": {
+            "id": "ad4f7fc3-39e5-4567-ac92-42f23799532d",
+            "argument": [
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "基金",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "之",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "轉換",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "有何",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "克制",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "制止",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "制約",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "局限",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "牽制",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "管制",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "節制",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "設限",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "遏制",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "限價",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "限定",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "限度",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "停止",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "囚禁",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "封閉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "抑止",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "按捺",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "監禁",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "看押",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "禁令",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "禁運",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "羈絆",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "關押",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "限縮",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "規定",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "規範",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "約束",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "禁止",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "允許",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "拘束",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "阻礙",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "容許",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "限制",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "尊榮禮賓服務是什麼": {
             "id": "ceda2191-51ef-4f70-91cb-59710de1a544",
             "argument": [
@@ -920,11 +1143,17 @@
             ]
         },
         "海外ETF交易時間為何": {
-            "id": "6053a86d-7944-4b78-8528-723c71299493",
+            "id": "2621551c-ec71-450c-91a2-5098ec2b47ea",
             "argument": [
                 {
-                    "pos": "UserDefined",
-                    "text": "海外ETF",
+                    "pos": "ENTITY_oov",
+                    "text": "海外",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "ETF",
                     "checked": true,
                     "checkbox": true
                 },
@@ -1350,7 +1579,7 @@
             ]
         },
         "如何取消海外債券交易": {
-            "id": "ae893ec2-c6a6-49e1-811f-dd155e0be70b",
+            "id": "e01313af-eec0-422e-bf04-abef36777c0d",
             "argument": [
                 {
                     "pos": "CLAUSE_HowQ",
@@ -1502,7 +1731,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "UserDefined",
+                    "pos": "ENTITY_nouny",
                     "text": "海外債券",
                     "checked": true,
                     "checkbox": true
@@ -1516,7 +1745,7 @@
             ]
         },
         "如何進行海外債券交易": {
-            "id": "79df068b-3e3c-4524-8d18-d540e66a2d0b",
+            "id": "a7078999-9dd5-430b-8b20-29512009b259",
             "argument": [
                 {
                     "pos": "CLAUSE_HowQ",
@@ -1593,7 +1822,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "UserDefined",
+                    "pos": "ENTITY_nouny",
                     "text": "海外債券",
                     "checked": true,
                     "checkbox": true
@@ -1892,22 +2121,22 @@
                             "checked": false
                         },
                         {
-                            "text": "有同",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "含有",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1930,7 +2159,7 @@
             ]
         },
         "投資海外債券適合我嗎": {
-            "id": "46466de6-217b-4952-a398-3085957a6f55",
+            "id": "3a79adfd-97a6-452c-99fb-a71fc74839f0",
             "argument": [
                 {
                     "pos": "ACTION_verb",
@@ -1956,42 +2185,7 @@
                             "checked": false
                         },
                         {
-                            "text": "併購",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "貸款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "招商",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "持股",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "注資",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "融資",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "放款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "私募",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2001,7 +2195,42 @@
                             "checked": false
                         },
                         {
+                            "text": "放款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "融資",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "注資",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "貸款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "持股",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "私募",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "增資",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "併購",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -2011,7 +2240,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "UserDefined",
+                    "pos": "ENTITY_nouny",
                     "text": "海外債券",
                     "checked": true,
                     "checkbox": true
@@ -2037,7 +2266,7 @@
             ]
         },
         "贖回款之淨值如何決定": {
-            "id": "94527b37-8337-4f9b-a130-3272f5345559",
+            "id": "68fff819-914c-4427-98aa-d2a618179349",
             "argument": [
                 {
                     "pos": "ENTITY_nouny",
@@ -2052,52 +2281,10 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "估值",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "放款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "純損",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "現值",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "作價",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "溢價",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "淨損",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "負債",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
+                    "pos": "UserDefined",
                     "text": "淨值",
-                    "checked": false,
-                    "checkbox": false
+                    "checked": true,
+                    "checkbox": true
                 },
                 {
                     "pos": "CLAUSE_HowQ",
@@ -2159,17 +2346,12 @@
                             "checked": false
                         },
                         {
-                            "text": "決議",
+                            "text": "定奪",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "願意",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "確定",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2184,7 +2366,22 @@
                             "checked": false
                         },
                         {
+                            "text": "決議",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "建議",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "選擇",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "確定",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2197,224 +2394,11 @@
                             "text": "同意",
                             "level": "word2vec",
                             "checked": false
-                        },
-                        {
-                            "text": "選擇",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "定奪",
-                            "level": "word2vec",
-                            "checked": false
                         }
                     ],
                     "text": "決定",
                     "checked": false,
                     "checkbox": false
-                }
-            ]
-        },
-        "基金之轉換有何限制條件": {
-            "id": "fb7d982e-4c7d-460a-927f-cfd09dcd1de0",
-            "argument": [
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "基金",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "之",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "轉換",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "CLAUSE_WhatQ",
-                    "text": "有何",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "克制",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "制止",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "制約",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "局限",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "牽制",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "管制",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "節制",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "設限",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "遏制",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "限價",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "限定",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "限度",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "停止",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "囚禁",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "封閉",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "抑止",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "按捺",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "監禁",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "看押",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "禁令",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "禁運",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "羈絆",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "關押",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "允許",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "限縮",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "禁止",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "拘束",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "規定",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "約束",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "容許",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "規範",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "阻礙",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "限制",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nounHead",
-                    "text": "條件",
-                    "checked": true,
-                    "checkbox": true
                 }
             ]
         },
@@ -2493,22 +2477,22 @@
                             "checked": false
                         },
                         {
-                            "text": "有同",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "含有",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2653,22 +2637,12 @@
                             "checked": false
                         },
                         {
+                            "text": "允許",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "限縮",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "規定",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "規範",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "約束",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2678,22 +2652,32 @@
                             "checked": false
                         },
                         {
-                            "text": "允許",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "拘束",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "阻礙",
+                            "text": "規定",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "約束",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "容許",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "規範",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "阻礙",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -2761,22 +2745,22 @@
                             "checked": false
                         },
                         {
-                            "text": "含有",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "有同",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -3232,12 +3216,192 @@
                 }
             ]
         },
-        "海外ETF/股票交易時間為何": {
-            "id": "8c76f555-4619-4a1f-bc17-cb3cb7c34b70",
+        "要如何申請網路基金交易": {
+            "id": "c30748df-160b-4be8-93b8-f429386ba649",
             "argument": [
                 {
-                    "pos": "UserDefined",
-                    "text": "海外ETF",
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "想要",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "需要",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想拿",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "想買",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "渴望",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "渴求",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "餓了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "得照",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "需",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "更要",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "想",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "要去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "真要",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "餓",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "要",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "如何",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "申辦",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "申領",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "請求",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "應徵",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "應聘",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "註冊",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "聲請",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "核發",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申訴",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦理",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申報",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "登記",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "領取",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "申請",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "網路基金",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "交易",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "海外ETF/股票交易時間為何": {
+            "id": "4582e3a4-3e18-404a-92f1-c2a63af40bd8",
+            "argument": [
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "海外",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "ETF",
                     "checked": true,
                     "checkbox": true
                 },
@@ -3274,7 +3438,7 @@
             ]
         },
         "如何查詢海外債券庫存損益": {
-            "id": "bad7f40a-0201-46a4-829e-bab17dbf18a9",
+            "id": "f8a48a0c-82e9-4040-9f8e-fa41a00bc72b",
             "argument": [
                 {
                     "pos": "CLAUSE_HowQ",
@@ -3491,13 +3655,13 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "UserDefined",
+                    "pos": "ENTITY_nouny",
                     "text": "海外債券",
                     "checked": true,
                     "checkbox": true
                 },
                 {
-                    "pos": "ENTITY_oov",
+                    "pos": "ENTITY_nounHead",
                     "text": "庫存",
                     "checked": true,
                     "checkbox": true
@@ -3523,7 +3687,7 @@
             ]
         },
         "如何查詢海外債券成交結果": {
-            "id": "7968fe69-ec92-4cc6-8a33-73ee2325d16e",
+            "id": "a4bd99e1-570c-42ba-ad99-45117987e051",
             "argument": [
                 {
                     "pos": "CLAUSE_HowQ",
@@ -3740,7 +3904,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "UserDefined",
+                    "pos": "ENTITY_nouny",
                     "text": "海外債券",
                     "checked": true,
                     "checkbox": true
@@ -3812,7 +3976,7 @@
             ]
         },
         "如何查詢海外債券產品條件": {
-            "id": "846c147e-be78-47c6-9aeb-37714f02c7b5",
+            "id": "e3e93785-7600-4973-b900-1f30490fae39",
             "argument": [
                 {
                     "pos": "CLAUSE_HowQ",
@@ -4029,7 +4193,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "UserDefined",
+                    "pos": "ENTITY_nouny",
                     "text": "海外債券",
                     "checked": true,
                     "checkbox": true
@@ -4043,7 +4207,7 @@
             ]
         },
         "如何訂閱玉山理財電子週報": {
-            "id": "79f130de-9004-4186-9307-587581c7fe6a",
+            "id": "4452f82a-7117-4773-a5fa-a137dc29709f",
             "argument": [
                 {
                     "pos": "CLAUSE_HowQ",
@@ -4070,32 +4234,12 @@
                             "checked": false
                         },
                         {
-                            "text": "點播",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "瀏覽",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "訂戶",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "下載",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "登入",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "串流",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "點播",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -4105,17 +4249,37 @@
                             "checked": false
                         },
                         {
+                            "text": "瀏覽",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "登入",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "預購",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "借閱",
+                            "text": "下載",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "訂戶",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "收看",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "借閱",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -4126,14 +4290,84 @@
                 },
                 {
                     "pos": "UserDefined",
-                    "text": "玉山理財電子週報",
+                    "text": "玉山",
                     "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "儲蓄",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "創業",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "記帳",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "節稅",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "信貸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "換匯",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "育兒",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "康健",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "生財",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "營銷",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "理財",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "電子",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "週報",
+                    "checked": false,
                     "checkbox": true
                 }
             ]
         },
         "投資海外債券的風險是什麼": {
-            "id": "7681ce7e-d0bb-481a-a887-26a8fa23b7d1",
+            "id": "95993569-0846-4196-9e65-6fc61b321ace",
             "argument": [
                 {
                     "pos": "ACTION_verb",
@@ -4214,7 +4448,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "UserDefined",
+                    "pos": "ENTITY_nouny",
                     "text": "海外債券",
                     "checked": true,
                     "checkbox": true
@@ -4538,7 +4772,7 @@
             ]
         },
         "如何得知基金的最新淨值報價": {
-            "id": "79b3e063-f8ea-46a0-a427-1d699301bb62",
+            "id": "c83f2386-0a95-4661-b510-adfd0c3d96d6",
             "argument": [
                 {
                     "pos": "CLAUSE_HowQ",
@@ -4668,57 +4902,15 @@
                 },
                 {
                     "pos": "DegreeP",
-                    "text": "最新淨",
+                    "text": "最新",
                     "checked": false,
                     "checkbox": true
                 },
                 {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "增益",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "值電",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "阻抗",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "值域",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "大值",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "取值",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "乘積",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "值等",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "值",
-                    "checked": false,
-                    "checkbox": false
+                    "pos": "UserDefined",
+                    "text": "淨值",
+                    "checked": true,
+                    "checkbox": true
                 },
                 {
                     "pos": "ACTION_verb",
@@ -5475,186 +5667,6 @@
                 }
             ]
         },
-        "要如何申請網路基金交易功能": {
-            "id": "74a2fad0-4d73-4bb6-b80f-7bf758e40dcd",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "想要",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "需要",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "想拿",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "想買",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "渴望",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "渴求",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "餓了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "得照",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "需",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "更要",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "想",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "要去",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "真要",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "餓",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "要",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "如何",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "申辦",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "申領",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "請求",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "應徵",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "應聘",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "註冊",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "聲請",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "核發",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "申訴",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "申報",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "登記",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "領取",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "申請",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "網路基金",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "交易",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "功能",
-                    "checked": true,
-                    "checkbox": true
-                }
-            ]
-        },
         "基金的單位數與報酬率如何計算": {
             "id": "2430eda7-1ff6-4292-8ac5-c8b92fd4a93f",
             "argument": [
@@ -5810,7 +5822,7 @@
             ]
         },
         "投資海外ETF所需負擔的稅負為何": {
-            "id": "bfe7fd91-a627-496d-b0a9-e506100e87c3",
+            "id": "7e1600ed-4e3b-4c06-a54c-b912f1f9bf03",
             "argument": [
                 {
                     "pos": "ACTION_verb",
@@ -5891,8 +5903,14 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "UserDefined",
-                    "text": "海外ETF",
+                    "pos": "ENTITY_nouny",
+                    "text": "海外",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "ETF",
                     "checked": true,
                     "checkbox": true
                 },
@@ -6112,7 +6130,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "稅",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -6613,7 +6631,7 @@
             ]
         },
         "如何決定海外ETF/股票的委託價格": {
-            "id": "fc0b9803-a0db-4ed9-bad3-bd9e859eba01",
+            "id": "9beb604e-d4ae-46b5-b51c-d5d5d9d7841a",
             "argument": [
                 {
                     "pos": "CLAUSE_HowQ",
@@ -6730,8 +6748,14 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "UserDefined",
-                    "text": "海外ETF",
+                    "pos": "ENTITY_nouny",
+                    "text": "海外",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "ETF",
                     "checked": true,
                     "checkbox": true
                 },
@@ -6855,7 +6879,7 @@
             ]
         },
         "投信基金及境外基金淨值適用說明": {
-            "id": "4b6a38b6-b453-4744-bb65-47a67eefcae2",
+            "id": "87797bb7-86e7-4542-8f92-8c32aa5de379",
             "argument": [
                 {
                     "pos": "ACTION_verb",
@@ -6878,7 +6902,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "基金",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -6890,7 +6914,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "境",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -6902,56 +6926,14 @@
                 {
                     "pos": "ENTITY_oov",
                     "text": "基金",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "估值",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "放款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "純損",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "現值",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "作價",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "溢價",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "淨損",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "負債",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
+                    "pos": "UserDefined",
                     "text": "淨值",
                     "checked": false,
-                    "checkbox": false
+                    "checkbox": true
                 },
                 {
                     "pos": "ACTION_verb",
@@ -7014,17 +6996,23 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "說明",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
         },
         "海外ETF有哪些投資市場可提供選擇": {
-            "id": "41a964b6-e6fa-4435-a92d-55f1f23e3ea3",
+            "id": "8b937a79-373b-4a26-a83f-884d7cbfab79",
             "argument": [
                 {
-                    "pos": "UserDefined",
-                    "text": "海外ETF",
+                    "pos": "ENTITY_oov",
+                    "text": "海外",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "ETF",
                     "checked": true,
                     "checkbox": true
                 },
@@ -7433,7 +7421,7 @@
             ]
         },
         "投資海外ETF/股票所需負擔的稅負為何": {
-            "id": "0a6fb2c0-3649-41c9-9c94-1359cf238cab",
+            "id": "8f2cfb26-74ae-4657-a280-3d314d47cbe3",
             "argument": [
                 {
                     "pos": "ACTION_verb",
@@ -7514,8 +7502,14 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "UserDefined",
-                    "text": "海外ETF",
+                    "pos": "ENTITY_nouny",
+                    "text": "海外",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "ETF",
                     "checked": true,
                     "checkbox": true
                 },
@@ -7747,7 +7741,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "稅",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -8479,13 +8473,13 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "觀察",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
                     "pos": "ENTITY_nouny",
                     "text": "清單",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -9038,11 +9032,17 @@
             ]
         },
         "海外ETF/股票有哪些投資市場可提供選擇": {
-            "id": "bec79b24-ec6a-457f-a7dc-69f944d07996",
+            "id": "aba35e14-f7b0-495d-8b08-1e71ca828d43",
             "argument": [
                 {
-                    "pos": "UserDefined",
-                    "text": "海外ETF",
+                    "pos": "ENTITY_oov",
+                    "text": "海外",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "ETF",
                     "checked": true,
                     "checkbox": true
                 },
@@ -9641,6 +9641,231 @@
                         }
                     ],
                     "text": "申購",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "如何進行金融商品(基金、海外ETF、港股、美股)比較": {
+            "id": "8c5add6a-c7b0-4790-aeb6-73a8f538e086",
+            "argument": [
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "如何",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "沿用",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "開展",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進行了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "展開",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "完成",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "實施",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦理",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進行過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "作出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "通過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進行著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "通",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "進行",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "金融",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "商品",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": "(",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "基金",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": "、",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "海外",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "ETF",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": "、",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "港",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_classifier",
+                    "text": "股",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": "、",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "美股",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": ")",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "對比",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "比對",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "比擬",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "比照",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "相比",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "相較",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "對照",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "匹配",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "比起來",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "區分",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "衡量",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "分析",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "比較",
                     "checked": false,
                     "checkbox": false
                 }
