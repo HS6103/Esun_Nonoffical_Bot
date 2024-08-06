@@ -3456,6 +3456,323 @@
                 }
             ]
         },
+        "英文投保證明應如何辦理": {
+            "id": "8c7f54f9-9631-4f14-b77b-170b25876391",
+            "argument": [
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "英文",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "承保",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳費",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "賠付",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "加保",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "給付",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "理賠",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "報稅",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳納",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳稅",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "保戶",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "投保",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "佐證",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "作證",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "印證",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "指證",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "申明",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "聲明",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "証明",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "認明",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "認證",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "論證",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "證實",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "驗明",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "驗證",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "報關",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "宣告",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "宣稱",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "批准",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "擔保",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "昭示",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "核准",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "確認",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "稱說",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "聲稱",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "自稱",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "追認",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "陳述",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "驗算",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "推論",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "闡明",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "證明了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "表明",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "斷定",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "證明",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "應",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "如何",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "處理",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "做買賣",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦理了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "受理",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "開展",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "承辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "實施",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "自辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉行",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申請",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "試辦",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "辦理",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "規劃退休有適合的保險嗎": {
             "id": "7473d6d5-d26b-43c3-b344-18af757757b5",
             "argument": [
@@ -3887,6 +4204,279 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "保險",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_YesNoQ",
+                    "text": "嗎",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "網路投保一定要填寫email嗎": {
+            "id": "ea1e00be-3f7c-4fa9-b852-b7969ae7b3b7",
+            "argument": [
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "網路",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "承保",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳費",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "賠付",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "加保",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "給付",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "理賠",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "報稅",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳納",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳稅",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "保戶",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "投保",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "一定",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "想要",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "需要",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想拿",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "想買",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "渴望",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "渴求",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "真要",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "得照",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "更要",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "要去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "想",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "需",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "餓了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "餓",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "要",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "充填",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "填塞",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "填表",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "填補",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "書寫",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "充塞",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "創作",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "撰述",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "擬作",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "添補",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "查閱",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "檢附",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "填報",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "填具",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出示",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "勾選",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "郵寄",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "填妥",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "蓋章",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "填寫",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "email",
                     "checked": true,
                     "checkbox": true
                 },
@@ -5938,255 +6528,6 @@
                 }
             ]
         },
-        "投保旅行平安保險之保額限制": {
-            "id": "a5845128-6cbd-4714-8705-df194911e440",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "承保",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳費",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "賠付",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "加保",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "給付",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "理賠",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "報稅",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳納",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳稅",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "保戶",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "投保",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "旅行平安保險",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "之",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "保額",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "克制",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "制止",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "制約",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "局限",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "牽制",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "管制",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "節制",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "設限",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "遏制",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "限價",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "限定",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "限度",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "停止",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "囚禁",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "封閉",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "抑止",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "按捺",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "監禁",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "看押",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "禁令",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "禁運",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "羈絆",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "關押",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "限縮",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "規定",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "規範",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "約束",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "禁止",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "允許",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "拘束",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "阻礙",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "容許",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "限制",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
         "旅行綜合險的繳費方式有什麼": {
             "id": "e81764a6-afa2-4118-bd36-0ec18a9a3388",
             "argument": [
@@ -6935,732 +7276,6 @@
                     "text": "限制",
                     "checked": false,
                     "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_YesNoQ",
-                    "text": "嗎",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "需要英文投保證明應如何辦理": {
-            "id": "e815b4ee-ea41-4806-bba4-b88c5f4cdf63",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "想要",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "索要",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "要求",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "需求",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "想拿",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "想買",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "索求",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "索討",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "允許",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "願意",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "需",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "要",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "需要",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "英文",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "承保",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳費",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "賠付",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "加保",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "給付",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "理賠",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "報稅",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳納",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳稅",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "保戶",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "投保",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "佐證",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "作證",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "印證",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "指證",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "申明",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "聲明",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "証明",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "認明",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "認證",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "論證",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "證實",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "驗明",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "驗證",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "報關",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "宣告",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "宣稱",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "批准",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "擔保",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "昭示",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "核准",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "確認",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "稱說",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "聲稱",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "自稱",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "追認",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "陳述",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "驗算",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "證明了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "推論",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "斷定",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "闡明",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "表明",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "證明",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "MODAL",
-                    "text": "應",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "如何",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "處理",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "做買賣",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "受理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "開展",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "試辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "承辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉行",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "自辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "申請",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "實施",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "辦理",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "辦理網路投保一定要填寫email嗎": {
-            "id": "58ebe4eb-ea35-4dc2-9d4b-6fc9729be0d9",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "處理",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "做買賣",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "受理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "開展",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "承辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "實施",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "自辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉行",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "申請",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "試辦",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "辦理",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "網路",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "承保",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳費",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "賠付",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "加保",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "給付",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "理賠",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "報稅",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳納",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳稅",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "保戶",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "投保",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "MODIFIER",
-                    "text": "一定",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "想要",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "需要",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "想拿",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "想買",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "渴望",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "渴求",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "真要",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "得照",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "更要",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "要去",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "想",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "需",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "餓了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "餓",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "要",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "充填",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "填塞",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "填表",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "填補",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "書寫",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "充塞",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "創作",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "撰述",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "擬作",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "添補",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "查閱",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "檢附",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "填報",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "填具",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "出示",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "勾選",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "郵寄",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "填妥",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "蓋章",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "填寫",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "email",
-                    "checked": true,
-                    "checkbox": true
                 },
                 {
                     "pos": "CLAUSE_YesNoQ",

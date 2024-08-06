@@ -53,15 +53,13 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
     if utterance == "[一定]要完成「網路投保註冊」[才][可以]投保嗎":
         if CHATBOT_MODE:
-            if args[1] == '網路':
-                resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
     if utterance == "[一定]要完成「網路投保註冊暨[身分]驗證」[才][可以]投保嗎":
         if CHATBOT_MODE:
-            if args[1] == '網路':
-                resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
@@ -225,9 +223,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             if args[0] in userDefinedDICT['insurance']:
                 if '綜' in args[0]:
-                    resultDICT["response"] = getResponse("投保[旅行綜合險]之[保額]限制", args)
-                else:
-                    resultDICT["response"] = getResponse("投保[旅行平安保險]之[保額]限制", args)
+                    resultDICT["response"] = getResponse("[旅行綜合險]之[保額]限制", args)
+                elif '平' in args[0]:
+                    resultDICT["response"] = getResponse("[旅行平安保險]之[保額]限制", args)
         else:
             pass
 
@@ -235,9 +233,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             if args[0] in userDefinedDICT['insurance']:
                 if '綜' in args[0]:
-                    resultDICT["response"] = getResponse("投保[旅行綜合險]之[保額]限制", args)
-                else:
-                    resultDICT["response"] = getResponse("投保[旅行平安保險]之[保額]限制", args)
+                    resultDICT["response"] = getResponse("[旅行綜合險]的繳費[方式]有什麼", args)
+                elif '平' in args[0]:
+                    resultDICT["response"] = getResponse("[旅行平安保險]的繳費[方式]有什麼", args)
         else:
             pass
 
@@ -460,17 +458,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
-
-    if utterance == "投保[旅行平安保險]之[保額]限制":
-        if CHATBOT_MODE:
-            if args[0] in userDefinedDICT['insurance']:
-                if '綜' in args[0]:
-                    resultDICT["response"] = getResponse("投保[旅行綜合險]之[保額]限制", args)
-                else:
-                    resultDICT["response"] = getResponse("投保[旅行平安保險]之[保額]限制", args)
-        else:
-            pass
-
+        
     if utterance == "投保[過程][中]有[問題][能]詢問誰":
         if CHATBOT_MODE:
             if '問' in args[2]:
@@ -534,7 +522,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "辦理[網路]投保[一定]要填寫[email]嗎":
+    if utterance == "[網路]投保[一定]要填寫[email]嗎":
         if CHATBOT_MODE:
             if args[0] == '網路' and args[2].lower().strip(' ') in ['email', 'e-mail']:
                 resultDICT["response"] = getResponse(utterance, args)
@@ -543,7 +531,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "透過[玉山]投保[只][能]向原[服務人員]所屬[分行]諮詢[保險][相關][問題]嗎":
         if CHATBOT_MODE:
-            if args[0] in ['玉山', '玉山銀行'] and args[3] == '安全':
+            if args[0] in ['玉山', '玉山銀行'] and '險' in args[5] and args[7] in ['問題', '事宜', '疑問']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -555,7 +543,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "需要[英文]投保證明[應]如何辦理":
+    if utterance == "[英文]投保證明[應]如何辦理":
         if CHATBOT_MODE:
             if args[0] in ['英文']:
                 resultDICT["response"] = getResponse(utterance, args)
@@ -564,8 +552,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "非本[國籍][可以]購買[保險]嗎":
         if CHATBOT_MODE:
-            if '國' in args[0] and args[2] == '保險' or args[2] in userDefinedDICT['insurance']
-            resultDICT["response"] = getResponse(utterance, args)
+            if '國' in args[0] and args[2] == '保險' or args[2] in userDefinedDICT['insurance']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
