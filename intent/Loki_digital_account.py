@@ -54,7 +54,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "[Email]驗證超過限制[次數]怎麼辦":
         if CHATBOT_MODE:
-            if args[0] in ['手機', '電話']:
+            if args[0] in ['手機', '電話', '簡訊']:
                 resultDICT["response"] = getResponse("[手機]驗證超過限制[次數]怎麼辦", args)
             elif args[0].lower().strip(' ') in ['email', 'e-mail']:
                 resultDICT["response"] = getResponse(utterance, args)
@@ -176,16 +176,16 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "如果[身分][證件][資料]辨識[結果][錯誤]怎麼辦":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '身分' in args[0] and args[4] in ['錯誤', '失敗']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
             pass
 
     if utterance == "如果已經有[信用卡][版]的[網路銀行][是]否還需要[再次]申請":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '信用卡' and args[2] in ['網路銀行', '網銀']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
             pass
 
     if utterance == "如果沒完成數位帳戶申請下[一次]申請需要[重新]填寫[資料]嗎":
@@ -209,44 +209,44 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "審核[期間][密碼]輸入[錯誤][5次]被暫停[該]怎麼辦":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[1] == '密碼':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
             pass
 
     if utterance == "審核[期間]忘記[信用卡][版][網銀]的[使用者][密碼][該]怎麼辦":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[1] == '信用卡' and args[3] in ['網路銀行', '網銀'] and args[5] == '密碼':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
             pass
 
     if utterance == "審核[期間]忘記[信用卡][版][網銀]的[使用者][密碼]或輸入[錯誤][5次]被暫停[該]怎麼辦":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[1] == '信用卡' and args[3] in ['網路銀行', '網銀'] and args[5] == '密碼':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
             pass
 
     if utterance == "已安裝[元件]但[網頁]還是[一直]顯示需下載安裝[元件]怎麼辦":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '元件' in args[0] and args[3]:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
             pass
 
     if utterance == "已有本行[臨櫃][帳戶][是]否[可以]再申請數位帳戶":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] in ['臨櫃', '銀行', '分行'] and args[1] in ['帳戶', '帳號', '戶頭']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
             pass
 
     if utterance == "忘記[自然人憑證][密碼]如何處理":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '自然人' in args[0] and args[1] == '密碼':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
             pass
 
     if utterance == "數位帳戶[可以]作為[期貨帳戶]的[出入]金約定[帳戶]嗎":
@@ -276,7 +276,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "數位帳戶[可以]接受[國外]匯入款嗎":
+    if utterance == "數位帳戶[可以]接受[國外]匯入[款]嗎":
         if CHATBOT_MODE:
             if '外' in args[1]:
                 resultDICT["response"] = getResponse(utterance, args)
@@ -304,9 +304,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "數位帳戶[可以]連結[街口支付]、[一卡通Money]等[電子]支付[工具]嗎":
+    if utterance == "數位帳戶[可以]連結[街口支付]":
         if CHATBOT_MODE:
-            if args[3] == '電子':
+            if args[3] in userDefinedDICT['as_payment']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -327,7 +327,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "數位帳戶[可以]進行哪些[交易]":
         if CHATBOT_MODE:
-            if args[1] == '交易':
+            if args[1] in ['交易', '業務']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -388,9 +388,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "數位帳戶作為[證券]交割[戶]時有什麼限制":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '證券':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
             pass
 
     if utterance == "數位帳戶有提供哪些臨櫃交易":
@@ -420,18 +420,18 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "數位帳戶簽帳[金融卡][可以]連結[行動]支付嗎":
+    if utterance == "數位帳戶簽帳金融卡[可以]連結[行動]支付":
         if CHATBOT_MODE:
-            if args[0] == '金融卡' and args[2] == '行動':
+            if args[1] == '行動':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
     if utterance == "數位帳戶至[臨櫃]辦理[業務]需要支付[手續費]嗎":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] in ['臨櫃', '銀行', '分行'] and args[2] == '手續費':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
             pass
 
     if utterance == "數位帳戶金融卡[可以]變更寄送地址嗎":
@@ -442,9 +442,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "有數位帳戶[可]在[臨櫃]開[一般]存款帳戶嗎":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] in ['臨櫃', '銀行', '分行'] and args[2] in ['一般', '普通', None]:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
             pass
 
     if utterance == "每[人][能]申請幾[個][玉山]數位帳戶":
@@ -463,9 +463,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "為什麼[具][他][國]或[地區][身分者]不[能]申請數位帳戶":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if ('國' in args[2] or args[3]) and args[4] in ['身分', '戶籍', '國籍']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
             pass
 
     if utterance == "為什麼[我]不[能]申請數位帳戶":
@@ -488,16 +488,17 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "為什麼美國納稅[義務人]不[能]申請數位帳戶":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '人' or '者' in args[0]:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
             pass
 
     if utterance == "為什麼美國納稅[義務人]或[具][他][國]或[地區][身分者]不[能]申請數位帳戶":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if ('人' or '者' in args[0]) and ('國' in args[3] or args[4]):
+                if args[5] in ['身分', '戶籍', '國籍'] or ('人' or '者' in args[5]):
+                    resultDICT["response"] = getResponse(utterance, args)       
         else:
-            # write your code here
             pass
 
     if utterance == "申請數位帳戶[後]如何拿到[金融卡]":
@@ -527,9 +528,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "若領補換[資訊]超過限制查詢[次數]怎麼辦":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[1] == '次數':            
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
             pass
 
     if utterance == "補件[照片]需要注意什麼":
@@ -541,30 +542,29 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "變更過[中文戶名]且未至[臨櫃]更新[資訊][是]否[可]申請數位帳戶":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '中文' in args[0] or args[0] == '戶名' and args[1] in ['臨櫃', '銀行', '分行']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
             pass
 
-    if utterance == "逾補[件][期][限]未完成補件怎麼辦":
+    if utterance == "逾補[件][期]限未完成補件怎麼辦":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
             pass
 
     if utterance == "驗證[之前]需要[先進]行[讀卡機]的[安裝]嗎":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[2] == '讀卡機' and args[3] == '安裝':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
             pass
 
     if utterance == "驗證有[版本]或[系統]的[限制]嗎":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] and args[1] in ['版本','系統', '規格', '作業系統', 'os', '環境'] and '限' in args[2]:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
             pass
 
     return resultDICT

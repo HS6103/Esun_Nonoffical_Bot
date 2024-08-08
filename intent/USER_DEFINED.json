@@ -24,7 +24,6 @@
         "webatm"
     ],
     "as_noun": [
-        "PayPal",
         "他益信託",
         "信託",
         "存款帳戶",
@@ -88,18 +87,12 @@
         "圖形密碼",
         "系統",
         "使用者名稱",
-        "台灣Pay",
         "指紋",
         "Touch ID",
         "Face ID",
         "數位帳戶",
         "自然人憑證",
         "照片",
-        "街口支付",
-        "一卡通Money",
-        "Apple Pay",
-        "Samsung Pay",
-        "Google Pay",
         "悠遊簽帳金融卡",
         "活期存款",
         "定期存款",
@@ -160,5 +153,14 @@
     "windows 7": [
         "win 7",
         "windows 7"
+    ],
+    "as_payment": [
+        "街口支付",
+        "一卡通money",
+        "apple pay",
+        "samsung pay",
+        "google pay",
+        "台灣pay",
+        "paypal"
     ]
 }

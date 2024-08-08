@@ -6,6 +6,14 @@
         "intent": "1.0"
     },
     "user_defined": {
+        "ie": [
+            "internet explorer 11",
+            "ie 11"
+        ],
+        "atm": [
+            "自動櫃員機",
+            "atm"
+        ],
         "loan": [
             "提前清償違約金",
             "指數型房貸",
@@ -18,45 +26,53 @@
             "信用貸款",
             "留學貸款"
         ],
+        "webatm": [
+            "web atm",
+            "webatm"
+        ],
         "as_noun": [
-            "Internet Explorer 11",
-            "PayPal",
-            "windows 7",
             "他益信託",
             "信託",
+            "存款帳戶",
+            "存戶",
             "全權委託保管機構",
             "兩岸支付通",
             "利息",
             "勞動保障卡",
             "協定",
             "台幣",
-            "國外",
             "基金保管機構",
             "報酬率",
             "定存",
+            "活存",
+            "交易額度",
+            "信貸",
+            "信用貸款",
+            "型號",
             "密碼",
             "對帳單",
             "帳單",
             "平台",
             "抵用金",
             "支付寶",
-            "收件地址",
+            "地址",
             "新台幣",
+            "保費",
             "明細",
             "樂享優惠專區",
             "模式",
             "注意事項",
-            "海外ETF",
-            "海外債券",
             "淘寶網",
+            "身份證字號",
             "無卡交易",
             "獨樂樂",
+            "中國人壽",
+            "凱基人壽",
             "玉山",
             "玉山銀行",
             "玉山Wallet",
             "玉山全球通",
             "玉山掃碼通",
-            "玉山理財電子週報",
             "現鈔",
             "眾樂樂",
             "綜合對帳單",
@@ -78,18 +94,12 @@
             "圖形密碼",
             "系統",
             "使用者名稱",
-            "台灣Pay",
             "指紋",
             "Touch ID",
             "Face ID",
             "數位帳戶",
             "自然人憑證",
             "照片",
-            "街口支付",
-            "一卡通Money",
-            "Apple Pay",
-            "Samsung Pay",
-            "Google Pay",
             "悠遊簽帳金融卡",
             "活期存款",
             "定期存款",
@@ -109,6 +119,7 @@
             "在學證明",
             "手機號碼",
             "店家",
+            "淨值",
             "無卡提款",
             "新式統一證號",
             "晶片卡",
@@ -127,25 +138,115 @@
             "樂享優惠",
             "定義",
             "數位",
+            "視窗",
             "通訊地址",
             "幣別",
-            "特店"
+            "特店",
+            "*",
+            "-"
         ],
         "insurance": [
             "強制汽/機車責任保險",
             "旅行平安保險",
             "強制汽機車責任保險",
-            "年金首期",
-            "續期每月定額",
+            "每月定額",
             "旅行綜合險",
             "利率變動型年金保險",
             "終身醫療保險",
-            "中國人壽",
-            "凱基人壽",
-            "旅行平安險"
+            "旅行平安險",
+            "旅平險",
+            "強制汽機車責任險"
+        ],
+        "windows 7": [
+            "win 7",
+            "windows 7"
+        ],
+        "as_payment": [
+            "街口支付",
+            "一卡通money",
+            "apple pay",
+            "samsung pay",
+            "google pay",
+            "台灣pay",
+            "paypal"
         ]
     },
     "utterance": {
+        "如何上傳照片": {
+            "id": "c6fb602e-3dd9-45c3-a275-6a5ac1d9c616",
+            "argument": [
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "如何",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "轉貼",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "轉發",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "轉傳",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "放上",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "傳送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "上傳了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "推送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "回傳",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "瘋傳",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "轉載",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "上傳",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "照片",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
         "如何完成補件": {
             "id": "5665032c-2725-4a3f-9ec1-7954ca57ac80",
             "argument": [
@@ -318,87 +419,6 @@
                 }
             ]
         },
-        "如何上傳照片檔": {
-            "id": "9bab6092-ef70-44e7-bd92-dfa14758b870",
-            "argument": [
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "如何",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "轉貼",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "轉發",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "轉傳",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "放上",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "傳送",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "上傳了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "推送",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "回傳",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "瘋傳",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "轉載",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "上傳",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "照片",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "檔",
-                    "checked": true,
-                    "checkbox": true
-                }
-            ]
-        },
         "如何申請網路銀行": {
             "id": "8c0a9587-cf2d-4aa7-9239-27ea3fb17963",
             "argument": [
@@ -437,7 +457,7 @@
                             "checked": false
                         },
                         {
-                            "text": "登記",
+                            "text": "註冊",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -447,7 +467,12 @@
                             "checked": false
                         },
                         {
-                            "text": "註冊",
+                            "text": "核發",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申訴",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -462,12 +487,7 @@
                             "checked": false
                         },
                         {
-                            "text": "申訴",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "核發",
+                            "text": "登記",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -495,7 +515,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -585,7 +605,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -793,7 +813,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1399,7 +1419,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1489,7 +1509,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "銷戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1506,7 +1526,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1608,7 +1628,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1695,13 +1715,94 @@
                 }
             ]
         },
+        "數位帳戶可以連結街口支付": {
+            "id": "1a48b5c5-f908-4832-ad60-cc5be462153e",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "數位帳戶",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "可以",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "連接",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "聯結",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "銜接",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "串連",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "串接",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "連繫",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "串聯",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "相連",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "結合",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "接軌",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "連結",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "街口支付",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
         "數位帳戶可以進行哪些交易": {
             "id": "c47c5466-5941-40ae-aac8-dfa73298ebc2",
             "argument": [
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1798,7 +1899,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1868,13 +1969,13 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "子帳",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
                     "pos": "ENTITY_nouny",
                     "text": "戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1891,7 +1992,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1983,7 +2084,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -2232,7 +2333,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -2479,7 +2580,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -3338,7 +3439,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -3899,7 +4000,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -4196,7 +4297,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -4316,7 +4417,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -4497,7 +4598,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -4735,13 +4836,13 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "臨",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
                     "pos": "ENTITY_nouny",
                     "text": "櫃交易",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -4861,7 +4962,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -4945,7 +5046,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -5395,7 +5496,7 @@
                 {
                     "pos": "ENTITY_oov",
                     "text": "限",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -5932,7 +6033,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -6088,12 +6189,12 @@
             ]
         },
         "數位帳戶可以接受國外匯入款嗎": {
-            "id": "6800f7ef-b7b9-4eee-bf43-61fc72e7d5b6",
+            "id": "ba0ad9da-ba05-41e1-a450-aa77e668848d",
             "argument": [
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -6311,10 +6412,10 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "UserDefined",
+                    "pos": "MODIFIER",
                     "text": "國外",
-                    "checked": true,
-                    "checkbox": true
+                    "checked": false,
+                    "checkbox": false
                 },
                 {
                     "pos": "ACTION_verb",
@@ -6409,12 +6510,12 @@
             ]
         },
         "數位帳戶金融卡可以國外提款嗎": {
-            "id": "0a2840ab-58f4-47a2-9d08-b2f5e6e1d0ff",
+            "id": "43e5f8ef-e5c7-4b0c-80bd-cafd6e2a62f2",
             "argument": [
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -6430,7 +6531,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "UserDefined",
+                    "pos": "LOCATION",
                     "text": "國外",
                     "checked": true,
                     "checkbox": true
@@ -6745,7 +6846,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -6985,7 +7086,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -9018,7 +9119,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -9355,12 +9456,12 @@
             ]
         },
         "數位帳戶可以進行國外匯出匯款嗎": {
-            "id": "35ace97a-b16f-4999-885f-74035fd39025",
+            "id": "09d2ae30-cd21-40ba-a76c-887a2f06a375",
             "argument": [
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -9438,10 +9539,10 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "UserDefined",
+                    "pos": "MODIFIER",
                     "text": "國外",
-                    "checked": true,
-                    "checkbox": true
+                    "checked": false,
+                    "checkbox": false
                 },
                 {
                     "pos": "VerbP",
@@ -9721,7 +9822,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -10584,7 +10685,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -11070,18 +11171,18 @@
             ]
         },
         "數位帳戶金融卡可以變更寄送地址嗎": {
-            "id": "6e0ecf5a-0cef-42d3-8132-29489f9a1a66",
+            "id": "677ce451-26f8-4bde-ae97-15625d1ec9f0",
             "argument": [
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
                     "pos": "ENTITY_noun",
                     "text": "金融卡",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -11402,9 +11503,9 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "地址",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -11884,7 +11985,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -12096,7 +12197,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -12502,8 +12603,241 @@
                 }
             ]
         },
+        "數位帳戶簽帳金融卡可以連結行動支付": {
+            "id": "490593b7-d49a-4f52-a81d-86e74e715fec",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "數位帳戶",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "儲值",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "充值",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "預付",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "盜刷",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "卡滿",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "簽帳",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "金融卡",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "可以",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "連接",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "聯結",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "銜接",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "串連",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "串接",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "連繫",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "串聯",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "相連",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "結合",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "接軌",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "連結",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "行動",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "付出",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "付款",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "付清",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "付現",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "付給",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "付費",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "付錢",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "償付",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "給付",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳付",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "賠付",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "預付",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "預支",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "交納",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳交",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳納",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳費",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "代付",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳稅",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "償還",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "收取",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "支付",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "有數位帳戶可在臨櫃開一般存款帳戶嗎": {
-            "id": "0445bf61-825b-4bb1-adf4-4e91475801ac",
+            "id": "1321019d-7401-42c6-a759-3cf8bf9a3c66",
             "argument": [
                 {
                     "pos": "ACTION_verb",
@@ -12591,7 +12925,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -12677,15 +13011,9 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nounHead",
-                    "text": "存款帳",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "戶",
-                    "checked": true,
+                    "pos": "UserDefined",
+                    "text": "存款帳戶",
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -13531,7 +13859,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -13797,245 +14125,6 @@
                 }
             ]
         },
-        "數位帳戶簽帳金融卡可以連結行動支付嗎": {
-            "id": "9b2b7aa3-53ae-4d55-b831-d7b731e1a241",
-            "argument": [
-                {
-                    "pos": "UserDefined",
-                    "text": "數位帳戶",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "儲值",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "充值",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "預付",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "盜刷",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "卡滿",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "簽帳",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "金融卡",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "MODAL",
-                    "text": "可以",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "連接",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "聯結",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "銜接",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "串連",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "串接",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "連繫",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "串聯",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "相連",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "結合",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "接軌",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "連結",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "MODIFIER",
-                    "text": "行動",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "付出",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "付款",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "付清",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "付現",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "付給",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "付費",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "付錢",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "償付",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "給付",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳付",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "賠付",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "預付",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "預支",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "交納",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳交",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳納",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "收取",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳稅",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "償還",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳費",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "代付",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "支付",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_YesNoQ",
-                    "text": "嗎",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
         "為什麼美國納稅義務人不能申請數位帳戶": {
             "id": "f4870cca-912c-4fb7-b3a4-0012b45230d8",
             "argument": [
@@ -14253,7 +14342,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -14337,7 +14426,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -15995,7 +16084,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -16006,7 +16095,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -16035,6 +16124,11 @@
                             "checked": false
                         },
                         {
+                            "text": "辦理了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "受理",
                             "level": "word2vec",
                             "checked": false
@@ -16045,27 +16139,7 @@
                             "checked": false
                         },
                         {
-                            "text": "辦理了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "試辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "承辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉行",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "自辦",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -16075,12 +16149,27 @@
                             "checked": false
                         },
                         {
+                            "text": "實施",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "自辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉行",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "申請",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "實施",
+                            "text": "試辦",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -16247,12 +16336,7 @@
                             "checked": false
                         },
                         {
-                            "text": "繳費",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "代付",
+                            "text": "收取",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -16267,7 +16351,12 @@
                             "checked": false
                         },
                         {
-                            "text": "收取",
+                            "text": "繳費",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "代付",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -16376,7 +16465,7 @@
                             "checked": false
                         },
                         {
-                            "text": "登記",
+                            "text": "註冊",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -16386,7 +16475,12 @@
                             "checked": false
                         },
                         {
-                            "text": "註冊",
+                            "text": "核發",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申訴",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -16401,12 +16495,7 @@
                             "checked": false
                         },
                         {
-                            "text": "申訴",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "核發",
+                            "text": "登記",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -16423,7 +16512,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -16434,7 +16523,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -16457,12 +16546,7 @@
                             "checked": false
                         },
                         {
-                            "text": "身為",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "充當",
+                            "text": "成了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -16472,12 +16556,7 @@
                             "checked": false
                         },
                         {
-                            "text": "視為",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "視作",
+                            "text": "充當",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -16487,7 +16566,12 @@
                             "checked": false
                         },
                         {
-                            "text": "成了",
+                            "text": "視作",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "視為",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -16498,6 +16582,11 @@
                         },
                         {
                             "text": "成為",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "身為",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -16719,7 +16808,17 @@
                             "checked": false
                         },
                         {
+                            "text": "訂下",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "協議",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "訂",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -16734,22 +16833,12 @@
                             "checked": false
                         },
                         {
-                            "text": "訂",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "簽立",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "訂立",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "訂下",
+                            "text": "簽立",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -16839,7 +16928,12 @@
                             "checked": false
                         },
                         {
-                            "text": "檢核",
+                            "text": "複審",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "備查",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -16849,7 +16943,7 @@
                             "checked": false
                         },
                         {
-                            "text": "審定",
+                            "text": "送審",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -16859,27 +16953,22 @@
                             "checked": false
                         },
                         {
+                            "text": "審定",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "檢核",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "審議",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "送審",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "複查",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "複審",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "備查",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -16908,22 +16997,7 @@
                             "checked": false
                         },
                         {
-                            "text": "忘了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "記起",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "記得",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "忘記了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -16933,12 +17007,27 @@
                             "checked": false
                         },
                         {
+                            "text": "忘了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "猜到",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
+                            "text": "忘記了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "記住",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "記起",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -17134,22 +17223,22 @@
                             "checked": false
                         },
                         {
-                            "text": "有同",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "含有",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -17302,7 +17391,7 @@
                             "checked": false
                         },
                         {
-                            "text": "註冊",
+                            "text": "登記",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -17312,12 +17401,7 @@
                             "checked": false
                         },
                         {
-                            "text": "核發",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "申訴",
+                            "text": "註冊",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -17332,7 +17416,12 @@
                             "checked": false
                         },
                         {
-                            "text": "登記",
+                            "text": "申訴",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "核發",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -17396,17 +17485,12 @@
                             "checked": false
                         },
                         {
-                            "text": "加裝",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "配備",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "放置",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "裝配",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -17416,7 +17500,7 @@
                             "checked": false
                         },
                         {
-                            "text": "裝載",
+                            "text": "加裝",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -17426,12 +17510,17 @@
                             "checked": false
                         },
                         {
+                            "text": "裝載",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "安裝了",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "裝配",
+                            "text": "配備",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -17624,12 +17713,22 @@
                             "checked": false
                         },
                         {
-                            "text": "預測",
+                            "text": "呈現",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "顯示了",
+                            "text": "讀取",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "判讀",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "顯示出",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -17644,27 +17743,17 @@
                             "checked": false
                         },
                         {
-                            "text": "讀取",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "顯示出",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "呈現",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "顯現",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "判讀",
+                            "text": "預測",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "顯示了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -17702,17 +17791,7 @@
                             "checked": false
                         },
                         {
-                            "text": "需預",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "需約",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "允許",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -17722,12 +17801,22 @@
                             "checked": false
                         },
                         {
-                            "text": "需經過",
+                            "text": "允許",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "要",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "需經過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "需預",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -17838,17 +17927,12 @@
                             "checked": false
                         },
                         {
-                            "text": "加裝",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "配備",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "放置",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "裝配",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -17858,7 +17942,7 @@
                             "checked": false
                         },
                         {
-                            "text": "裝載",
+                            "text": "加裝",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -17868,12 +17952,17 @@
                             "checked": false
                         },
                         {
+                            "text": "裝載",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "安裝了",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "裝配",
+                            "text": "配備",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -18028,6 +18117,26 @@
                             "checked": false
                         },
                         {
+                            "text": "實現",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "達成",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "結束",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進行",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "走完",
                             "level": "word2vec",
                             "checked": false
@@ -18039,26 +18148,6 @@
                         },
                         {
                             "text": "通過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "實現",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "進行",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "結束",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "達成",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -18075,7 +18164,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -18107,7 +18196,7 @@
                             "checked": false
                         },
                         {
-                            "text": "註冊",
+                            "text": "登記",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -18117,12 +18206,7 @@
                             "checked": false
                         },
                         {
-                            "text": "核發",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "申訴",
+                            "text": "註冊",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -18137,7 +18221,12 @@
                             "checked": false
                         },
                         {
-                            "text": "登記",
+                            "text": "申訴",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "核發",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -18239,7 +18328,7 @@
                             "checked": false
                         },
                         {
-                            "text": "註冊",
+                            "text": "登記",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -18249,12 +18338,7 @@
                             "checked": false
                         },
                         {
-                            "text": "核發",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "申訴",
+                            "text": "註冊",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -18269,7 +18353,12 @@
                             "checked": false
                         },
                         {
-                            "text": "登記",
+                            "text": "申訴",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "核發",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -18411,12 +18500,7 @@
                             "checked": false
                         },
                         {
-                            "text": "填報",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "填妥",
+                            "text": "查閱",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -18426,17 +18510,7 @@
                             "checked": false
                         },
                         {
-                            "text": "勾選",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "查閱",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "郵寄",
+                            "text": "填報",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -18446,7 +18520,7 @@
                             "checked": false
                         },
                         {
-                            "text": "蓋章",
+                            "text": "繳款",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -18456,7 +18530,22 @@
                             "checked": false
                         },
                         {
-                            "text": "繳款",
+                            "text": "勾選",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "郵寄",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "填妥",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "蓋章",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -18601,12 +18690,37 @@
                             "checked": false
                         },
                         {
+                            "text": "出產過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "變動過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "活膩",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "現身過",
+                            "text": "搬遷過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "交戰過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "跌倒過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "成立過",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -18621,32 +18735,7 @@
                             "checked": false
                         },
                         {
-                            "text": "跌倒過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "變動過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "交戰過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "搬遷過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "成立過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "出產過",
+                            "text": "現身過",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -18769,6 +18858,11 @@
                             "checked": false
                         },
                         {
+                            "text": "改版",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "優化",
                             "level": "word2vec",
                             "checked": false
@@ -18779,17 +18873,17 @@
                             "checked": false
                         },
                         {
-                            "text": "更改",
+                            "text": "更換",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "改版",
+                            "text": "擴充",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "改進",
+                            "text": "變更",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -18804,17 +18898,12 @@
                             "checked": false
                         },
                         {
-                            "text": "變更",
+                            "text": "更改",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "擴充",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "更換",
+                            "text": "改進",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -18870,7 +18959,7 @@
                             "checked": false
                         },
                         {
-                            "text": "登記",
+                            "text": "註冊",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -18880,7 +18969,12 @@
                             "checked": false
                         },
                         {
-                            "text": "註冊",
+                            "text": "核發",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申訴",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -18895,12 +18989,7 @@
                             "checked": false
                         },
                         {
-                            "text": "申訴",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "核發",
+                            "text": "登記",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -18917,390 +19006,8 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
-                    "checkbox": true
-                }
-            ]
-        },
-        "數位帳戶可以連結街口支付、一卡通Money等電子支付工具嗎": {
-            "id": "f2f2677a-f84d-4e0d-bb6e-bd618103621c",
-            "argument": [
-                {
-                    "pos": "UserDefined",
-                    "text": "數位帳戶",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "MODAL",
-                    "text": "可以",
                     "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "連接",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "聯結",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "銜接",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "串連",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "串接",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "連繫",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "串聯",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "相連",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "結合",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "接軌",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "連結",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "街口支付",
-                    "checked": true,
                     "checkbox": true
-                },
-                {
-                    "pos": "PUNCTUATION",
-                    "text": "、",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "一卡通Money",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "久等",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "稍等",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "等候",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "等到",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "等待",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "等第",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "等級",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "候補",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "安排",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "待遇",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "接洽",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "搬鋪",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "搭配",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "操辦",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "擘劃",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "擺放",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "擺設",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "歸入",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "籌辦",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "約出",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "約見",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "編排",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "鋪排",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "關等",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "重等",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "包括",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "藏等",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "性等",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "合等",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "論等",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "等",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "電子",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "付出",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "付款",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "付清",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "付現",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "付給",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "付費",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "付錢",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "償付",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "給付",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳付",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "賠付",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "預付",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "預支",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "交納",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳交",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳納",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳費",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "代付",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳稅",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "償還",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "收取",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "支付",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "工具",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "CLAUSE_YesNoQ",
-                    "text": "嗎",
-                    "checked": false,
-                    "checkbox": false
                 }
             ]
         },
@@ -19387,12 +19094,12 @@
                             "checked": false
                         },
                         {
-                            "text": "清空",
+                            "text": "關閉了",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "關停",
+                            "text": "清空",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -19402,7 +19109,12 @@
                             "checked": false
                         },
                         {
-                            "text": "停用",
+                            "text": "停運",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "關停",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -19412,17 +19124,12 @@
                             "checked": false
                         },
                         {
+                            "text": "停用",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "重開",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "關閉了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "停運",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -19536,7 +19243,7 @@
                             "checked": false
                         },
                         {
-                            "text": "使用了",
+                            "text": "選用",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -19546,17 +19253,7 @@
                             "checked": false
                         },
                         {
-                            "text": "選用",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "用到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "改用",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -19566,7 +19263,17 @@
                             "checked": false
                         },
                         {
+                            "text": "改用",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "使用過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "使用了",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -19601,17 +19308,7 @@
                             "checked": false
                         },
                         {
-                            "text": "投幣",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳費",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "扣款",
+                            "text": "預付",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -19626,12 +19323,12 @@
                             "checked": false
                         },
                         {
-                            "text": "儲值",
+                            "text": "繳費",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "預付",
+                            "text": "儲值",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -19642,6 +19339,16 @@
                         },
                         {
                             "text": "靠卡",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "投幣",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "扣款",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -19664,17 +19371,17 @@
                             "checked": false
                         },
                         {
+                            "text": "照護",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "運營",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "營運",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "照護",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -19780,12 +19487,7 @@
                             "checked": false
                         },
                         {
-                            "text": "課稅",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "申報",
+                            "text": "徵收",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -19805,7 +19507,12 @@
                             "checked": false
                         },
                         {
-                            "text": "徵收",
+                            "text": "申報",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "課稅",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -19903,7 +19610,7 @@
                             "checked": false
                         },
                         {
-                            "text": "註冊",
+                            "text": "登記",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -19913,12 +19620,7 @@
                             "checked": false
                         },
                         {
-                            "text": "核發",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "申訴",
+                            "text": "註冊",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -19933,7 +19635,12 @@
                             "checked": false
                         },
                         {
-                            "text": "登記",
+                            "text": "申訴",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "核發",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -19950,7 +19657,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "數位帳戶",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -20012,7 +19719,12 @@
                             "checked": false
                         },
                         {
-                            "text": "檢核",
+                            "text": "複審",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "備查",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -20022,7 +19734,7 @@
                             "checked": false
                         },
                         {
-                            "text": "審定",
+                            "text": "送審",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -20032,27 +19744,22 @@
                             "checked": false
                         },
                         {
+                            "text": "審定",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "檢核",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "審議",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "送審",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "複查",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "複審",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "備查",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -20081,22 +19788,7 @@
                             "checked": false
                         },
                         {
-                            "text": "忘了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "記起",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "記得",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "忘記了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -20106,12 +19798,27 @@
                             "checked": false
                         },
                         {
+                            "text": "忘了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "猜到",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
+                            "text": "忘記了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "記住",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "記起",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -20196,12 +19903,7 @@
                             "checked": false
                         },
                         {
-                            "text": "輸出",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "讀取",
+                            "text": "存取",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -20211,12 +19913,12 @@
                             "checked": false
                         },
                         {
-                            "text": "存取",
+                            "text": "輸出",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "加載",
+                            "text": "讀取",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -20232,6 +19934,11 @@
                         },
                         {
                             "text": "縮放",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "加載",
                             "level": "word2vec",
                             "checked": false
                         },
