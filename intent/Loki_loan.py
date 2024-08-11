@@ -239,41 +239,37 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "[成績單]如何繳交":
         if CHATBOT_MODE:
-            if args[0] == '成績單':
+            if '留學' in inputSTR:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
     if utterance == "[成績單]需於[每年幾月]繳交":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '留學' in inputSTR:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[我][可以]指定[我]的繳款[日期]嗎":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[3] in ['日期', '時間']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[我]符合申請[個人信貸][資格]嗎":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] in ['個人信貸', '個人信用貸款']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[房屋]貸款[期間][是]否[可以][部分]還款":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] in ['房屋', '房貸'] and args[4] == '部分':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[房貸]簽約時需要攜帶哪些[資料]":
@@ -287,26 +283,30 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "[所得]不需報稅需檢附何[種][文件]認定[其][家庭][年]收入":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '家' in args[4] and args[5] == '年':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[所得清單][應]如何辦理":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '所得清單':
+                resultDICT["response"] = getResponse(utterance, args)
+            elif '紀錄' or '文件' in args[0] and '留學' or '出國' in inputSTR:
+                resultDICT["response"] = getResponse("[入出國紀錄文件][應]如何辦理", args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[指數型房貸]有什麼[優點]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[1] in ['優點', '好處']:
+                if args[0] == '指數型房貸':
+                    resultDICT["response"] = getResponse(utterance, args)
+                elif args[0] == '月繳月省房貸':
+                    resultDICT["response"] = getResponse("[指數型房貸]有什麼[優點]", args)
+                elif 'coupon' or '誠信' in inputSTR:
+                    resultDICT["response"] = getResponse("[誠信COUPON房貸]有什麼[優點]", args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "教育部採認規定之[國][外][大學][校院]為何":
@@ -318,122 +318,109 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "[月繳月省房貸]的[利率]減碼[優惠][是]否適用於[政策][性]貸款":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '月繳月省房貸':
+                resultDICT["response"] = getResponse(utterance, args)
+            if 'coupon' or '誠信' in inputSTR:
+                resultDICT["response"] = getResponse("[誠信COUPON房貸]的[利率]減碼[優惠][是]否適用於[政策][性]貸款", args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[理財型房貸]的[利息][費用]如何計算":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '理財型房貸' and args[1] == '利息':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[理財型房貸]要如何動用[資金]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '理財型房貸' and args[1] == '資金':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[留學貸款][分期]撥貸[方式]為何":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '留學貸款' and args[1] == '分期':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[留學貸款][應]於何時償還":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '留學貸款':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
-    if utterance == "[留學貸款][期][限]為何":
+    if utterance == "[留學貸款][期]限為何":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '留學貸款' and args[1] == '期':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[留學貸款][額度]及[分期]撥貸[方式]為何":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '留學貸款' and args[1] == '額度' and args[2] == '分期':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[留學貸款]之[利息][應該]如何繳交":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '留學貸款' and args[1] in ['利息', '本金']:
+                resultDICT["response"] = getResponse("[留學貸款]之[{}][應該]如何繳交".format(args[1]), args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[留學貸款]之[利息][應該]如何還款":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '留學貸款' and args[1] in ['利息', '本金']:
+                resultDICT["response"] = getResponse("[留學貸款]之[{}][應該]如何還款".format(args[1]), args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[留學貸款]之[利息]及[本金][應該]如何繳交及還款":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '留學貸款' and args[1] and args[2] in ['利息', '本金']:
+                resultDICT["response"] = getResponse("[留學貸款]之[{}][應該]如何還款".format(args[1]), args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[留學貸款]的[申請人][是]否需要[保證人]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '留學貸款' and '申請' in args[1] and args[3] == '保證人':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[留學貸款]的[申請人]為何及[是]否需要[保證人]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '留學貸款' and '申請' in args[1] and args[3] == '保證人':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[留學貸款]的[申請人]為何需要[保證人]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '留學貸款' and '申請' in args[1] and args[2] == '保證人':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[薪水][多寡]跟[可以]核貸的[額度]有關嗎":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '薪' in args[0] and args[3] in ['額度', '金額']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[遠距]教學之[學位][是]否[可]申貸[留學貸款]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '遠距' and args[4] == '留學貸款':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "什麼是[提前清償違約金]":
@@ -443,60 +430,46 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "何處[可]查詢[國外][大專][院][校]參考[名冊]":
+    if utterance == "何處[可]查詢[國][外][大專]院校參考名冊":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[1] in ['國', '境'] and args[2] == '外' and args[3] in ['大專', '大學']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "使用[MyData]服務取得[相關][財證]時若發生[系統][異常]導至無法授權或授權[失敗][該]怎麼辦":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0].lower().strip(' ') in ['my data', 'mydata']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
-    if utterance == "使用[MyData]服務提供[玉山銀行]取用[個人][資料][可]在哪裡查詢[相關][紀錄]":
+    if utterance == "使用[MyData]服務提供[玉山銀行]取用個人[資料][可]在哪裡查詢":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0].lower().strip(' ') in ['my data', 'mydata'] and '玉山' in args[1]:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
-    if utterance == "依[信用貸款契約]在什麼[情形][下][會]縮短[我]的借款[期限]呢":
+    if utterance == "什麼情形[下][會]縮短[我]的借款期限呢":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '信用貸款' or '信貸' in inputSTR:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
-
-    if utterance == "入出國[紀錄文件][應]如何辦理":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "在[薪]轉[銀行]申請貸款[個人信貸][會]比較容易過[件]嗎":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '薪' in args[0] and args[2] in ['個人信貸', '個人信用貸款']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "多[久][可以]收到貸款[契約]呢":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[2] == '契約':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "如何使用[玉山銀行][IXML]":
@@ -522,18 +495,16 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         
     if utterance == "如何知道[我]的[個人信貸][每月][應該]繳款的[金額]是多少":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[1] in ['個人信貸', '個人信用貸款'] and '月' in args[2]:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
-    if utterance == "如何透過[MyData]服務[將][個人][資料]給[玉山銀行]":
+    if utterance == "如何透過[MyData]服務[將]個人[資料]給[玉山銀行]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0].lower().strip(' ') in ['my data', 'mydata'] and '玉山' in args[3]:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "如果提[前]清償貸款有無違約[金]":
@@ -547,32 +518,27 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "已[先]申請到[留學貸款][者][是]否[可以]報考或申請[我][國][政府]提供之各項[公費]或留學[獎助學金]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[1] == '留學貸款':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "所修讀之[學校][學位]需較長[時間][可][否]延長[寬限期]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] or args[1] in ['學校', '學位'] and args[2] == '時間':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "所修讀之[學校][學位]需較長[時間][可][否]延長還款[期限]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] or args[1] in ['學校', '學位'] and args[2] == '時間':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "找[代辦公司]協助辦理貸款[利率][會]比較好嗎":
@@ -608,10 +574,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "申請[個人信貸][後]需要多[久][能]知道貸款[結果]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] in ['個人信貸', '個人信用貸款']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "申請[房屋貸款]需要準備哪些[資料]":
@@ -639,18 +604,16 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "申請[留學貸款]所訂之[家庭][年]收入[標準]如何認定":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '留學貸款' and '家' in args[1] and args[2] == '年':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "申請[留學貸款]所訂之[家庭][年]收入[標準]為何":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '留學貸款' and '家' in args[1] and args[2] == '年':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "若留學生在[國][外][可][否]委託[國內]之[人]代為申請":
@@ -664,8 +627,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "退學[應]如何還款":
