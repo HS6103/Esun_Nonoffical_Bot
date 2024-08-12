@@ -1216,7 +1216,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "保證人",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -9784,6 +9784,267 @@
                     "pos": "UserDefined",
                     "text": "留學貸款",
                     "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "休學後再復學可否續享本貸款之寬限期": {
+            "id": "558ed373-e82a-4326-aa33-f40531112d97",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "因循",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "延擱",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "拖延",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "捱延",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "推延",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "沖挹",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "緩徵",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "緩聘",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "緩辦",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "耽擱",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "遲交",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "遲延",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "遲滯",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "順延",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "離校",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "轉學",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "留級",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "輟學",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "重考",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "跳級",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "復學",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "轉讀",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "停學",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退學",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "休學",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "RANGE_period",
+                    "text": "後",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "再",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "回復",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "復職",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "復課",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "恢復",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "離校",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "休學",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "升讀",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "重考",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "輟學",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "轉讀",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "返校",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退學",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "入讀",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "復學",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "可",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "否",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [],
+                    "text": "續享",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_determiner",
+                    "text": "本",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "貸款",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "之",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "寬限期",
+                    "checked": false,
                     "checkbox": true
                 }
             ]

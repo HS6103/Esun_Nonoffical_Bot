@@ -79,16 +79,16 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "保證人[是]否有[年齡]限制":
+    if utterance == "[保證人][是]否有[年齡]限制":
         if CHATBOT_MODE:
-            if args[1] in ['年齡', '年紀', '歲數']:
+            if '保證' or '借款' in args[0] and args[2] in ['年齡', '年紀', '歲數']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
     if utterance == "[保證人][資格]為何":
         if CHATBOT_MODE:
-            if args[0] == '保證人' and args[1] == '資格':
+            if args[0] in ['保證人','借款人'] and args[1] == '資格':
                 resultDICT["response"] = getResponse(utterance, args)
             elif args[0] == '房貸' and args[1] == '流程':
                 resultDICT["response"] = getResponse('[{}][{}]為何'.format(args[0], args[1]), args)
@@ -293,7 +293,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if args[0] == '所得清單':
                 resultDICT["response"] = getResponse(utterance, args)
             elif '紀錄' or '文件' in args[0] and '留學' or '出國' in inputSTR:
-                resultDICT["response"] = getResponse("[入出國紀錄文件][應]如何辦理", args)
+                resultDICT["response"] = getResponse("入出國[紀錄文件][應]如何辦理", args)
         else:
             pass
 
@@ -303,7 +303,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
                 if args[0] == '指數型房貸':
                     resultDICT["response"] = getResponse(utterance, args)
                 elif args[0] == '月繳月省房貸':
-                    resultDICT["response"] = getResponse("[指數型房貸]有什麼[優點]", args)
+                    resultDICT["response"] = getResponse("[月繳月省房貸]有什麼[優點]", args)
                 elif 'coupon' or '誠信' in inputSTR:
                     resultDICT["response"] = getResponse("[誠信COUPON房貸]有什麼[優點]", args)
         else:
@@ -589,7 +589,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     if utterance == "申請[留學貸款][應]檢附哪些[文件]":
         if CHATBOT_MODE:
             if args[0] in ['房屋貸款', '房貸']:
-                resultDICT["response"] = getResponse("申請[房屋貸款][應]檢附哪些[資料]", args)
+                resultDICT["response"] = getResponse("申請[房屋貸款]需要準備哪些[資料]", args)
             elif args[0] in ['留學貸款']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -634,7 +634,13 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
-
+        
+    if utterance == "休學[後]再復學[可][否]續享本[貸款]之寬限期":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+        
     if utterance == "逾期未還款[者][會]有什麼[不良][後果]":
         if CHATBOT_MODE:
             if args[3] in ['後果', '下場', '責任', '問題']:
