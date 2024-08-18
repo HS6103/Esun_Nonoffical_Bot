@@ -20,7 +20,6 @@
 
 ```
 │  .gitignore
-│  account.info
 │  app.py
 │  chatbot.json
 │  chatbotMaker.py
