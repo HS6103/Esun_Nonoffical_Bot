@@ -7,8 +7,7 @@
 ## 使用說明
 
 1. 至 Line 主畫面右上角點選「加入好友」圖示
-2. 掃描此 QR Code 或搜尋 ID: @696ufyri 將機器人加入好友
-![QR](qr-official.line.me/sid/L/696ufyri.png)
+2. 搜尋 ID: @696ufyri 將機器人加入好友
 3. 傳送訊息可開始聊天！
 
 ## 環境 & 使用技術
@@ -79,34 +78,34 @@
 │      web_bank.ref
 │
 └─reply
-        reply_app.json
-        reply_bsm.json
-        reply_cardless.json
-        reply_china_pay.json
-        reply_corporate.json
-        reply_credit_card.json
-        reply_crossboarding.json
-        reply_customer_service.json
-        reply_deposit.json
-        reply_digital_account.json
-        reply_face_atm.json
-        reply_foreign.json
-        reply_insurance.json
-        reply_line.json
-        reply_loan.json
-        reply_paypal.json
-        reply_small_corp.json
-        reply_trust_fund.json
-        reply_wealth.json
-        reply_web_atm.json
-        reply_web_bank.json
+|      reply_app.json
+|      reply_bsm.json
+|      reply_cardless.json
+|      reply_china_pay.json
+|      reply_corporate.json
+|      reply_credit_card.json
+|      reply_crossboarding.json
+|      reply_customer_service.json
+|      reply_deposit.json
+|      reply_digital_account.json
+|      reply_face_atm.json
+|      reply_foreign.json
+|      reply_insurance.json
+|      reply_line.json
+|      reply_loan.json
+|      reply_paypal.json
+|      reply_small_corp.json
+|      reply_trust_fund.json
+|      reply_wealth.json
+|      reply_web_atm.json
+|      reply_web_bank.json
 ```
 
 ## 關於作者
 
-+ [Hsu-Chen Hsiao "Simon"](https://github.com/HS6103)
++ [GitHub](https://github.com/HS6103)
 + [Medium](https://medium.com/@simonhsiao.hs)
-+ Email: <simonhsiao.hs@gmail.com>
++ <simonhsiao.hs@gmail.com>
 
 ## 參考資料
 
