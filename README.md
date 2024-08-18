@@ -19,6 +19,7 @@
 
 ## 檔案內容
 
+```
 │  .gitignore
 │  account.info
 │  app.py
@@ -99,12 +100,13 @@
         reply_wealth.json
         reply_web_atm.json
         reply_web_bank.json
+```
 
 ## 關於作者
 
 + [Hsu-Chen Hsiao "Simon"](https://github.com/HS6103)
 + [Medium](https://medium.com/@simonhsiao.hs)
-+ [Email](simonhsiao.hs@gmail.com)
++ Email: <simonhsiao.hs@gmail.com>
 
 ## 參考資料
 
