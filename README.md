@@ -19,7 +19,6 @@
 ## 檔案內容
 
 ```
-│
 │  .gitignore
 │  account.info
 │  app.py
