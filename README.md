@@ -19,6 +19,7 @@
 ## 檔案內容
 
 ```
+│
 │  .gitignore
 │  account.info
 │  app.py
@@ -77,28 +78,28 @@
 │      web_atm.ref
 │      web_bank.ref
 │
-└─reply
-|      reply_app.json
-|      reply_bsm.json
-|      reply_cardless.json
-|      reply_china_pay.json
-|      reply_corporate.json
-|      reply_credit_card.json
-|      reply_crossboarding.json
-|      reply_customer_service.json
-|      reply_deposit.json
-|      reply_digital_account.json
-|      reply_face_atm.json
-|      reply_foreign.json
-|      reply_insurance.json
-|      reply_line.json
-|      reply_loan.json
-|      reply_paypal.json
-|      reply_small_corp.json
-|      reply_trust_fund.json
-|      reply_wealth.json
-|      reply_web_atm.json
-|      reply_web_bank.json
+├─reply
+│      reply_app.json
+│      reply_bsm.json
+│      reply_cardless.json
+│      reply_china_pay.json
+│      reply_corporate.json
+│      reply_credit_card.json
+│      reply_crossboarding.json
+│      reply_customer_service.json
+│      reply_deposit.json
+│      reply_digital_account.json
+│      reply_face_atm.json
+│      reply_foreign.json
+│      reply_insurance.json
+│      reply_line.json
+│      reply_loan.json
+│      reply_paypal.json
+│      reply_small_corp.json
+│      reply_trust_fund.json
+│      reply_wealth.json
+│      reply_web_atm.json
+│      reply_web_bank.json
 ```
 
 ## 關於作者
