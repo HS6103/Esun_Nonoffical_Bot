@@ -8,14 +8,14 @@
 
 1. 至 Line 主畫面右上角點選「加入好友」圖示
 2. 掃描此 QR Code 或搜尋 ID: @696ufyri 將機器人加入好友
-![QR](https://qr-official.line.me/sid/L/696ufyri.png)
+![QR](qr-official.line.me/sid/L/696ufyri.png)
 3. 傳送訊息可開始聊天！
 
 ## 環境 & 使用技術
 
 + Python 3.11
 + Flask + Heroku
-+ 卓騰語言科技 Loki 語意理解引擎 (請參考[此處](https://api.droidtown.co/document/#Loki))
++ 卓騰語言科技 Loki 語意理解引擎 (請參考[官方文件](https://api.droidtown.co/document/#Loki))
 
 ## 檔案內容
 
