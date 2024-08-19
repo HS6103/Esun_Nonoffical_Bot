@@ -203,8 +203,10 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "什麼是[QR Code]轉帳":
         if CHATBOT_MODE:
-            if 'qr' in args[1]: 
+            if 'qr' in args[0]: 
                 resultDICT["response"] = getResponse(utterance, args)
+            elif '手機' in args[0]:
+                resultDICT["response"] = getResponse("什麼是[手機號碼]收款轉帳", args)
         else:
             pass
 
