@@ -1596,6 +1596,29 @@
                 }
             ]
         },
+        "什麼是台灣Pay/TWQR": {
+            "id": "8659f301-bd24-4b55-8557-264124a6b21b",
+            "argument": [
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "什麼",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "AUX",
+                    "text": "是",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "台灣Pay/TWQR",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
         "夜間靜音服務為何": {
             "id": "a0c16d8a-f606-408d-8ba3-456eb38882cd",
             "argument": [

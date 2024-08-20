@@ -223,7 +223,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
-
+        
+    if utterance == "什麼是[台灣Pay/TWQR]":
+        if CHATBOT_MODE:
+            if '灣' and 'pay' in args[0].lower() or 'twqr' in args[0].lower():
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+        
     if utterance == "什麼是[玉山][行動銀行]":
         if CHATBOT_MODE:
             if '玉山' in args[0] and args[1] == '行動銀行':
