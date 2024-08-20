@@ -322,9 +322,18 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             if args[0] == '付款碼':
                 resultDICT["response"] = getResponse(utterance, args)
+            elif args[0] == '無卡提款':
+                resultDICT["response"] = getResponse("如何使用[無卡提款]", args)
         else:
             pass
-
+        
+    if utterance == "如何使用[QR Code]繳費":
+        if CHATBOT_MODE:
+            if 'qr' in args[0]:
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+        
     if utterance == "如何使用[手機號碼]收款":
         if CHATBOT_MODE:
             if '手機' in args[0]:
@@ -387,7 +396,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
-
+        
+    if utterance == "如何產製[玉山][行動銀行]之[QR Code]轉帳收款[碼]":
+        if CHATBOT_MODE:
+            if '玉山' in args[0] and args[1] in ['行動銀行', 'app'] and 'qr' in args[2]:
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+        
     if utterance == "如何在[付款碼(台灣Pay)/TWQR][功能][中]新增或刪除[電子][發票載具]":
         if CHATBOT_MODE:
             if '灣' and 'pay' in args[0].lower() or 'twqr' in args[0].lower() and '載具' in args[4]:
@@ -462,6 +478,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             if args[0] == '簡易' and args[1] == '密碼':
                 resultDICT["response"] = getResponse(utterance, args)
+            elif '圖形' in args[1]:
+                resultDICT["response"] = getResponse("如何設定[圖形密碼]", args)
         else:
             pass
 
@@ -513,9 +531,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "如何隱藏[圖形密碼][軌跡]":
+    if utterance == "如何隱藏[圖形密碼]":
         if CHATBOT_MODE:
-            if '圖形' or '密碼' in args[0] and args[1] == '軌跡':
+            if '圖形' or '密碼' in args[0]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -674,12 +692,23 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "若重複繳費怎麼辦":
+    if utterance == "[TWQR]若重複繳費怎麼辦":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '功能':
+                if 'twqr' in inputSTR or ('灣' and 'pay' in inputSTR):
+                    resultDICT["response"] = getResponse(utterance, args)
+            elif 'twqr' in args[0] or ('灣' and 'pay' in args[0]):
+                resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
-
+        
+    if utterance == "[QR Code]繳費[功能]若重複繳費怎麼辦":
+        if CHATBOT_MODE:
+            if 'qr' in args[0]:
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+        
     if utterance == "轉帳[紀錄]沒有顯示在[最近]轉帳列表":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
