@@ -212,50 +212,44 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "[玉山][電子]支付[帳戶][可以]綁定幾[組]提領[帳號]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '玉山' in args[0] and args[1] == '電子' and args[2] and args[5] in ['帳戶', '帳號', '戶頭']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[玉山][電子]支付[帳戶]提領[是]否[會]被收取[手續費]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '玉山' in args[0] and args[1] == '電子' and args[2] in ['帳戶', '帳號', '戶頭'] and args[5] == '手續費':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[玉山][電子]支付[帳戶]是什麼":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '玉山' in args[0] and args[1] == '電子' and args[2] in ['帳戶', '帳號', '戶頭']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[玉山][電子]支付[帳戶]的[交易限額]是多少":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '玉山' in args[0] and args[1] == '電子' and args[2] in ['帳戶', '帳號', '戶頭'] and '限額' in args[3]:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[玉山][電子]支付[帳戶款項]轉出完成[後][銀行][帳號備註欄位]為何":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '玉山' in args[0] and args[1] == '電子' and args[2] in ['帳戶', '帳號', '戶頭'] and '備註' in args[5]:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[玉山][電子]支付[簡訊]驗證[是]否有[次數][上][限]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '玉山' in args[0] and args[1] == '電子' and args[2] == '簡訊' and args[3] == '次數':
+                resultDICT["response"] = getResponse(utterance, args)                
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[該]如何使用[玉山Wallet][電子]支付於日本[PayPay][掃碼]付服務呢":
@@ -268,26 +262,23 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "[身分證]認證[是]否有[次數]限制":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '身分證' and args[2] == '次數':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[身分證]認證若[多次]認證[失敗][該]怎麼辦":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '身分證' and args[2] == '失敗':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[電子]支付儲值[是]否[會]被收取[手續費]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '電子' and args[3] == '手續費':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "使用[玉山Wallet][電子]支付[交易][失敗]怎麼辦":
@@ -326,16 +317,13 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "儲值完成[後][銀行][帳號備註欄位]為何":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '備註' in args[2]:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "哪些[PayPay][通路][可以]使用":
@@ -351,8 +339,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if 'wallet' in args[0]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "啟用審核[中]請[稍後]再試":
@@ -363,106 +349,93 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "多[久][才能]收到[玉山][電子]支付—跨境網購服務的[退款]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '玉山' in args[2] and args[3] == '電子' and args[4] == '退款':
+                resultDICT["response"] = getResponse(utterance, args)                
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
-    if utterance == "如何了解[樂享優惠][活動]":
+    if utterance == "如何了解[樂享優惠]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '樂享' in args[0]:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
-    if utterance == "如何使用[獨樂樂]的[購物金]":
+    if utterance == "如何使用獨樂樂的[購物金]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] in ['購物金', '抵用金']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "如何使用[玉山Wallet][電子]支付綁定[水]/[電號]並設定繳款提醒通知":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if 'wallet' in args[0] and args[1] == '電子' and args[2] and args[3] in ['水號', '電號', '水', '電']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "如何使用[玉山Wallet][電子]支付綁定[水號]並設定繳款提醒通知":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if 'wallet' in args[0] and args[1] == '電子' and args[2] in ['水號', '電號']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "如何使用[玉山Wallet][電子]支付進行繳費":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if 'wallet' in args[0] and args[1] == '電子':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
-    if utterance == "如何使用[玉山][電子]支付—跨境網購[超商]繳費(不取貨)":
+    if utterance == "如何使用[玉山]電子支付—跨境網購[超商]繳費":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '玉山' in args[0]:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "如何使用[玉山][電子]支付—跨境網購轉帳付款":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '玉山' in args[0] and args[1] == '電子':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "如何提供[玉山][電子]支付補件[資料]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '玉山' in args[0] and args[1] == '電子':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "如何提升[玉山][電子]支付的[交易限額]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '玉山' in args[0] and args[1] == '電子' and '限' or '額' in args[2]:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "如何提領[玉山][電子]支付[帳戶][餘額]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '玉山' in args[0] and args[1] == '電子' and args[3] == '餘額':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "如何查詢[活動]已結束超過[六個月]的[活動]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[2] == '活動' and args[1] in ['六個月', '半年']:
+                resultDICT["response"] = getResponse(utterance, args)   
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "如何查詢[玉山Wallet][電子]支付繳費[紀錄]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if 'wallet' in args[0] and args[1] == '電子':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "如何查詢[玉山][電子]支付—跨境網購[交易][紀錄]與[訂單][狀況]":
@@ -475,35 +448,30 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "如何綁定[郵局帳戶]":
         if CHATBOT_MODE:
-            if '郵' in args[0]:
+            if '郵局' in args[0]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "如何設定[玉山][電子]支付[帳戶]的常用提領[銀行][帳戶]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '玉山' in args[0] and args[1] == '電子' and args[2] and args[4] in ['帳戶', '帳號', '戶頭']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "如何註冊[玉山][電子]支付[帳戶]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '玉山' in args[0] and args[1] == '電子' and args[2] in ['帳戶', '帳號', '戶頭']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "如何變更[玉山][電子]支付[帳戶][手機號碼]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '玉山' in args[0] and args[1] == '電子' and args[2] in ['帳戶', '帳號', '戶頭'] and '手機' or '電話' in args[3]:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "如何進行[外匯]申報":
@@ -515,10 +483,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "如何進行[玉山][電子]支付[帳戶]儲值":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '玉山' in args[0] and args[1] == '電子' and args[2] in ['帳戶', '帳號', '戶頭']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "如何進行[玉山][電子]支付[行動][電話]驗證[人工]審核":
@@ -531,10 +498,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "如何驗證[玉山][電子]支付[帳戶][姓名]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '玉山' in args[0] and args[1] == '電子' and args[2] in ['帳戶', '帳號', '戶頭'] and args[3] in ['姓名', '名字', '姓氏']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "忘記[玉山][電子]支付[網站帳戶]登入的[會員][序號]怎麼辦":
@@ -587,10 +553,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "未收到[玉山][電子]支付[Email]驗證信[該]怎麼辦":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '玉山' in args[0] and args[1] == '電子' and 'mail' in args[2]:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "沒有收到[驗證碼][簡訊][該]怎麼辦":
@@ -617,20 +582,18 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             # resultDICT[key].append(value)
             pass
 
-    if utterance == "為什麼[我]沒收到[玉山][電子]支付[帳戶]推播[訊息]":
+    if utterance == "為什麼[我]沒收到[玉山][電子]支付[帳戶]推播":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '玉山' in args[1] and args[2] == '電子':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
-    if utterance == "為什麼[玉山][電子]支付[身分][證]驗證[會][失敗]":
+    if utterance == "為什麼[玉山][電子]支付身分證驗證[會][失敗]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '玉山' in args[0] and args[1] == '電子' and args[3] == '失敗':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "為什麼[玉山][電子]支付[身分]認證[結果]顯示註冊[資料]審核[中]":
@@ -699,34 +662,30 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "為何無法找到[樂享優惠專區]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '樂享' in args[0]:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "由[店家]掃描[手機條碼]的付款[方式]為何":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '手機' or '條碼' in args[1]:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "誰[可以]使用[玉山Wallet][電子]支付":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if 'wallet' in args[1] and args[2] == '電子':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "誰[可以]使用[玉山][電子]支付跨境網購服務":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '玉山' in args[0] and args[1] == '電子':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "跨境網購[是]否有[額度]限制":
@@ -749,12 +708,10 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "跨境網購服務[身分]驗證[結果]顯示「[電支帳戶姓名]未通過驗證」怎麼辦":
+    if utterance == "電支帳戶姓名未通過驗證":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "跨境網購服務[身分]驗證時出現[系統]維護[作業][畫面][我][該]如何處理":
@@ -773,10 +730,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "跨境網購服務為什麼需要[外匯]申報":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '外匯':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "跨境網購的[超商]繳費[是]否[會]收取[手續費]":
@@ -795,19 +751,20 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "跨境網購的轉帳付款及[超商]繳費[是]否[會]收取[手續費]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '超商' and args[3] == '手續費':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "退款[匯率]如何計算":
         if CHATBOT_MODE:
-            if 'wallet' in inputSTR and args[0] == '匯率':
-                resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '匯率':
+                if 'paypay' in inputSTR:
+                    resultDICT["response"] = getResponse("玉山Wallet電子支付退款匯率如何換算", args)
+                elif '跨境網購' in inputSTR:
+                    resultDICT["response"] = getResponse("跨境網購服務(轉帳付款/超商繳費)的退款匯率如何計算", args)
+                    
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "退款[會]退到哪裡":
