@@ -190,87 +190,6 @@
         ]
     },
     "utterance": {
-        "手續費會退嗎": {
-            "id": "4eee93b6-e3b5-4bc2-823a-c51e2b9ba11b",
-            "argument": [
-                {
-                    "pos": "UserDefined",
-                    "text": "手續費",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "MODAL",
-                    "text": "會",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "給退",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "撤",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "後退",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "欲退",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "退兵",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "退了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "撤兵",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "任退",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "退去",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "退到",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "退",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_YesNoQ",
-                    "text": "嗎",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
         "退款會退到哪裡": {
             "id": "3d794426-7bb6-46a2-a188-2ec3fb8f90a9",
             "argument": [
@@ -1341,6 +1260,161 @@
                 {
                     "pos": "CLAUSE_WhatQ",
                     "text": "甚麼",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "退款時手續費會退嗎": {
+            "id": "beea0fbc-1233-4d55-aaa8-a725ce0972ae",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "退還",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "退錢",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "退貨",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "充值",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退稅",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "儲值",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退費",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "付款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "開戶",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "訂位",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退票",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "理賠",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "退款",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "時",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "手續費",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "會",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "給退",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "撤",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "後退",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "欲退",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退兵",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "撤兵",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "任退",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退到",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "退",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_YesNoQ",
+                    "text": "嗎",
                     "checked": false,
                     "checkbox": false
                 }

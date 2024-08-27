@@ -75,7 +75,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "[手續費][會]退嗎":
+    if utterance == "退款時[手續費][會]退嗎":
         if CHATBOT_MODE:
             if args[0] == '手續費':
                 resultDICT["response"] = getResponse(utterance, args)
