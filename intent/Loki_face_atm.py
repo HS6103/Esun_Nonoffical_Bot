@@ -51,6 +51,9 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
+    for i in range(len(args)):
+        args[i] = args[i].lower().strip(' ')   # 前處理，把argument變小寫並去頭尾空格
+    
     if utterance == "[別人]拿[我]的[照片]來使用刷臉提款怎麼辦":
         if CHATBOT_MODE:
             if args[1] == '我' and args[2] in ['照片', '相片']:
@@ -113,7 +116,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "想更新刷臉[ID]":
         if CHATBOT_MODE:
-            if args[0].lower() == 'id':
+            if args[0] == 'id':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -138,7 +141,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "設定刷臉[ID]有無[特殊][注意事項]":
         if CHATBOT_MODE:
-            if args[0].lower() == 'id' and args[2] in ['注意事項', '規定']:
+            if args[0] == 'id' and args[2] in ['注意事項', '規定']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -149,5 +152,24 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
-
+        
+    if utterance == "[外國人][能]否使用刷臉提款":
+        if CHATBOT_MODE:
+            if '國' or '民' in args[0]:
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+        
+    if utterance == "[美國][人][能]否使用刷臉提款":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+        
+    if utterance == "身份證字號重號[能]否使用刷臉提款":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+        
     return resultDICT

@@ -51,9 +51,12 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
+    for i in range(len(args)):
+        args[i] = args[i].lower().strip(' ')   # 前處理，把argument變小寫並去頭尾空格
+    
     if utterance == "[APP]預約[行動]無卡提款需於多[久][時間][內]至[ATM]進行交易":
         if CHATBOT_MODE:
-            if args[3] == '時間' and args[5].lower() in userDefinedDICT['atm']:
+            if args[3] == '時間' and args[5] in userDefinedDICT['atm']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -74,7 +77,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "[可以]至[他][行][ATM]進行跨行無卡提款嗎":
         if CHATBOT_MODE:
-            if args[1] == '他' and args[2] == '行' and args[3].lower() in userDefinedDICT['atm']:
+            if args[1] == '他' and args[2] == '行' and args[3] in userDefinedDICT['atm']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -123,14 +126,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "[玉山][ATM][可以]進行跨行無卡提款嗎":
         if CHATBOT_MODE:
-            if '玉山' in args[0] and args[1].lower() in userDefinedDICT['atm']:
+            if '玉山' in args[0] and args[1] in userDefinedDICT['atm']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
     if utterance == "[玉山][顧客][可以]至[他][行][ATM]進行跨行無卡提款嗎":
         if CHATBOT_MODE:
-            if '玉山' in args[0] and args[3] == '他' and args[5].lower() in userDefinedDICT['atm']:
+            if '玉山' in args[0] and args[3] == '他' and args[5] in userDefinedDICT['atm']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass

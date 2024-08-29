@@ -51,6 +51,9 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
+    for i in range(len(args)):
+        args[i] = args[i].lower().strip(' ')   # 前處理，把argument變小寫並去頭尾空格
+    
     if utterance == "[公司]貸款跟[個人]貸款有什麼不[一樣]":
         if CHATBOT_MODE:
             if (args[0] == '公司' and args[1] == '個人') or (args[0] == '個人' and args[1] == '公司'):

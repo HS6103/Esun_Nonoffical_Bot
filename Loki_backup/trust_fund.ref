@@ -6,6 +6,20 @@
         "intent": "1.0"
     },
     "user_defined": {
+        "ie": [
+            "internet explorer 11",
+            "ie 11"
+        ],
+        "qr": [
+            "qr code",
+            "qrcode",
+            "qr碼",
+            "qr 碼"
+        ],
+        "atm": [
+            "自動櫃員機",
+            "atm"
+        ],
         "loan": [
             "提前清償違約金",
             "指數型房貸",
@@ -16,47 +30,64 @@
             "自購住宅補貼貸款",
             "個人信貸",
             "信用貸款",
-            "留學貸款"
+            "留學貸款",
+            "房屋貸款",
+            "個人信用貸款"
+        ],
+        "as_adj": [
+            "快捷"
+        ],
+        "webatm": [
+            "web atm",
+            "webatm"
         ],
         "as_noun": [
-            "Internet Explorer 11",
-            "PayPal",
-            "windows 7",
+            "水電費",
+            "身分證",
+            "應用程式",
+            "後果",
             "他益信託",
             "信託",
+            "存款帳戶",
+            "存戶",
             "全權委託保管機構",
             "兩岸支付通",
             "利息",
             "勞動保障卡",
             "協定",
             "台幣",
-            "國外",
             "基金保管機構",
             "報酬率",
             "定存",
+            "活存",
+            "交易額度",
+            "信貸",
+            "信用貸款",
+            "型號",
             "密碼",
             "對帳單",
             "帳單",
             "平台",
             "抵用金",
             "支付寶",
-            "收件地址",
+            "地址",
             "新台幣",
+            "保費",
             "明細",
             "樂享優惠專區",
             "模式",
             "注意事項",
-            "海外ETF",
-            "海外債券",
             "淘寶網",
+            "身份證字號",
             "無卡交易",
             "獨樂樂",
+            "中國人壽",
+            "凱基人壽",
             "玉山",
             "玉山銀行",
             "玉山Wallet",
             "玉山全球通",
             "玉山掃碼通",
-            "玉山理財電子週報",
             "現鈔",
             "眾樂樂",
             "綜合對帳單",
@@ -78,18 +109,12 @@
             "圖形密碼",
             "系統",
             "使用者名稱",
-            "台灣Pay",
             "指紋",
             "Touch ID",
             "Face ID",
             "數位帳戶",
             "自然人憑證",
             "照片",
-            "街口支付",
-            "一卡通Money",
-            "Apple Pay",
-            "Samsung Pay",
-            "Google Pay",
             "悠遊簽帳金融卡",
             "活期存款",
             "定期存款",
@@ -109,6 +134,7 @@
             "在學證明",
             "手機號碼",
             "店家",
+            "淨值",
             "無卡提款",
             "新式統一證號",
             "晶片卡",
@@ -127,22 +153,40 @@
             "樂享優惠",
             "定義",
             "數位",
+            "視窗",
             "通訊地址",
             "幣別",
-            "特店"
+            "特店",
+            "*",
+            "-"
         ],
         "insurance": [
             "強制汽/機車責任保險",
             "旅行平安保險",
             "強制汽機車責任保險",
-            "年金首期",
-            "續期每月定額",
+            "每月定額",
             "旅行綜合險",
             "利率變動型年金保險",
             "終身醫療保險",
-            "中國人壽",
-            "凱基人壽",
-            "旅行平安險"
+            "旅行平安險",
+            "旅平險",
+            "強制汽機車責任險"
+        ],
+        "windows 7": [
+            "win 7",
+            "windows 7"
+        ],
+        "as_payment": [
+            "街口支付",
+            "一卡通money",
+            "apple pay",
+            "samsung pay",
+            "google pay",
+            "台灣pay",
+            "臺灣pay",
+            "paypal",
+            "台灣 pay",
+            "臺灣 pay"
         ]
     },
     "utterance": {
@@ -353,234 +397,9 @@
                 }
             ]
         },
-        "有價證券信託的定義": {
-            "id": "eef6330a-c6aa-4ce5-ac33-02c0719fcef7",
+        "信託業務包含哪些": {
+            "id": "6568492d-7fe5-47d7-8d24-d12847e32662",
             "argument": [
-                {
-                    "pos": "MODIFIER",
-                    "text": "有價",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nounHead",
-                    "text": "證券",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "信託",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "的",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "定義",
-                    "checked": true,
-                    "checkbox": true
-                }
-            ]
-        },
-        "儲蓄信託最大特色為何": {
-            "id": "852bc2f4-ee51-4b25-a6a9-605aa38b3f09",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "積蓄",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "積攢",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "放款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "擔保",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "負債",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "借貸",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "養老",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "理財",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "放貸",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "信貸",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "按揭",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "貸款",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "儲蓄",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "信託",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "DegreeP",
-                    "text": "最大",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "特色",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "CLAUSE_WhyQ",
-                    "text": "為何",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "員工持股最大特色為何": {
-            "id": "4ea54688-4bc3-4efb-8fc1-e5cb4840b97b",
-            "argument": [
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "員工",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "增持",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "控股",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "增資",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "減持",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "入股",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "認購",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "投資",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "回購",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "配售",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "買進",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "持股",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "DegreeP",
-                    "text": "最大",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "特色",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "CLAUSE_WhyQ",
-                    "text": "為何",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "本行信託業務包含哪些": {
-            "id": "eac4e1db-2148-4bc3-b466-76c812fffc1d",
-            "argument": [
-                {
-                    "pos": "ENTITY_DetPhrase",
-                    "text": "本行",
-                    "checked": false,
-                    "checkbox": false
-                },
                 {
                     "pos": "UserDefined",
                     "text": "信託",
@@ -779,15 +598,322 @@
                 }
             ]
         },
-        "本行目前可辦理哪些保管業務": {
-            "id": "6f2b81e4-a514-4375-b1f2-3eb27f720c06",
+        "儲蓄信託最大特色": {
+            "id": "1445b54f-6428-4405-a8c9-244bd742d7be",
             "argument": [
                 {
-                    "pos": "ENTITY_DetPhrase",
-                    "text": "本行",
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "積蓄",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "積攢",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "貸款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "擔保",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "信貸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "理財",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "養老",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "負債",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "放貸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "放款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "借貸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "按揭",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "儲蓄",
                     "checked": false,
                     "checkbox": false
                 },
+                {
+                    "pos": "UserDefined",
+                    "text": "信託",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "DegreeP",
+                    "text": "最大",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "特色",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "員工持股最大特色": {
+            "id": "c8999a67-0845-4ee9-95a6-f696b56c095d",
+            "argument": [
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "員工",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "增持",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "控股",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "增資",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "減持",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "入股",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "認購",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "投資",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "回購",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "配售",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "買進",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "持股",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "DegreeP",
+                    "text": "最大",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "特色",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "有價證券信託的定義": {
+            "id": "eef6330a-c6aa-4ce5-ac33-02c0719fcef7",
+            "argument": [
+                {
+                    "pos": "MODIFIER",
+                    "text": "有價",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nounHead",
+                    "text": "證券",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "信託",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "定義",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "何謂自益信託他益信託": {
+            "id": "0f51f6b2-0ee5-4cea-9928-02f2dde193a3",
+            "argument": [
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "何",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "宣判",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "拼讀",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "演說",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "談到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "辯護",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "顧忌",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "致也",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "謂選",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "謂用",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "謂愛",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "謂了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "謂保",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "共知",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "謂得",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "去診",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "謂",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "自益信託",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "他益信託",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "目前可辦理哪些保管業務": {
+            "id": "487e7500-2b54-4f4c-80a2-617c50a577f2",
+            "argument": [
                 {
                     "pos": "TIME_justtime",
                     "text": "目前",
@@ -814,6 +940,11 @@
                             "checked": false
                         },
                         {
+                            "text": "辦理了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "受理",
                             "level": "word2vec",
                             "checked": false
@@ -824,27 +955,7 @@
                             "checked": false
                         },
                         {
-                            "text": "辦理了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "試辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "承辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉行",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "自辦",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -854,12 +965,27 @@
                             "checked": false
                         },
                         {
+                            "text": "實施",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "自辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉行",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "申請",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "實施",
+                            "text": "試辦",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -963,17 +1089,22 @@
                             "checked": false
                         },
                         {
+                            "text": "存放",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "轉交",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "領回",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "收存",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存放",
+                            "text": "保管著",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -983,7 +1114,12 @@
                             "checked": false
                         },
                         {
-                            "text": "轉交",
+                            "text": "收存",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "銷毀",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1001,16 +1137,6 @@
                             "text": "寄放",
                             "level": "word2vec",
                             "checked": false
-                        },
-                        {
-                            "text": "保管著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "銷毀",
-                            "level": "word2vec",
-                            "checked": false
                         }
                     ],
                     "text": "保管",
@@ -1020,6 +1146,328 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "業務",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "員工持股/儲蓄信託之優點": {
+            "id": "9bda2861-b144-4220-9648-8816d843b729",
+            "argument": [
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "員工",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "增持",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "控股",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "增資",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "減持",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "入股",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "認購",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "投資",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "回購",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "配售",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "買進",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "持股",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": "/",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "積蓄",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "積攢",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "放款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "擔保",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "負債",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "借貸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "養老",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "理財",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "放貸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "信貸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "按揭",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "貸款",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "儲蓄",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "信託",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "之",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "優點",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "員工持股/儲蓄信託最大特色": {
+            "id": "7575d9ca-22e1-4228-ab5e-15a174128797",
+            "argument": [
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "員工",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "增持",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "控股",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "增資",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "減持",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "入股",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "認購",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "投資",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "回購",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "配售",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "買進",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "持股",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": "/",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "積蓄",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "積攢",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "貸款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "擔保",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "信貸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "理財",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "養老",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "負債",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "放貸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "放款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "借貸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "按揭",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "儲蓄",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "信託",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "DegreeP",
+                    "text": "最大",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "特色",
                     "checked": true,
                     "checkbox": true
                 }
@@ -1353,340 +1801,6 @@
                         }
                     ],
                     "text": "保障",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "員工持股/儲蓄信託之優點為何": {
-            "id": "ea0ebc37-3996-4fcc-ad78-56fcf553f94f",
-            "argument": [
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "員工",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "增持",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "控股",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "增資",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "減持",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "入股",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "認購",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "投資",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "回購",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "配售",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "買進",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "持股",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "PUNCTUATION",
-                    "text": "/",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "積蓄",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "積攢",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "貸款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "擔保",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "信貸",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "理財",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "養老",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "負債",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "放貸",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "放款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "借貸",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "按揭",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "儲蓄",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "信託",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "之",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "優點",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "CLAUSE_WhyQ",
-                    "text": "為何",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "員工持股/儲蓄信託最大特色為何": {
-            "id": "eff271dc-1654-48d4-afdd-b3bd7c7da7e1",
-            "argument": [
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "員工",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "增持",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "控股",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "增資",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "減持",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "入股",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "認購",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "投資",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "回購",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "配售",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "買進",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "持股",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "PUNCTUATION",
-                    "text": "/",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "積蓄",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "積攢",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "放款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "擔保",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "負債",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "借貸",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "養老",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "理財",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "放貸",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "信貸",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "按揭",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "貸款",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "儲蓄",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "信託",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "DegreeP",
-                    "text": "最大",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "特色",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "CLAUSE_WhyQ",
-                    "text": "為何",
                     "checked": false,
                     "checkbox": false
                 }

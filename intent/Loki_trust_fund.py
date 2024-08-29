@@ -79,7 +79,15 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "何謂[信託]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] in ['信託', '全權委託保管機構', '基金保管機構', '自益信託', '他益信託']:
+                resultDICT["response"] = getResponse("何謂[{}]".format(args[0]), args)
+        else:
+            pass
+        
+    if utterance == "何謂[自益信託][他益信託]":
+        if CHATBOT_MODE:
+            if args[0] and args[1] in ['自益信託', '他益信託']:
+                resultDICT["response"] = "關於{}和{}，說明如下~\n\n" + getResponse(utterance, args)
         else:
             pass
 
@@ -96,28 +104,28 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "儲蓄信託最大[特色]為何":
+    if utterance == "儲蓄信託最大[特色]":
         if CHATBOT_MODE:
             if args[0] in ['特色', '特點']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
-    if utterance == "員工持股/儲蓄信託之[優點]為何":
+    if utterance == "員工持股/儲蓄信託之[優點]":
         if CHATBOT_MODE:
             if args[0] in ['優點', '好處', '優勢', '利多']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
-    if utterance == "員工持股/儲蓄信託最大[特色]為何":
+    if utterance == "員工持股/儲蓄信託最大[特色]":
         if CHATBOT_MODE:
             if args[0] in ['特色', '特點']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
-    if utterance == "員工持股最大[特色]為何":
+    if utterance == "員工持股最大[特色]":
         if CHATBOT_MODE:
             if args[0] in ['特色', '特點']:
                 resultDICT["response"] = getResponse(utterance, args)
@@ -131,14 +139,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "本行[目前][可]辦理哪些保管[業務]":
+    if utterance == "[目前][可]辦理哪些保管[業務]":
         if CHATBOT_MODE:
             if args[2] == '業務':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
-    if utterance == "本行信託[業務]包含哪些":
+    if utterance == "信託[業務]包含哪些":
         if CHATBOT_MODE:
             if args[0] == '業務':
                 resultDICT["response"] = getResponse(utterance, args)

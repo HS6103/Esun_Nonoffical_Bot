@@ -141,6 +141,9 @@ def getCorrectTime(time1="", time2="", openTime=None, closeTime=None, weekendOff
         
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
+    for i in range(len(args)):
+        args[i] = args[i].lower().strip(' ')   # 前處理，把argument變小寫並去頭尾空格
+    
     if utterance == "[下午6點]至[網路銀行]買/賣[外幣][交易額度]是算在[明天]嗎":
         if CHATBOT_MODE:
             if args[1] in ['網路銀行', '網銀'] and '額度' in args[3]:

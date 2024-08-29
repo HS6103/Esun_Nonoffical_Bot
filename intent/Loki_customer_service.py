@@ -51,6 +51,9 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
+    for i in range(len(args)):
+        args[i] = args[i].lower().strip(' ')   # 前處理，把argument變小寫並去頭尾空格
+    
     if utterance == "玉山電話銀行台幣綜合存轉[定存]服務相關規定":
         if CHATBOT_MODE:
             if args[1] in ['定存', '定期存款']:

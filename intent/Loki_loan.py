@@ -51,16 +51,19 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
+    for i in range(len(args)):
+        args[i] = args[i].lower().strip(' ')   # 前處理，把argument變小寫並去頭尾空格
+    
     if utterance == "[MyData]服務[會]取得哪些[資料]":
         if CHATBOT_MODE:
-            if args[0].lower().strip(' ') in ['my data', 'mydata'] and '資' in args[2]:
+            if args[0] in ['my data', 'mydata'] and '資' in args[2]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
     if utterance == "[MyData]服務[會]取得那些[資料]":
         if CHATBOT_MODE:
-            if args[0].lower().strip(' ') in ['my data', 'mydata'] and '資' in args[2]:
+            if args[0] in ['my data', 'mydata'] and '資' in args[2]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -183,14 +186,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "[可][否]以[有條件式入學許可]([conditional offer])申請本貸款":
         if CHATBOT_MODE:
-            if args[2].lower().strip(' ') and args[3].lower().strip(' ') in ['有條件式入學許可', 'conditional offer']:
+            if args[2] and args[3] in ['有條件式入學許可', 'conditional offer']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
     if utterance == "[可][否]以[有條件式入學許可]申請本貸款":
         if CHATBOT_MODE:
-            if args[2].lower().strip(' ') in ['有條件式入學許可', 'conditional offer']:
+            if args[2] in ['有條件式入學許可', 'conditional offer']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -439,14 +442,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "使用[MyData]服務取得[相關][財證]時若發生[系統][異常]導至無法授權或授權[失敗][該]怎麼辦":
         if CHATBOT_MODE:
-            if args[0].lower().strip(' ') in ['my data', 'mydata']:
+            if args[0] in ['my data', 'mydata']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
     if utterance == "使用[MyData]服務提供[玉山銀行]取用個人[資料][可]在哪裡查詢":
         if CHATBOT_MODE:
-            if args[0].lower().strip(' ') in ['my data', 'mydata'] and '玉山' in args[1]:
+            if args[0] in ['my data', 'mydata'] and '玉山' in args[1]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -474,21 +477,21 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "如何使用[玉山銀行][IXML]":
         if CHATBOT_MODE:
-            if '玉山' in args[0] and args[1].lower().strip(' ') == 'ixml':
+            if '玉山' in args[0] and args[1] == 'ixml':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
     if utterance == "如何申請[玉山銀行][IXML]":
         if CHATBOT_MODE:
-            if '玉山' in args[0] and args[1].lower().strip(' ') == 'ixml':
+            if '玉山' in args[0] and args[1] == 'ixml':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
         
     if utterance == "如何申請/使用[玉山銀行][IXML]":
         if CHATBOT_MODE:
-            if '玉山' in args[0] and args[1].lower().strip(' ') == 'ixml':
+            if '玉山' in args[0] and args[1] == 'ixml':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -502,7 +505,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "如何透過[MyData]服務[將]個人[資料]給[玉山銀行]":
         if CHATBOT_MODE:
-            if args[0].lower().strip(' ') in ['my data', 'mydata'] and '玉山' in args[3]:
+            if args[0] in ['my data', 'mydata'] and '玉山' in args[3]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -567,7 +570,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "沒收到[MyData][平台]與[玉山]取檔[成功]的[簡訊]通知卻收到補件通知":
         if CHATBOT_MODE:
-            if args[0].lower().strip(' ') in ['my data', 'mydata'] and '玉山' in args[2]:
+            if args[0] in ['my data', 'mydata'] and '玉山' in args[2]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass

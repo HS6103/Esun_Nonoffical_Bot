@@ -51,6 +51,9 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
+    for i in range(len(args)):
+        args[i] = args[i].lower().strip(' ')   # 前處理，把argument變小寫並去頭尾空格
+    
     if utterance == "[何]謂[基金]之[轉換]":
         if CHATBOT_MODE:
             if args[1] == '基金' and args[2] == '轉換':
@@ -109,28 +112,28 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "[海外][ETF]/[股票][交易][時間]為何":
         if CHATBOT_MODE:
-            if args[0] == '海外' and (args[1].lower() and args[2].lower() in ['etf','股票']) and args[3] == '交易' and '時' in args[4]:
+            if args[0] == '海外' and (args[1] and args[2] in ['etf','股票']) and args[3] == '交易' and '時' in args[4]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
     if utterance == "[海外][ETF]/[股票]有哪些[投資市場][可]提供選擇":
         if CHATBOT_MODE:
-            if args[0] == '海外' and (args[1].lower() and args[2].lower() in ['etf','股票']) and '市場' in args[4]:
+            if args[0] == '海外' and (args[1] and args[2] in ['etf','股票']) and '市場' in args[4]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
     if utterance == "[海外][ETF][交易][時間]為何":
         if CHATBOT_MODE:
-            if args[0] == '海外' and (args[1].lower() and args[2].lower() in ['etf','股票']) and '市場' in args[4]:
+            if args[0] == '海外' and (args[1] and args[2] in ['etf','股票']) and '市場' in args[4]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
     if utterance == "[海外][ETF]有哪些[投資市場][可]提供選擇":
         if CHATBOT_MODE:
-            if args[0] == '海外' and args[1].lower() in ['etf','股票'] and '市場' in args[3]:
+            if args[0] == '海外' and args[1] in ['etf','股票'] and '市場' in args[3]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -279,7 +282,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "如何決定[海外ETF]/[股票]的委託[價格]":
         if CHATBOT_MODE:
-            if args[0] == '海外' and (args[1].lower() and args[2].lower() in ['etf','股票']) and '價' in args[3]:
+            if args[0] == '海外' and (args[1] and args[2] in ['etf','股票']) and '價' in args[3]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -300,7 +303,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "如何買賣[海外][ETF]":
         if CHATBOT_MODE:
-            if args[0] == '海外' and args[1].lower() == 'etf':
+            if args[0] == '海外' and args[1] == 'etf':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -334,14 +337,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "投資[海外][ETF]/[股票]所需負擔的稅負為何":
         if CHATBOT_MODE:
-            if args[0] == '海外' and (args[1].lower() and args[2].lower() in ['etf','股票']):
+            if args[0] == '海外' and (args[1] and args[2] in ['etf','股票']):
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
     if utterance == "投資[海外][ETF]所需負擔的稅負為何":
         if CHATBOT_MODE:
-            if args[0] == '海外' and args[1].lower() in ['etf','股票']:
+            if args[0] == '海外' and args[1] in ['etf','股票']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass

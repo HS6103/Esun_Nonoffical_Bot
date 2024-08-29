@@ -51,6 +51,8 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
+    for i in range(len(args)):
+        args[i] = args[i].lower().strip(' ')   # 前處理，把argument變小寫並去頭尾空格
 
     if utterance == "[Email]驗證超過限制[次數]怎麼辦":
         if CHATBOT_MODE:

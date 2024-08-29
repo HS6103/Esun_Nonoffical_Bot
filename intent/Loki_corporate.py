@@ -51,7 +51,9 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
-    debugInfo(inputSTR, utterance)
+    for i in range(len(args)):
+        args[i] = args[i].lower().strip(' ')   # 前處理，把argument變小寫並去頭尾空格
+        
     if utterance == "[可以]透過哪些[方式]開發信用狀":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)

@@ -51,33 +51,36 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
+    for i in range(len(args)):
+        args[i] = args[i].lower().strip(' ')   # 前處理，把argument變小寫並去頭尾空格
+    
     if utterance == "[Edge][瀏覽器]無法[正常]顯示[玉山][WebATM]":
         if CHATBOT_MODE:
-            if args[0].lower() == 'edge' and '玉山' in args[2] and args[3].lower() in userDefinedDICT['webatm']:
+            if args[0] == 'edge' and '玉山' in args[2] and args[3] in userDefinedDICT['webatm']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
     if utterance == "[Linux][上]使用[玉山][WebATM]服務的[基本][需求]":
         if CHATBOT_MODE:
-            if '玉山' in args[2] and args[3].lower() in userDefinedDICT['webatm'] and args[4] in ['需求', '條件']:          
-                if args[0].lower() == 'linux':
+            if '玉山' in args[2] and args[3] in userDefinedDICT['webatm'] and args[4] in ['需求', '條件']:          
+                if args[0] == 'linux':
                     resultDICT["response"] = getResponse(utterance, args)
-                elif 'mac' or 'ios' in args[0].lower():
+                elif 'mac' or 'ios' in args[0]:
                     resultDICT["response"] = getResponse('[mac][上]使用[玉山][WebATM]服務的[基本][需求]', args)
         else:
             pass
 
     if utterance == "[TLS]加密通訊[協定]調整教學":
         if CHATBOT_MODE:
-            if args[0].lower() == 'tls':
+            if args[0] == 'tls':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
     if utterance == "[WebATM]轉帳[成功][對方]卻表示未入帳怎麼辦":
         if CHATBOT_MODE:
-            if args[0].lower() in userDefinedDICT['webatm'] and args[1] == '完成':
+            if args[0] in userDefinedDICT['webatm'] and args[1] == '完成':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -119,14 +122,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "「[玉山][WebATM]」[可以]在[國][外]使用嗎":
         if CHATBOT_MODE:
-            if args[1].lower() in userDefinedDICT['webatm'] and args[3] in ['國', '境', '海'] and args[2] == '外':
+            if args[1] in userDefinedDICT['webatm'] and args[3] in ['國', '境', '海'] and args[2] == '外':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
     if utterance == "「[玉山][WebATM]」有轉帳[金額]的[限制]嗎":
         if CHATBOT_MODE:
-            if '玉山' in args[0] and args[1].lower() in userDefinedDICT['webatm'] and args[2] == '金額' and '限' in args[3]:
+            if '玉山' in args[0] and args[1] in userDefinedDICT['webatm'] and args[2] == '金額' and '限' in args[3]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -147,7 +150,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "什麼是[玉山][WebATM]":
         if CHATBOT_MODE:
-            if '玉山' in args[0] and args[1].lower() in userDefinedDICT['webatm']:
+            if '玉山' in args[0] and args[1] in userDefinedDICT['webatm']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -161,7 +164,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "使用[Internet Explorer 11]為何[WebATM][網頁]無法[正常]顯示[網頁]":
         if CHATBOT_MODE:
-            if args[0].lower() in userDefinedDICT['ie']:
+            if args[0] in userDefinedDICT['ie']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -175,35 +178,35 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "使用[玉山][WebATM]服務的[基本][條件]":
         if CHATBOT_MODE:
-            if '玉山' in args[0] and args[1].lower() in userDefinedDICT['webatm']:
+            if '玉山' in args[0] and args[1] in userDefinedDICT['webatm']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
     if utterance == "如何安裝[pcscd]":
         if CHATBOT_MODE:
-            if args[0].lower() == 'pcscd':
+            if args[0] == 'pcscd':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
     if utterance == "如何確定[WebATM][元件]已安裝[成功]":
         if CHATBOT_MODE:
-            if args[0].lower() in userDefinedDICT['webatm'] and args[1] == '元件' and args[2] == None or '成功':
+            if args[0] in userDefinedDICT['webatm'] and args[1] == '元件' and args[2] == None or '成功':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
     if utterance == "如何確定[WebATM][讀卡機][是]否安裝[成功]":
         if CHATBOT_MODE:
-            if args[0].lower() in userDefinedDICT['webatm'] and args[1] == '讀卡機' and args[3] == '成功':
+            if args[0] in userDefinedDICT['webatm'] and args[1] == '讀卡機' and args[3] == '成功':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
     if utterance == "如何確認[Smart Card Service]已[啓]動":
         if CHATBOT_MODE:
-            if 'smart card device' in args[0].lower():
+            if 'smart card device' in args[0]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass

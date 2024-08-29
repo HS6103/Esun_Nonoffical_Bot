@@ -51,6 +51,9 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
+    for i in range(len(args)):
+        args[i] = args[i].lower().strip(' ')   # 前處理，把argument變小寫並去頭尾空格
+    
     if utterance == "[可以]不要收到[綜合對帳單]嗎":
         if CHATBOT_MODE:
             if args[1] == '綜合對帳單':
@@ -147,7 +150,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "如何變更[綜合對帳單]的[收件地址]":
         if CHATBOT_MODE:
-            if args[0] == '綜合對帳單' and args[1].lower() in ['地址', '收件地址', '通訊地址', '簡訊','手機號嗎','email', 'e-mail']:
+            if args[0] == '綜合對帳單' and args[1] in ['地址', '收件地址', '通訊地址', '簡訊','手機號嗎','email', 'e-mail']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass

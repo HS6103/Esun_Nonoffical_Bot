@@ -51,6 +51,9 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
+    for i in range(len(args)):
+        args[i] = args[i].lower().strip(' ')   # 前處理，把argument變小寫並去頭尾空格
+    
     if utterance == "兩岸支付通收款需要有[支付寶][帳號]嗎":
         if CHATBOT_MODE:
             if args[0] == '支付寶' and args[1] in ['帳戶', '帳號']:

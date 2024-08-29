@@ -51,6 +51,9 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
+    for i in range(len(args)):
+        args[i] = args[i].lower().strip(' ')   # 前處理，把argument變小寫並去頭尾空格
+    
     if utterance == "個網銀行動銀行暨[數位]身分核驗[安全]宣告注意事項":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -108,17 +111,17 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "[讀卡機]未符合[玉山銀行][晶片金融卡]元件([WebATM]元件)要求":
         if CHATBOT_MODE:
-            if '玉山' in args[1] and (args[2] and args[3].lower().strip(' ') in ['晶片金融卡', 'webatm']):
-                if args[0].lower().strip(' ') in  ['讀卡機', 'smart card service', '作業系統', '瀏覽器', 'os']:
-                    resultDICT["response"] = getResponse("[{}]未符合[玉山銀行][晶片金融卡]元件([WebATM]元件)要求".format(args[0].lower().strip(' ')), args)
+            if '玉山' in args[1] and (args[2] and args[3] in ['晶片金融卡', 'webatm']):
+                if args[0] in  ['讀卡機', 'smart card service', '作業系統', '瀏覽器', 'os']:
+                    resultDICT["response"] = getResponse("[{}]未符合[玉山銀行][晶片金融卡]元件([WebATM]元件)要求".format(args[0]), args)
         else:
             pass
 
     if utterance == "[讀卡機]未符合[玉山銀行][晶片金融卡]元件要求":
         if CHATBOT_MODE:
-            if args[1].lower().strip(' ') in ['晶片金融卡', 'webatm']:
-                if args[0].lower().strip(' ') in  ['讀卡機', 'smart card service', '作業系統', '瀏覽器', 'os']:
-                    resultDICT["response"] = getResponse("[{}]未符合[玉山銀行][晶片金融卡]元件要求".format(args[0].lower().strip(' ')), args)
+            if args[1] in ['晶片金融卡', 'webatm']:
+                if args[0] in  ['讀卡機', 'smart card service', '作業系統', '瀏覽器', 'os']:
+                    resultDICT["response"] = getResponse("[{}]未符合[玉山銀行][晶片金融卡]元件要求".format(args[0]), args)
         else:
             pass
 
@@ -432,7 +435,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "無法使用[WebATM]元件":
         if CHATBOT_MODE:
-            if args[0].lower().strip(' ') in userDefinedDICT['webatm']:
+            if args[0] in userDefinedDICT['webatm']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass

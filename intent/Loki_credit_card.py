@@ -51,30 +51,33 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
+    for i in range(len(args)):
+        args[i] = args[i].lower().strip(' ')   # 前處理，把argument變小寫並去頭尾空格
+    
     if utterance == "[TWQR跨機構購物交易][疑似]遭冒用[可以]怎麼處理":
         if CHATBOT_MODE:
-            if 'twqr' in args[0].lower():
+            if 'twqr' in args[0]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
     if utterance == "[TWQR跨機構購物交易][疑似]遭冒用或消費[爭議][可以]怎麼處理":
         if CHATBOT_MODE:
-            if 'twqr' in args[0].lower():
+            if 'twqr' in args[0]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
     if utterance == "[TWQR跨機構購物交易]是在哪[一家][商店]消費":
         if CHATBOT_MODE:
-            if 'twqr' in args[0].lower() and '店' in args[2]:
+            if 'twqr' in args[0] and '店' in args[2]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
         
     if utterance == "[TWQR跨機構購物交易]是[甚麼]的[消費]":
         if CHATBOT_MODE:
-            if 'twqr' in args[0].lower() and '消費' in args[2]:
+            if 'twqr' in args[0] and '消費' in args[2]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -229,7 +232,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     if utterance == "如何更改[信用卡][帳單][地址]": # 電話 email
         if CHATBOT_MODE:
             if args[0] == '信用卡' and args[1] == '帳單':
-                if args[0].lower().strip(' ') in ['地址', '電話', 'email', 'e-mail', '信箱']:
+                if args[0] in ['地址', '電話', 'email', 'e-mail', '信箱']:
                     resultDICT["response"] = getResponse(utterance, args)
         else:
             pass

@@ -51,16 +51,19 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
+    for i in range(len(args)):
+        args[i] = args[i].lower().strip(' ')   # 前處理，把argument變小寫並去頭尾空格
+    
     if utterance == "[e]化[通路]承作[外匯交易][是]否有[時間]限制":
         if CHATBOT_MODE:
-            if args[0].lower() in ['e', '電子', '數位'] and '外匯' in args[2] and args[4] in ['時間', '時段']:
+            if args[0] in ['e', '電子', '數位'] and '外匯' in args[2] and args[4] in ['時間', '時段']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
     if utterance == "[人民幣][外幣][現鈔]存入[外幣][帳戶]有無[金額]限制":
         if CHATBOT_MODE:
-            if args[0].lower() in ['rmb','人民幣'] and args[2] in ['現鈔','現金','鈔票'] and '額' in args[5]:
+            if args[0] in ['rmb','人民幣'] and args[2] in ['現鈔','現金','鈔票'] and '額' in args[5]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -88,21 +91,21 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "[國外]的[支票][是]否收取[費用]":
         if CHATBOT_MODE:
-            if args[0] in ['國外', '外國', '海外'] and args[1].lower() in ['支票', 'check'] and args[3] in ['費用', '手續費']:
+            if args[0] in ['國外', '外國', '海外'] and args[1] in ['支票', 'check'] and args[3] in ['費用', '手續費']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
     if utterance == "[國外]的[支票]如何使用":
         if CHATBOT_MODE:
-            if args[0] in ['國外', '外國', '海外'] and args[1].lower() in ['支票', 'check']:
+            if args[0] in ['國外', '外國', '海外'] and args[1] in ['支票', 'check']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
     if utterance == "[國外]的[支票]如何兌現":
         if CHATBOT_MODE:
-            if args[0] in ['國外', '外國', '海外'] and args[1].lower() in ['支票', 'check']:
+            if args[0] in ['國外', '外國', '海外'] and args[1] in ['支票', 'check']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -126,7 +129,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "[是]否有提供[ATM]提領[外幣][現鈔]服務":
         if CHATBOT_MODE:
-            if args[1].lower() == 'atm' and args[2] not in ['台幣','新台幣','臺幣','新臺幣'] and ('鈔' or '金' in args[3]):
+            if args[1] == 'atm' and args[2] not in ['台幣','新台幣','臺幣','新臺幣'] and ('鈔' or '金' in args[3]):
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -220,7 +223,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "購買[人民幣][現鈔][金額][是]否有[相關]限制":
         if CHATBOT_MODE:
-            if args[0].lower() in ['rmb','人民幣'] and args[1] in ['現鈔','現金','鈔票'] and '額' in args[2]:
+            if args[0] in ['rmb','人民幣'] and args[1] in ['現鈔','現金','鈔票'] and '額' in args[2]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
