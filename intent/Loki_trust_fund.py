@@ -97,13 +97,27 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "來臺從事[證券]投資或[期貨]交易之大陸地區投資人以何為限":
+    if utterance == "來臺從事[證券]投資或[期貨]交易之[大陸]地區投資人以何為限":
         if CHATBOT_MODE:
-            if args[0] in ['證券', '期貨', '股票']:
+            if args[0] in ['證券', '期貨', '股票'] and '中國' or '大陸' in args[2]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
-
+        
+    if utterance == "[台]從事[證券]投資或[期貨]交易之[大陸]地區投資人以何為限":
+        if CHATBOT_MODE:
+            if args[0] == '台' and args[1] in ['證券', '期貨', '股票'] and '中國' or '大陸' in args[3]:
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+        
+    if utterance == "[台灣]從事[證券]投資或[期貨]交易之[大陸]地區投資人以何為限":
+        if CHATBOT_MODE:
+            if args[0] in ['台灣', '臺灣'] and args[1] in ['證券', '期貨', '股票'] and '中國' or '大陸' in args[3]:
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+        
     if utterance == "儲蓄信託最大[特色]":
         if CHATBOT_MODE:
             if args[0] in ['特色', '特點']:

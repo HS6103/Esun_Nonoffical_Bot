@@ -3344,6 +3344,306 @@
                 }
             ]
         },
+        "台從事證券投資或期貨交易之大陸地區投資人以何為限": {
+            "id": "0b7e6afb-7a77-4a0b-9400-cbc6977233a0",
+            "argument": [
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "台",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "供職",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "任職",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擔任",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "承做",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "承包",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "承辦",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "從事過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "從事著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "開展",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "從事了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "從事家",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "涉足",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "投身",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "鑽研",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "做著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "做",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "從事",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "證券",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "出資",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "投入",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "投注",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "付出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "招商",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "入股",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "放款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "融資",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "注資",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "貸款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "持股",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "私募",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "增資",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "併購",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "投資",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_conjunction",
+                    "text": "或",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "期貨",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "交易",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "之",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "LOCATION",
+                    "text": "大陸",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "地區",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "投資人",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "以",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "何",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "上者",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "致難",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "折算",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "計",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "計價",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "抵繳",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "性加",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "具保",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "超逾",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "致到",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "為限",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "來臺從事證券投資或期貨交易之大陸地區投資人以何為限": {
             "id": "4439bcb3-cd0e-4a24-8c9a-26adec39b2c6",
             "argument": [
@@ -3353,7 +3653,7 @@
                         {
                             "text": "赴臺",
                             "level": "word2vec",
-                            "checked": false
+                            "checked": true
                         },
                         {
                             "text": "回臺",
@@ -3609,7 +3909,307 @@
                 {
                     "pos": "LOCATION",
                     "text": "大陸",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "地區",
                     "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "投資人",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "以",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "何",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "上者",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "致難",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "折算",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "計",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "計價",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "抵繳",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "性加",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "具保",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "超逾",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "致到",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "為限",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "台灣從事證券投資或期貨交易之大陸地區投資人以何為限": {
+            "id": "6306272e-4a54-4023-a6f3-d59eea3c0bf4",
+            "argument": [
+                {
+                    "pos": "LOCATION",
+                    "text": "台灣",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "供職",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "任職",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擔任",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "承做",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "承包",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "承辦",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "從事過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "從事著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "開展",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "從事了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "從事家",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "涉足",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "投身",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "鑽研",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "做著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "做",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "從事",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "證券",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "出資",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "投入",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "投注",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "付出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "招商",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "入股",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "放款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "融資",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "注資",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "貸款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "持股",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "私募",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "增資",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "併購",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "投資",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_conjunction",
+                    "text": "或",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "期貨",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "交易",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "之",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "LOCATION",
+                    "text": "大陸",
+                    "checked": true,
                     "checkbox": true
                 },
                 {
