@@ -54,9 +54,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     for i in range(len(args)):
         args[i] = args[i].lower().strip(' ')   # 前處理，把argument變小寫並去頭尾空格
     
-    if utterance == "玉山電話銀行台幣綜合存轉[定存]服務相關規定":
+    if utterance == "玉山電話銀行[台幣][綜合]存款轉[定存]服務[相關]規定":
         if CHATBOT_MODE:
-            if args[1] in ['定存', '定期存款']:
+            if args[0] in ['台幣', '臺幣'] and args[2] in ['定存', '定期存款']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
