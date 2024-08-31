@@ -295,7 +295,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             if args[0] == '所得清單':
                 resultDICT["response"] = getResponse(utterance, args)
-            elif '紀錄' or '文件' in args[0] and '留學' or '出國' in inputSTR:
+            elif ('紀錄' in args[0] or '文件' in args[0]) and ('留學' in inputSTR or '出國' in inputSTR):
                 resultDICT["response"] = getResponse("入出國[紀錄文件][應]如何辦理", args)
         else:
             pass

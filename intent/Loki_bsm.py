@@ -70,10 +70,10 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "[是]否還[會]收到[信用卡][帳單]":
         if CHATBOT_MODE:
-            if args[2] in ['帳單', '對帳單']:
-                if args[1] in ['信用卡']:
+            if args[3] in ['帳單', '對帳單']:
+                if args[2] in ['信用卡']:
                     resultDICT["response"] = getResponse(utterance, args)
-                elif args[1] in ["保險"]:
+                elif args[2] in ["保險"]:
                     resultDICT["response"] = getResponse("[是]否還[會]收到理財或[保險][對帳單]", args)
         else:
             pass
@@ -148,9 +148,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "如何變更[綜合對帳單]的[收件地址]":
+    if utterance == "如何變更綜合對帳單的收件[地址]":
         if CHATBOT_MODE:
-            if args[0] == '綜合對帳單' and args[1] in ['地址', '收件地址', '通訊地址', '簡訊','手機號嗎','email', 'e-mail']:
+            if args[0] in ['地址', '通訊地址', '簡訊','手機號碼','email', 'e-mail']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
