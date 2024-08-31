@@ -91,16 +91,17 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "[可以]透過兩岸支付通提領回台灣的[存款][帳戶]嗎":
+    if utterance == "[可以]透過兩岸支付通提領回[台灣]的[存款帳戶]嗎":
         if CHATBOT_MODE:
-            if args[1] == '存款' and args[2] in ['帳戶', '帳號', '戶頭']:
+            if args[1] in ['台灣','臺灣'] and '存款' in args[2]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
-    if utterance == "[可以]透過兩岸支付通讓大陸[消費者]在[門市]使用[支付寶]付款嗎":
+    if utterance == "[可以]透過兩岸支付通讓[大陸][消費者]在[門市]使用[支付寶]付款嗎":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[1] in ['大陸', '中國'] and args[4] == '支付寶':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
@@ -138,9 +139,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "大陸[消費者]付款[流程]為何":
+    if utterance == "[大陸][消費者]付款[流程]為何":
         if CHATBOT_MODE:
-            if args[0] in ['消費者', '買家', '客戶'] and args[1] in ['流程', '手續', '過程']:
+            if args[0] in ['大陸', '中國'] and args[1] in ['消費者', '買家', '客戶'] and args[2] in ['流程', '手續', '過程']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
