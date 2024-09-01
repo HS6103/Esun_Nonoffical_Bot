@@ -54,9 +54,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     for i in range(len(args)):
         args[i] = args[i].lower().strip(' ')   # 前處理，把argument變小寫並去頭尾空格
     
-    if utterance == "[e]化[通路]承作[外匯交易][是]否有[時間]限制":
+    if utterance == "[e][化][通路]承作[外匯交易][是]否有[時間]限制":
         if CHATBOT_MODE:
-            if args[0] in ['e', '電子', '數位'] and '外匯' in args[2] and args[4] in ['時間', '時段']:
+            if args[0] in ['e', '電子', '數位'] and '外匯' in args[3] and args[5] in ['時間', '時段']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -118,16 +118,16 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "[日期處]有[註記]「[*]」[符號]是代表什麼[意思]":
+    if utterance == "[日期處]有註記「[*]」[符號]":
         if CHATBOT_MODE:
-            if '日期' in args[0] and args[2] in ['*', '星星']:
+            if '日期' in args[0] and args[1] in ['*', '星星']:
                 resultDICT["response"] = getResponse(utterance, args)
-            elif '金額' in args[0] and args[2] in ['-', '減號']:
-                resultDICT["response"] = getResponse("[金額][前]有標明「[-]」[符號]是代表什麼[意思]", args)
+            elif '金額' in args[0] and args[1] in ['-', '減號']:
+                resultDICT["response"] = getResponse("[金額][前]有標明「[-]」[符號]是代表什麼", args)
         else:
             pass
 
-    if utterance == "[是]否有提供[ATM]提領[外幣][現鈔]服務":
+    if utterance == "[是]否有提供[ATM]提領[外幣][現鈔]":
         if CHATBOT_MODE:
             if args[1] == 'atm' and args[2] not in ['台幣','新台幣','臺幣','新臺幣'] and ('鈔' or '金' in args[3]):
                 resultDICT["response"] = getResponse(utterance, args)
@@ -170,10 +170,10 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "[金額][前]有標明「[-]」[符號]是代表什麼[意思]":
+    if utterance == "[金額][前]有標明「[-]」[符號]":
         if CHATBOT_MODE:
             if '日期' in args[0] and args[2] in ['*', '星星']:
-                resultDICT["response"] = getResponse("[日期處]有[註記]「[*]」[符號]是代表什麼[意思]", args)
+                resultDICT["response"] = getResponse("[日期處]有[註記]「[*]」[符號]是代表什麼", args)
             elif '金額' in args[0] and args[2] in ['-', '減號']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:

@@ -84,7 +84,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "[保證人][是]否有[年齡]限制":
         if CHATBOT_MODE:
-            if '保證' or '借款' in args[0] and args[2] in ['年齡', '年紀', '歲數']:
+            if '保證' in args[0] or '借款' in args[0] and args[2] in ['年齡', '年紀', '歲數']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
