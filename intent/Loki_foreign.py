@@ -113,7 +113,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     if utterance == "[外幣][現鈔][可][否]存入[我]在[玉山銀行]的[外幣][帳戶]呢":
         if CHATBOT_MODE:
             if '玉山' in args[5]:
-                if (args[1] and args[6] not in ['台幣','新台幣','臺幣','新臺幣']) and ('鈔' or '金' in args[2]):
+                if (args[0] not in ['台幣','新台幣','臺幣','新臺幣'] and args[6] not in ['台幣','新台幣','臺幣','新臺幣']) and ('鈔' or '金' in args[2]):
                     resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -141,10 +141,10 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "[玉山銀行][外幣帳戶]提領[外幣][現鈔][是]否需支付[手續費]":
+    if utterance == "[玉山銀行][外幣帳戶]提領[外幣][現鈔][是]否需支付[手續費]呢":
         if CHATBOT_MODE:
             if args[0] in ['玉山', '玉山銀行']:
-                if args[1] not in ['台幣','新台幣','臺幣','新臺幣'] and ('鈔' or '金' in args[2]):
+                if args[2] not in ['台幣','新台幣','臺幣','新臺幣'] and ('鈔' or '金' in args[3]):
                     resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -216,7 +216,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "怎樣[將][款項]匯給[國][外][親友]":
         if CHATBOT_MODE:
-            if args[1] in ['款項','錢'] and args[1] in ['國', '海'] and args[2] == '外' and ('親' or '友' in args[3]):
+            if args[1] in ['款項','錢'] and args[2] in ['國', '海'] and args[3] == '外' and ('親' or '友' in args[4]):
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass

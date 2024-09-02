@@ -40,7 +40,7 @@ def linebot():
             print(msg)                                       # 印出內容
             
             filterLIST = []
-            splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
+            splitLIST = ["！", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
             refDICT = {}
             
             if msg.lower() in ["哈囉","嗨","你好","您好","hi","hello"]:
@@ -55,12 +55,13 @@ def linebot():
                     print("loki complete")
                     print(resultDICT)
                     
-                    if resultDICT != {}:                        
-                        reply = resultDICT["response"][0]            # 回傳回覆字串
+                    if resultDICT != {}:
+                        if resultDICT['response'] != ['']:                        
+                            reply = resultDICT["response"][0] + "\n\n希望有解答您的疑問~"  # 回傳回覆字串
                     else:
                         reply = "抱歉，我只是個機器人，沒辦法回答喔"    # 回傳/沒有答案時的預設回覆字串
                             
-                except:
+                except Exception:
                     reply = "抱歉發生一些問題~請再試一次"   # 錯誤時回覆
                         
         else:
@@ -72,7 +73,7 @@ def linebot():
             
     except Exception as e:
         print("[ERROR] => {}".format(str(e)))
-        print(body)                                                                   # 如果發生錯誤，印出收到的內容
+        print(body)                                                                        # 如果發生錯誤，印出收到的內容
                                                                  
     return 'OK'                                                                       # 驗證 Webhook 使用，不能省略   
 
