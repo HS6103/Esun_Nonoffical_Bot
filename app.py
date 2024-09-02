@@ -14,7 +14,7 @@ import json
 # 載入 LINE Message API 相關函式庫
 from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
-from linebot.models import MessageEvent, TextMessage, TextSendMessage
+from linebot.models import MessageEvent, TextMessage, TextSendMessage, ImageSendMessage
 
 app = Flask(__name__)
 
@@ -56,25 +56,40 @@ def linebot():
                     print(resultDICT)
                     
                     if resultDICT != {}:
-                        if resultDICT['response'] != ['']:                        
-                            reply = resultDICT["response"][0] + "\n\n希望有解答您的疑問~"  # 回傳回覆字串
+                        if resultDICT['response'] != ['']:
+                            if resultDICT['imgURL']:
+                                reply1 = TextSendMessage(resultDICT["response"][0] + "\n\n希望有解答您的疑問~")              # 設定回覆字串
+                                reply2 = TextSendMessage("希望有解答您的疑問~")
+                                img_url = resultDICT["imgURL"][0]                                                           # 設定回覆圖片
+                                img_reply = ImageSendMessage(original_content_url=img_url, preview_image_url=img_url)
+                                line_bot_api.reply_message(tk, [reply1, img_reply, reply2])                                 # 回傳訊息和圖片
+                                
+                            else:
+                                reply = resultDICT["response"][0] + "\n\n希望有解答您的疑問~"                        # 回覆字串
+                                line_bot_api.reply_message(tk,reply)                                               # 回傳文字訊息
+                                
                     else:
-                        reply = "抱歉，我只是個機器人，沒辦法回答喔"    # 回傳/沒有答案時的預設回覆字串
+                        reply = "抱歉，我只是個機器人，沒辦法回答喔"    # 回傳沒有答案時的預設回覆字串
+                        line_bot_api.reply_message(tk,TextSendMessage(reply)) # 回傳訊息
                             
-                except Exception:
-                    reply = "抱歉發生一些問題~請再試一次"   # 錯誤時回覆
+                except Exception as e:
+                    print("[ERROR] => {}".format(str(e)))
+                    print(body)                                                                        # 如果發生錯誤，印出收到的內容                    
+                    reply = "抱歉發生一些問題~\n請再試一次"   # 錯誤時回覆
+                    line_bot_api.reply_message(tk,TextSendMessage(reply)) # 回傳訊息
+                    
                         
         else:
-            reply = '不是文字，我可是不吃的喔~請再試一次'   # 非文字訊息時回覆
-            
-        print(reply)
-        line_bot_api.reply_message(tk,TextSendMessage(reply)) # 回傳訊息
-            
+            reply = '不是文字，我可是不吃的喔!\n請再試一次~'   # 非文字訊息時回覆
+            line_bot_api.reply_message(tk,TextSendMessage(reply)) # 回傳訊息
             
     except Exception as e:
         print("[ERROR] => {}".format(str(e)))
         print(body)                                                                        # 如果發生錯誤，印出收到的內容
-                                                                 
+        json_data = json.loads(body)                                                       # json 格式化訊息內容
+        reply = "抱歉發生一些問題~\n請再試一次"   # 錯誤時回覆        
+        line_bot_api.push_message(json_data['events'][0]['source']['userId'],TextSendMessage(reply)) # 回傳訊息
+        
     return 'OK'                                                                       # 驗證 Webhook 使用，不能省略   
 
 if __name__ == "__main__":

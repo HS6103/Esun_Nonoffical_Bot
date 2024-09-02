@@ -215,6 +215,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             if args[0] == '讀卡機':
                 resultDICT["response"] = getResponse(utterance, args)
+                resultDICT["imgURL"] = "https://www.esunbank.com/zh-tw/-/media/ESUNBANK/Images/Home/About/FAQ/webATM/webatmfaq10.png"
         else:
             pass
 
