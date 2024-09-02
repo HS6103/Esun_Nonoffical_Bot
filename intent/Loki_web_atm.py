@@ -63,7 +63,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "[Linux][上]使用[玉山][WebATM]服務的[基本][需求]":
         if CHATBOT_MODE:
-            if '玉山' in args[2] and args[3] in userDefinedDICT['webatm'] and args[4] in ['需求', '條件']:          
+            if '玉山' in args[2] and args[3] in userDefinedDICT['webatm'] and args[5] in ['需求', '條件']:          
                 if args[0] == 'linux':
                     resultDICT["response"] = getResponse(utterance, args)
                 elif 'mac' or 'ios' in args[0]:
@@ -171,7 +171,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "使用[Windows 7]時[元件]出現[亂碼]要怎麼排除":
         if CHATBOT_MODE:
-            if args[0].lower in userDefinedDICT['windows 7'] and args[1] == '元件' and args[2] == '亂碼':
+            if args[0] in userDefinedDICT['windows 7'] and args[1] == '元件' and args[2] == '亂碼':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -206,7 +206,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "如何確認[Smart Card Service]已[啓]動":
         if CHATBOT_MODE:
-            if 'smart card device' in args[0]:
+            if 'smart card' in args[0]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
