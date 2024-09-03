@@ -57,15 +57,15 @@ def linebot():
                     
                     if resultDICT != {}:
                         if resultDICT['response'] != ['']:
-                            if resultDICT['imgURL']:
-                                reply1 = TextSendMessage(resultDICT["response"][0] + "\n\n希望有解答您的疑問~")              # 設定回覆字串
-                                reply2 = TextSendMessage("希望有解答您的疑問~")
-                                img_url = resultDICT["imgURL"][0]                                                           # 設定回覆圖片
-                                img_reply = ImageSendMessage(original_content_url=img_url, preview_image_url=img_url)
-                                line_bot_api.reply_message(tk, [reply1, img_reply, reply2])                                 # 回傳訊息和圖片
-                                
+                            if 'imgURL' in resultDICT.keys():
+                                replyLIST = []
+                                replyLIST.append(TextSendMessage(resultDICT["response"][0]))                                        # 設定回覆字串
+                                for img_url in resultDICT['imgURL']:                                                                # 設定回覆圖片
+                                    replyLIST.append(ImageSendMessage(original_content_url=img_url, preview_image_url=img_url))
+                                replyLIST.append(TextSendMessage("希望有解答您的疑問~"))
+                                line_bot_api.reply_message(tk, replyLIST)                                 # 回傳訊息和圖片
                             else:
-                                reply = resultDICT["response"][0] + "\n\n希望有解答您的疑問~"                        # 回覆字串
+                                reply = TextSendMessage(resultDICT["response"][0] + "\n\n希望有解答您的疑問~")                # 回覆字串
                                 line_bot_api.reply_message(tk,reply)                                               # 回傳文字訊息
                                 
                     else:

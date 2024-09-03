@@ -10,6 +10,12 @@
             "internet explorer 11",
             "ie 11"
         ],
+        "qr": [
+            "qr code",
+            "qrcode",
+            "qr碼",
+            "qr 碼"
+        ],
         "atm": [
             "自動櫃員機",
             "atm"
@@ -24,14 +30,22 @@
             "自購住宅補貼貸款",
             "個人信貸",
             "信用貸款",
-            "留學貸款"
+            "留學貸款",
+            "房屋貸款",
+            "個人信用貸款"
+        ],
+        "as_adj": [
+            "快捷"
         ],
         "webatm": [
             "web atm",
             "webatm"
         ],
         "as_noun": [
-            "PayPal",
+            "水電費",
+            "身分證",
+            "應用程式",
+            "後果",
             "他益信託",
             "信託",
             "存款帳戶",
@@ -47,6 +61,8 @@
             "定存",
             "活存",
             "交易額度",
+            "信貸",
+            "信用貸款",
             "型號",
             "密碼",
             "對帳單",
@@ -54,8 +70,9 @@
             "平台",
             "抵用金",
             "支付寶",
-            "收件地址",
+            "地址",
             "新台幣",
+            "保費",
             "明細",
             "樂享優惠專區",
             "模式",
@@ -64,6 +81,8 @@
             "身份證字號",
             "無卡交易",
             "獨樂樂",
+            "中國人壽",
+            "凱基人壽",
             "玉山",
             "玉山銀行",
             "玉山Wallet",
@@ -90,18 +109,12 @@
             "圖形密碼",
             "系統",
             "使用者名稱",
-            "台灣Pay",
             "指紋",
             "Touch ID",
             "Face ID",
             "數位帳戶",
             "自然人憑證",
             "照片",
-            "街口支付",
-            "一卡通Money",
-            "Apple Pay",
-            "Samsung Pay",
-            "Google Pay",
             "悠遊簽帳金融卡",
             "活期存款",
             "定期存款",
@@ -151,18 +164,29 @@
             "強制汽/機車責任保險",
             "旅行平安保險",
             "強制汽機車責任保險",
-            "年金首期",
-            "續期每月定額",
+            "每月定額",
             "旅行綜合險",
             "利率變動型年金保險",
             "終身醫療保險",
-            "中國人壽",
-            "凱基人壽",
-            "旅行平安險"
+            "旅行平安險",
+            "旅平險",
+            "強制汽機車責任險"
         ],
         "windows 7": [
             "win 7",
             "windows 7"
+        ],
+        "as_payment": [
+            "街口支付",
+            "一卡通money",
+            "apple pay",
+            "samsung pay",
+            "google pay",
+            "台灣pay",
+            "臺灣pay",
+            "paypal",
+            "台灣 pay",
+            "臺灣 pay"
         ]
     },
     "utterance": {
@@ -6037,196 +6061,6 @@
                 }
             ]
         },
-        "晶片金融卡被鎖住該怎麼辦": {
-            "id": "89ebe209-72b6-4612-a67c-bc87571f6381",
-            "argument": [
-                {
-                    "pos": "UserDefined",
-                    "text": "晶片金融卡",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_lightVerb",
-                    "text": "被",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "上鎖",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "封鎖",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "鎖上",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "鎖定",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "鎖起來",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "鎖門",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "閉鎖",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "封閉",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "關押",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "撕開",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "封死",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "夾住",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "蓋住",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "抽走",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "壓住",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "扯斷",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "壓扁",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "擊碎",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "封住",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "鎖住",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "MODAL",
-                    "text": "該",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "怎麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "籌辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "承辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "主辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦副",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦說",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "合辦",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "辦",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
         "如何使用網路銀行之預約匯出": {
             "id": "7038b743-b498-4e8c-a637-7e9f6ee70a5f",
             "argument": [
@@ -6700,156 +6534,6 @@
                     "text": "信用卡",
                     "checked": true,
                     "checkbox": true
-                }
-            ]
-        },
-        "忘記晶片金融卡密碼該怎麼辦": {
-            "id": "c194edeb-b8de-4f96-8ccd-a1ba81e124a9",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "忘掉",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "遺忘",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "記得",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "憶起",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "忘了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "猜到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "忘記了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "記住",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "記起",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "想起",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "忘",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "忘記",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "晶片金融卡",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "密碼",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "MODAL",
-                    "text": "該",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "怎麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "籌辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "承辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "主辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦副",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦說",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "合辦",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "辦",
-                    "checked": false,
-                    "checkbox": false
                 }
             ]
         },

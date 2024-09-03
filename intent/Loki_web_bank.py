@@ -81,13 +81,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "[晶片金融卡]被鎖住[該]怎麼辦":
-        if CHATBOT_MODE:
-            if '金融卡' in args[0]:
-                resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass
-
     if utterance == "[玉山][個人][網路銀行][使用者名稱]與[密碼]的設定[規則]為何":
         if CHATBOT_MODE:
             if '玉山' in args[0] and args[2] in ['網路銀行', '網銀'] and (args[3] and args[4]) in ['使用者名稱', '密碼', '用戶名'] and '規'in args[5]:
@@ -364,13 +357,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     if utterance == "忘記[使用者名稱]或[密碼]":
         if CHATBOT_MODE:
             if args[0] in ['使用者名稱', '密碼', '用戶名']:
-                resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass
-
-    if utterance == "忘記[晶片金融卡][密碼][該]怎麼辦":
-        if CHATBOT_MODE:
-            if '金融卡' in args[0] and args[1] == '密碼':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass

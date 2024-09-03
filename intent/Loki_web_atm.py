@@ -56,8 +56,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     
     if utterance == "[Edge][瀏覽器]無法[正常]顯示[玉山][WebATM]":
         if CHATBOT_MODE:
-            if args[0] == 'edge' and '玉山' in args[2] and args[3] in userDefinedDICT['webatm']:
+            if args[0] == 'edge' and '玉山' in args[3] and args[4] in userDefinedDICT['webatm']:
                 resultDICT["response"] = getResponse(utterance, args)
+                resultDICT["imgURL"] = []
+                resultDICT["imgURL"] += [
+                    "https://www.esunbank.com/zh-tw/-/media/ESUNBANK/Images/Home/About/FAQ/webATM/webatmqa17_1.png",
+                    "https://www.esunbank.com/zh-tw/-/media/ESUNBANK/Images/Home/About/FAQ/webATM/webatmqa17_2.png"
+                ]
+                
         else:
             pass
 
@@ -80,7 +86,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "[WebATM]轉帳[成功][對方]卻表示未入帳怎麼辦":
         if CHATBOT_MODE:
-            if args[0] in userDefinedDICT['webatm'] and args[1] == '完成':
+            if args[0] in userDefinedDICT['webatm'] and args[1] in ['成功', '完成']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -96,33 +102,40 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             if args[3] == '晶片卡':
                 resultDICT["response"] = getResponse(utterance, args)
+                resultDICT["imgURL"] = []
+                resultDICT["imgURL"] += [
+                    "https://www.esunbank.com/zh-tw/-/media/ESUNBANK/Images/Home/About/FAQ/webATM/webatmfaq6.jpg",
+                    "https://www.esunbank.com/zh-tw/-/media/ESUNBANK/Images/Home/About/FAQ/webATM/webatmfaq7.jpg",
+                    "https://www.esunbank.com/zh-tw/-/media/ESUNBANK/Images/Home/About/FAQ/webATM/webatmfaq8.jpg"
+                ]
+                
         else:
             pass
 
     if utterance == "[金融卡][可以][一直]插在[讀卡機][上]嗎":
         if CHATBOT_MODE:
-            if args[0] == '金融卡' and args[3] == '讀卡機' and args[4] in ['上', '裡']:
+            if '金融卡' in args[0] and args[3] == '讀卡機' and args[4] in ['上', '裡']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
     if utterance == "[金融卡]在[國][外][可]使用嗎":
         if CHATBOT_MODE:
-            if args[0] == '金融卡' and args[1] in ['國', '境', '海'] and args[2] == '外':
+            if '金融卡' in args[0] and args[1] in ['國', '境', '海'] and args[2] == '外':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
     if utterance == "[金融卡]被鎖住[該]怎麼辦":
         if CHATBOT_MODE:
-            if args[0] == '金融卡':
+            if '金融卡' in args[0]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
-    if utterance == "「[玉山][WebATM]」[可以]在[國][外]使用嗎":
+    if utterance == "[玉山][WebATM][可以]在[國][外]使用嗎":
         if CHATBOT_MODE:
-            if args[1] in userDefinedDICT['webatm'] and args[3] in ['國', '境', '海'] and args[2] == '外':
+            if args[1] in userDefinedDICT['webatm'] and args[3] in ['國', '境', '海'] and args[4] == '外':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -194,6 +207,12 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             if args[0] in userDefinedDICT['webatm'] and args[1] == '元件' and args[2] == None or '成功':
                 resultDICT["response"] = getResponse(utterance, args)
+                resultDICT["imgURL"] = []
+                resultDICT["imgURL"] += [
+                    "https://www.esunbank.com/zh-tw/-/media/ESUNBANK/Images/Home/About/FAQ/webATM/WebATM_FAQ_Linux1.jpg",
+                    "https://www.esunbank.com/zh-tw/-/media/ESUNBANK/Images/Home/About/FAQ/webATM/WebATM_FAQ_Linux2.jpg",
+                    "https://www.esunbank.com/zh-tw/-/media/ESUNBANK/Images/Home/About/FAQ/webATM/webatmfaq3.png"
+                    ]
         else:
             pass
 
@@ -201,6 +220,12 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             if args[0] in userDefinedDICT['webatm'] and args[1] == '讀卡機' and args[3] == '成功':
                 resultDICT["response"] = getResponse(utterance, args)
+                resultDICT["imgURL"] = []
+                resultDICT["imgURL"] += [
+                    "https://www.esunbank.com/zh-tw/-/media/ESUNBANK/Images/Home/About/FAQ/webATM/webatmfaq1.png",
+                    "https://www.esunbank.com/zh-tw/-/media/ESUNBANK/Images/Home/About/FAQ/webATM/webatmfaq2.png"                    
+                ]
+                
         else:
             pass
 
@@ -219,9 +244,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "忘記[密碼][該]怎麼辦":
+    if utterance == "忘記[金融卡][密碼][該]怎麼辦":
         if CHATBOT_MODE:
-            if args[0] == '密碼':
+            if '金融卡' in args[0] and args[1] == '密碼':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -233,10 +258,11 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "登入[WebATM][時]出現[元件]未更新":
+    if utterance == "登入[WebATM]時出現元件未更新":
         if CHATBOT_MODE:
-            if args[0].lower == 'webatm' and args[2] == '元件':
+            if args[0] == 'webatm':
                 resultDICT["response"] = getResponse(utterance, args)
+                resultDICT["imgURL"] = "https://www.esunbank.com/zh-tw/-/media/ESUNBANK/Images/Home/About/FAQ/webATM/webatmqa16.png"                
         else:
             pass
 
