@@ -66,8 +66,10 @@ def linebot():
                                 line_bot_api.reply_message(tk, replyLIST)                                 # 回傳訊息和圖片
                             else:
                                 reply = TextSendMessage(resultDICT["response"][0] + "\n\n希望有解答您的疑問~")                # 回覆字串
-                                line_bot_api.reply_message(tk,reply)                                               # 回傳文字訊息
-                                
+                                line_bot_api.reply_message(tk,reply)                                                        # 回傳文字訊息
+                        else:
+                            reply = "抱歉，我只是個機器人，沒辦法回答喔"    # 回傳沒有答案時的預設回覆字串
+                            line_bot_api.reply_message(tk,TextSendMessage(reply)) # 回傳訊息
                     else:
                         reply = "抱歉，我只是個機器人，沒辦法回答喔"    # 回傳沒有答案時的預設回覆字串
                         line_bot_api.reply_message(tk,TextSendMessage(reply)) # 回傳訊息
@@ -87,8 +89,9 @@ def linebot():
         print("[ERROR] => {}".format(str(e)))
         print(body)                                                                        # 如果發生錯誤，印出收到的內容
         json_data = json.loads(body)                                                       # json 格式化訊息內容
-        reply = "抱歉發生一些問題~\n請再試一次"   # 錯誤時回覆        
-        line_bot_api.push_message(json_data['events'][0]['source']['userId'],TextSendMessage(reply)) # 回傳訊息
+        reply = "抱歉發生一些問題~\n請再試一次"   # 錯誤時回覆
+        if json_data['events'] != []:
+            line_bot_api.push_message(json_data['events'][0]['source']['userId'],TextSendMessage(reply)) # 回傳訊息
         
     return 'OK'                                                                       # 驗證 Webhook 使用，不能省略   
 
