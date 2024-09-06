@@ -99,9 +99,10 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "什麼是PayPal":
+    if utterance == "什麼是[PayPal]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] in ['paypal', '玉山全球通'] or '全球通' in args[0]:
+                resultDICT["response"] = getResponse("什麼是{}".format(args[0]), args)
         else:
             pass
 

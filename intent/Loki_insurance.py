@@ -395,7 +395,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "如何申請理賠":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '理賠' in inputSTR:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 

@@ -56,20 +56,22 @@ def linebot():
                     print(resultDICT)
                     
                     if resultDICT != {}:
-                        if resultDICT['response'] != ['']:
+                        replyLIST = []                        
+                        if resultDICT['response'] != []:
                             if 'imgURL' in resultDICT.keys():
-                                replyLIST = []
-                                replyLIST.append(TextSendMessage(resultDICT["response"][0]))                                        # 設定回覆字串
+                                for response in resultDICT['response']:
+                                    replyLIST.append(TextSendMessage(response))                                                     # 設定回覆字串
                                 for img_url in resultDICT['imgURL']:                                                                # 設定回覆圖片
                                     replyLIST.append(ImageSendMessage(original_content_url=img_url, preview_image_url=img_url))
-                                replyLIST.append(TextSendMessage("希望有解答您的疑問~"))
-                                line_bot_api.reply_message(tk, replyLIST)                                 # 回傳訊息和圖片
                             else:
-                                reply = TextSendMessage(resultDICT["response"][0] + "\n\n希望有解答您的疑問~")                # 回覆字串
-                                line_bot_api.reply_message(tk,reply)                                                        # 回傳文字訊息
+                                for response in resultDICT['response']:
+                                    replyLIST.append(TextSendMessage(response))                                             # 設定回覆字串
+                            replyLIST.append(TextSendMessage("希望有解答您的疑問~"))
+                            line_bot_api.reply_message(tk,replyLIST)                                                        # 回傳文字訊息
                         else:
-                            reply = "抱歉，我只是個機器人，沒辦法回答喔"    # 回傳沒有答案時的預設回覆字串
-                            line_bot_api.reply_message(tk,TextSendMessage(reply)) # 回傳訊息
+                            reply = "抱歉，我只是個機器人，沒辦法回答喔"                                                       # 回傳沒有答案時的預設回覆字串
+                            line_bot_api.reply_message(tk,TextSendMessage(reply))                                           # 回傳訊息
+                            
                     else:
                         reply = "抱歉，我只是個機器人，沒辦法回答喔"    # 回傳沒有答案時的預設回覆字串
                         line_bot_api.reply_message(tk,TextSendMessage(reply)) # 回傳訊息
@@ -77,9 +79,8 @@ def linebot():
                 except Exception as e:
                     print("[ERROR] => {}".format(str(e)))
                     print(body)                                                                        # 如果發生錯誤，印出收到的內容                    
-                    reply = "抱歉發生一些問題~\n請再試一次"   # 錯誤時回覆
+                    reply = "抱歉發生一些問題\n請再試一次"   # 錯誤時回覆
                     line_bot_api.reply_message(tk,TextSendMessage(reply)) # 回傳訊息
-                    
                         
         else:
             reply = '不是文字，我可是不吃的喔!\n請再試一次~'   # 非文字訊息時回覆

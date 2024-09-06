@@ -148,7 +148,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "如何退款":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if "退" in inputSTR:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
