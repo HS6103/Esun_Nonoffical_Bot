@@ -51,10 +51,19 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
+    
+    # 前處理，把argument變小寫並去頭尾空格
+    for i in range(len(args)):
+        args[i] = args[i].lower().strip(' ')   
+    
+    # 初始化 resultDICT['response']
+    if 'response' not in resultDICT.keys():
+        resultDICT['response'] = []
+    
     if utterance == "PayPal[帳號]連結已失效":
         if CHATBOT_MODE:
             if args[0] in ['帳戶', '帳號']:
-                resultDICT["response"] = getResponse(utterance, args)
+                resultDICT["response"].append(getResponse(utterance, args))
         else:
             pass
 
@@ -65,7 +74,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "Paypal 跨行提領[可]約定的[臺幣]入帳[銀行]有哪些":
+    if utterance == "PayPal跨行提領[可]約定的[臺幣]入帳[銀行]有哪些":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -92,9 +101,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "什麼[時候][會]使用[玉山全球通]":
+    if utterance == "什麼時候[會]使用[玉山全球通]":
         if CHATBOT_MODE:
-            if '全球通' in args[2]:
+            if '全球通' in args[1]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -112,7 +121,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "出現「身分證註冊資料不[正確]，請[重新]確認資料正確性。驗證錯誤累積達[三次](含)，註冊功能[將]被鎖定[30日]。」如何處理":
+    if utterance == "身分證註冊資料不[正確]請[重新]確認資料正確性":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -132,37 +141,37 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "如何確認PayPal跨行[帳戶][基本][資料]修改[失敗][原因]":
+    if utterance == "如何確認PayPal跨行[帳戶][基本]資料修改[失敗][原因]":
         if CHATBOT_MODE:
-            if args[0] in ['帳戶', '帳號'] and args[2] == '資料' and args[3] == '失敗':
+            if args[0] in ['帳戶', '帳號'] and args[2] == '失敗':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
-    if utterance == "如何確認PayPal跨行[帳戶][基本][資料]註冊/修改[失敗][原因]":
+    if utterance == "如何確認PayPal跨行[帳戶][基本]資料註冊/修改[失敗][原因]":
         if CHATBOT_MODE:
-            if args[0] in ['帳戶', '帳號'] and args[2] == '資料' and args[3] == '失敗':
+            if args[0] in ['帳戶', '帳號'] and args[2] == '失敗':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
-    if utterance == "如何確認PayPal跨行[帳戶][基本][資料]註冊[失敗][原因]":
+    if utterance == "如何確認PayPal跨行[帳戶][基本]資料註冊[失敗][原因]":
         if CHATBOT_MODE:
-            if args[0] in ['帳戶', '帳號'] and args[2] == '資料' and args[3] == '失敗':
+            if args[0] in ['帳戶', '帳號'] and args[2] == '失敗':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
-    if utterance == "打完PayPal[帳號][密碼]並點選授權[後]仍無反應":
+    if utterance == "登打完PayPal[帳號][密碼]並點選授權[後]仍無反應":
         if CHATBOT_MODE:
             if args[0] in ['帳戶', '帳號'] and args[1] == '密碼':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
-    if utterance == "打完PayPal[帳號][密碼]並點選授權[後]出現[轉圈圈]的[畫面]":
+    if utterance == "登打完PayPal[帳號][密碼]並點選授權[後]出現[轉圈圈]":
         if CHATBOT_MODE:
-            if args[0] in ['帳戶', '帳號'] and args[1] == '密碼' and ['轉圈', 'loading'] in args[3].lower():
+            if args[0] in ['帳戶', '帳號'] and args[1] == '密碼' and ['轉圈', 'loading'] in args[3]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -212,7 +221,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     if utterance == "查無PayPal[帳號權限]":
         if CHATBOT_MODE:
             if '權限' in args[0]:
-                resultDICT["response"] = getResponse(utterance, args)
+                resultDICT["response"].append(getResponse(utterance, args))
         else:
             pass
 
@@ -225,7 +234,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "為什麼[我]約定[他][行][臺幣][帳戶][會][失敗]":
         if CHATBOT_MODE:
-            if args[1] == '他' and args[2] == '行' and args[3] in ['台幣','新台幣','臺幣','新臺幣'] and args[4] in ['帳戶', '帳號', '戶頭'] and args[5] == '失敗':
+            if args[1] == '他' and args[2] == '行' and args[3] in ['台幣','新台幣','臺幣','新臺幣'] and args[4] in ['帳戶', '帳號', '戶頭'] and args[6] == '失敗':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -294,7 +303,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "透過[玉山全球通]確認提領PayPal[款項][後][能]否取消[交易]呢":
         if CHATBOT_MODE:
-            if '全球通' in args[0] and args[3] == '交易':
+            if '全球通' in args[0] and args[4] == '交易':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
