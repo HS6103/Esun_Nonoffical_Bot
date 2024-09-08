@@ -44,10 +44,10 @@ def linebot():
             refDICT = {}
             
             if msg.lower() in ["哈囉","嗨","你好","您好","hi","hello"]:
-                reply = msg + "!\n" + "我是玉山銀行非官方客服機器人\n請問您今天想問什麼呢?"
+                line_bot_api.reply_message(tk,TextSendMessage(msg + "!\n" + "我是玉山銀行非官方客服機器人\n請問您今天想問什麼呢?"))                                                        # 回傳文字訊息                
                 
             elif msg.lower() in ["掰掰","掰","88","bye bye","bye","再見", "沒有", "拜拜"]:
-                reply = "掰掰，謝謝您的使用，期待下次為您服務!"
+                line_bot_api.reply_message(tk,TextSendMessage("掰掰，謝謝您的使用，期待下次為您服務!"))                                                        # 回傳文字訊息                
                 
             else:
                 try:
