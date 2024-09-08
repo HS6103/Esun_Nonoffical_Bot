@@ -13,7 +13,7 @@
 ## 環境 & 使用技術
 
 + Python 3.11
-+ Flask + Heroku
++ Flask + Docker (Deployed on Heroku)
 + 卓騰語言科技 Loki 語意理解引擎 (請參考[官方文件](https://api.droidtown.co/document/#Loki))
 
 ## 檔案內容
