@@ -10,6 +10,12 @@
             "internet explorer 11",
             "ie 11"
         ],
+        "qr": [
+            "qr code",
+            "qrcode",
+            "qr碼",
+            "qr 碼"
+        ],
         "atm": [
             "自動櫃員機",
             "atm"
@@ -24,14 +30,23 @@
             "自購住宅補貼貸款",
             "個人信貸",
             "信用貸款",
-            "留學貸款"
+            "留學貸款",
+            "房屋貸款",
+            "個人信用貸款"
+        ],
+        "as_adj": [
+            "快捷"
         ],
         "webatm": [
             "web atm",
             "webatm"
         ],
         "as_noun": [
-            "PayPal",
+            "港股",
+            "水電費",
+            "身分證",
+            "應用程式",
+            "後果",
             "他益信託",
             "信託",
             "存款帳戶",
@@ -47,6 +62,8 @@
             "定存",
             "活存",
             "交易額度",
+            "信貸",
+            "信用貸款",
             "型號",
             "密碼",
             "對帳單",
@@ -54,8 +71,9 @@
             "平台",
             "抵用金",
             "支付寶",
-            "收件地址",
+            "地址",
             "新台幣",
+            "保費",
             "明細",
             "樂享優惠專區",
             "模式",
@@ -64,6 +82,8 @@
             "身份證字號",
             "無卡交易",
             "獨樂樂",
+            "中國人壽",
+            "凱基人壽",
             "玉山",
             "玉山銀行",
             "玉山Wallet",
@@ -90,18 +110,12 @@
             "圖形密碼",
             "系統",
             "使用者名稱",
-            "台灣Pay",
             "指紋",
             "Touch ID",
             "Face ID",
             "數位帳戶",
             "自然人憑證",
             "照片",
-            "街口支付",
-            "一卡通Money",
-            "Apple Pay",
-            "Samsung Pay",
-            "Google Pay",
             "悠遊簽帳金融卡",
             "活期存款",
             "定期存款",
@@ -151,18 +165,29 @@
             "強制汽/機車責任保險",
             "旅行平安保險",
             "強制汽機車責任保險",
-            "年金首期",
-            "續期每月定額",
+            "每月定額",
             "旅行綜合險",
             "利率變動型年金保險",
             "終身醫療保險",
-            "中國人壽",
-            "凱基人壽",
-            "旅行平安險"
+            "旅行平安險",
+            "旅平險",
+            "強制汽機車責任險"
         ],
         "windows 7": [
             "win 7",
             "windows 7"
+        ],
+        "as_payment": [
+            "街口支付",
+            "一卡通money",
+            "apple pay",
+            "samsung pay",
+            "google pay",
+            "台灣pay",
+            "臺灣pay",
+            "paypal",
+            "台灣 pay",
+            "臺灣 pay"
         ]
     },
     "utterance": {
@@ -592,6 +617,81 @@
                     "pos": "UserDefined",
                     "text": "隨行理專",
                     "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "如何買賣海外股票": {
+            "id": "20274a5c-a99d-4818-80df-e270437029e8",
+            "argument": [
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "如何",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "販賣",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "炒賣",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申購",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "倒賣",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "售屋",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "租賃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "轉讓",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "抵押",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "結匯",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "買入",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "買賣",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "海外股票",
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -3971,6 +4071,243 @@
                     "pos": "ENTITY_nouny",
                     "text": "結果",
                     "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "如何查詢海外債券產品價格": {
+            "id": "33cdb4c3-5630-4b4c-b73a-8390becd5ea7",
+            "argument": [
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "如何",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "徵詢",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "探查",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "探詢",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "查問",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "查找",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "查探",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "查明",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "查看",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "查究",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "查考",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "檢查",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "質詢",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "追詢",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "勘測",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "反問",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "叩問",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "尋找",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "尋求",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "扣問",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "探勘",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "探問",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "探尋",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "探討",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "探訪",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "提問",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "搜尋",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "檢視",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "檢驗",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "詰問",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "質問",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "質疑",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "追問",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "傳真",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "電洽",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "查閱",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "洽詢",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "閱覽",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "推播",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "檢索",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "訂票",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "查詢",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "海外債券",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "產品",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "價格",
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -9647,7 +9984,7 @@
             ]
         },
         "如何進行金融商品(基金、海外ETF、港股、美股)比較": {
-            "id": "8c5add6a-c7b0-4790-aeb6-73a8f538e086",
+            "id": "b0fc6a19-9317-4bd3-a1d8-dc7177b4ad00",
             "argument": [
                 {
                     "pos": "CLAUSE_HowQ",
@@ -9669,37 +10006,7 @@
                             "checked": false
                         },
                         {
-                            "text": "進行了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "展開",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "完成",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "實施",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "進行過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "作出",
+                            "text": "進行著",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -9709,7 +10016,37 @@
                             "checked": false
                         },
                         {
-                            "text": "進行著",
+                            "text": "展開",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進行了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦理",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "作出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "實施",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進行過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "完成",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -9772,16 +10109,10 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_oov",
-                    "text": "港",
+                    "pos": "UserDefined",
+                    "text": "港股",
                     "checked": true,
                     "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_classifier",
-                    "text": "股",
-                    "checked": true,
-                    "checkbox": false
                 },
                 {
                     "pos": "PUNCTUATION",
@@ -9850,17 +10181,17 @@
                             "checked": false
                         },
                         {
+                            "text": "分析",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "區分",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "衡量",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "分析",
                             "level": "word2vec",
                             "checked": false
                         }

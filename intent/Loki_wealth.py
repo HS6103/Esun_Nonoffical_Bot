@@ -63,7 +63,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "[信託][管理費]如何計收":
         if CHATBOT_MODE:
-            if args[1] == '信託' and args[2] == '管理費':
+            if args[0] == '信託' and args[1] == '管理費':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -105,7 +105,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "[尊榮禮賓]服務是什麼":
         if CHATBOT_MODE:
-            if args[0] == '尊榮禮賓':
+            if '禮賓' in args[0]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -119,15 +119,18 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "[海外][ETF]/[股票]有哪些[投資市場][可]提供選擇":
         if CHATBOT_MODE:
-            if args[0] == '海外' and (args[1] and args[2] in ['etf','股票']) and '市場' in args[4]:
+            if args[0] == '海外' and (args[1] and args[2] in ['etf','股票']) and '市場' in args[3]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
     if utterance == "[海外][ETF][交易][時間]為何":
         if CHATBOT_MODE:
-            if args[0] == '海外' and (args[1] and args[2] in ['etf','股票']) and '市場' in args[4]:
-                resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '海外' and '時' in args[3]:
+                if args[1] == 'etf':
+                    resultDICT["response"] = getResponse(utterance, args)
+                elif args[1] == '債券':
+                    resultDICT["response"] = getResponse("[海外][債券][交易][時間]為何", args)
         else:
             pass
 
@@ -198,6 +201,13 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             if args[0] == '海外債券':
                 resultDICT["response"] = getResponse(utterance, args)
+            elif args[0] == '隨行理專':
+                resultDICT["response"] = getResponse("什麼是[隨行理專]", args)
+                resultDICT["imgURL"] = []
+                resultDICT["imgURL"] += [
+                    "https://www.esunbank.com/zh-tw/-/media/ESUNBANK/Images/Home/About/wealth/QR_code03_fund.png"
+                ]
+
         else:
             pass
 
@@ -208,7 +218,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "如何使用[財富]管理[專區]的[我]的[觀察][清單]":
+    if utterance == "如何使用[財富]管理[專區]的[我]的觀察清單":
         if CHATBOT_MODE:
             if args[0] in ['財富', '資產']:
                 resultDICT["response"] = getResponse(utterance, args)
@@ -219,6 +229,11 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             if args[0] == '隨行理專':
                 resultDICT["response"] = getResponse(utterance, args)
+                resultDICT["imgURL"] = []
+                resultDICT["imgURL"] += [
+                    "https://www.esunbank.com/zh-tw/-/media/ESUNBANK/Images/Home/About/wealth/QR_code03_fund.png"
+                ]
+                
         else:
             pass
 
@@ -268,8 +283,17 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "如何查詢[海外債券][產品條件]":
         if CHATBOT_MODE:
-            if args[0] == '海外債券' and args[1] == '產品條件':
-                resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '海外債券':
+                if args[1] == '產品條件':
+                    resultDICT["response"] = getResponse(utterance, args)
+                elif '價' in args[1]:
+                    resultDICT["response"] = getResponse("如何查詢海外債券產品價格", args)
+        else:
+            pass
+
+    if utterance == "如何查詢海外債券產品價格":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
@@ -280,7 +304,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "如何決定[海外ETF]/[股票]的委託[價格]":
+    if utterance == "如何決定[海外][ETF]/[股票]的委託[價格]":
         if CHATBOT_MODE:
             if args[0] == '海外' and (args[1] and args[2] in ['etf','股票']) and '價' in args[3]:
                 resultDICT["response"] = getResponse(utterance, args)
@@ -289,7 +313,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "如何決定[海外股票]的委託[價格]":
         if CHATBOT_MODE:
-            if args[0] == '海外債券' and args[1] == '價格':
+            if args[0] == '海外股票' and args[1] == '價格':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -305,6 +329,12 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             if args[0] == '海外' and args[1] == 'etf':
                 resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+        
+    if utterance == "如何買賣海外股票":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
@@ -329,7 +359,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "投信基金及境外基金淨值適用說明":
+    if utterance == "投信基金及境[外]基金淨值適用說明":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -405,10 +435,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
         
-    if utterance == "請問如何進行金融商品([基金]、[海外][ETF]、[港股]、[美股])比較":
+    if utterance == "如何進行金融商品([基金]、[海外][ETF]、[港股]、[美股])比較":
         if CHATBOT_MODE:
-            if (args[0] and args[1] and args[2] and args[3] and args[4] and args[5]) in ['基金', '海外', 'ETF', 'etf', '港股', '美股']:
-                resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
