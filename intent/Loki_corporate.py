@@ -182,9 +182,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "如何匯款至[玉山銀行][帳戶]":
+    if utterance == "如何匯款至[銀行][帳戶]":
         if CHATBOT_MODE:
-            if args[0] in ['玉山', '玉山銀行'] and args[1] in ['帳戶', '戶頭', '帳號']:
+            if '銀行' in args[0] and args[1] in ['帳戶', '戶頭', '帳號']:
                 resultDICT["response"].append(getResponse(utterance, args))
         else:
             pass
@@ -223,9 +223,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "如果沒有[玉山銀行]的授信額度[可以]辦理開立信用狀[業務]嗎":
+    if utterance == "如果沒有[銀行]的授信額度[可以]辦理開立信用狀[業務]嗎":
         if CHATBOT_MODE:
-            if args[0] in ['玉山', '玉山銀行']:
+            if '銀行' in args[0]:
                 resultDICT["response"].append(getResponse(utterance, args))
         else:
             pass

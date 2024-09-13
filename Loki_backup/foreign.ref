@@ -42,6 +42,7 @@
             "webatm"
         ],
         "as_noun": [
+            "港股",
             "水電費",
             "身分證",
             "應用程式",
@@ -4483,6 +4484,170 @@
                 }
             ]
         },
+        "外幣現鈔可否存入我在銀行的外幣帳戶呢": {
+            "id": "ae0978a4-ef76-4362-bd83-1492b711be88",
+            "argument": [
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "外幣",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "現鈔",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "可",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "否",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "儲存",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存款",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "貯存",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "堆積",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "斜飛",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "賺取",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "贏得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "存進",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "領出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "撥入",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "抽取",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "匯到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "取走",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "領走",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "貸方",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳回",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "存入",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "我",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "在",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "銀行",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "外幣",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "帳戶",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_particle",
+                    "text": "呢",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "人民幣外幣現鈔存入外幣帳戶有無金額限制": {
             "id": "3606f918-e7e2-432f-a690-8225dae77718",
             "argument": [
@@ -5215,179 +5380,9 @@
                 }
             ]
         },
-        "外幣現鈔可否存入我在玉山銀行的外幣帳戶呢": {
-            "id": "84e1a2de-0b9d-4aea-832f-15474a92a271",
+        "外幣帳戶提領外幣現鈔是否需支付手續費呢": {
+            "id": "c6586b80-d4f9-4438-a334-97b0833fc5b7",
             "argument": [
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "外幣",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "現鈔",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "MODAL",
-                    "text": "可",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "否",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "儲存",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "存款",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "貯存",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "堆積",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "斜飛",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "賺取",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "贏得",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "存進",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "領走",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳回",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "撥入",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "貸方",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "取走",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "匯到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "抽取",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "領出",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "存入",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_pronoun",
-                    "text": "我",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "在",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "玉山銀行",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "的",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "外幣",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "帳戶",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "CLAUSE_particle",
-                    "text": "呢",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "玉山銀行外幣帳戶提領外幣現鈔是否需支付手續費呢": {
-            "id": "a08674c1-684a-4884-8fd5-7fbd0612bdce",
-            "argument": [
-                {
-                    "pos": "UserDefined",
-                    "text": "玉山銀行",
-                    "checked": true,
-                    "checkbox": true
-                },
                 {
                     "pos": "ENTITY_oov",
                     "text": "外幣帳戶",
@@ -5680,8 +5675,8 @@
                 }
             ]
         },
-        "從國外匯入款項至我的玉山銀行帳戶我該提供什麼資料": {
-            "id": "a4faf824-be90-40c3-a90f-e66c6d644999",
+        "從國外匯入款項至我的銀行帳戶我該提供什麼資料": {
+            "id": "8a64ee58-2a7a-47d1-9852-07369b75cffa",
             "argument": [
                 {
                     "pos": "FUNC_inner",
@@ -5798,13 +5793,13 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "UserDefined",
-                    "text": "玉山銀行",
+                    "pos": "ENTITY_noun",
+                    "text": "銀行",
                     "checked": true,
                     "checkbox": true
                 },
                 {
-                    "pos": "ENTITY_oov",
+                    "pos": "ENTITY_nounHead",
                     "text": "帳戶",
                     "checked": true,
                     "checkbox": true

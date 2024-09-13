@@ -258,9 +258,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "[玉山]有哪幾[種][定期]儲蓄[存款]":
+    if utterance == "有哪幾[種][定期]儲蓄[存款]":
         if CHATBOT_MODE:
-            if args[0] in ['玉山', '玉山銀行'] and args[1] == '定期' and args[2] == '存款':
+            if args[1] == '定期' and args[2] == '存款':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass

@@ -56,7 +56,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     
     if utterance == "[Edge][瀏覽器]無法[正常]顯示[玉山][WebATM]":
         if CHATBOT_MODE:
-            if args[0] == 'edge' and '玉山' in args[3] and args[4] in userDefinedDICT['webatm']:
+            if args[0] == 'edge' and args[4] in userDefinedDICT['webatm']:
                 resultDICT["response"] = getResponse(utterance, args)
                 resultDICT["imgURL"] = []
                 resultDICT["imgURL"] += [
@@ -69,7 +69,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "[Linux][上]使用[玉山][WebATM]服務的[基本][需求]":
         if CHATBOT_MODE:
-            if '玉山' in args[2] and args[3] in userDefinedDICT['webatm'] and args[5] in ['需求', '條件']:          
+            if args[3] in userDefinedDICT['webatm'] and args[5] in ['需求', '條件']:          
                 if args[0] == 'linux':
                     resultDICT["response"] = getResponse(utterance, args)
                 elif 'mac' or 'ios' in args[0]:
@@ -133,16 +133,16 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "[玉山][WebATM][可以]在[國][外]使用嗎":
+    if utterance == "[WebATM][可以]在[國][外]使用嗎":
         if CHATBOT_MODE:
-            if args[1] in userDefinedDICT['webatm'] and args[3] in ['國', '境', '海'] and args[4] == '外':
+            if args[0] in userDefinedDICT['webatm'] and args[2] in ['國', '境', '海'] and args[3] == '外':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
-    if utterance == "「[玉山][WebATM]」有轉帳[金額]的[限制]嗎":
+    if utterance == "[WebATM]有轉帳[金額]的[限制]嗎":
         if CHATBOT_MODE:
-            if '玉山' in args[0] and args[1] in userDefinedDICT['webatm'] and args[2] == '金額' and '限' in args[3]:
+            if args[0] in userDefinedDICT['webatm'] and args[1] == '金額' and '限' in args[2]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass

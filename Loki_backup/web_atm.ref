@@ -42,6 +42,7 @@
             "webatm"
         ],
         "as_noun": [
+            "港股",
             "水電費",
             "身分證",
             "應用程式",
@@ -316,6 +317,140 @@
                     "text": "WebATM",
                     "checked": true,
                     "checkbox": true
+                }
+            ]
+        },
+        "WebATM可以在國外使用嗎": {
+            "id": "671f5744-3623-4bc1-8136-4122dda84f61",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "WebATM",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "可以",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "在",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "國",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "RANGE_locality",
+                    "text": "外",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "利用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "動用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "應用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "採用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "施用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "沿用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "活用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "運用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "假借",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "憑靠",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "選用",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "用",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "用到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "使用著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "改用",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "使用過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "使用了",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "使用",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_YesNoQ",
+                    "text": "嗎",
+                    "checked": false,
+                    "checkbox": false
                 }
             ]
         },
@@ -927,6 +1062,202 @@
                 }
             ]
         },
+        "WebATM有轉帳金額的限制嗎": {
+            "id": "ca5ee1eb-1256-407f-9145-874f03bfa0af",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "WebATM",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "匯款",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "匯錢",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "匯出",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "匯進",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "轉賬",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "電匯",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "提領",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "提款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "充值",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳費",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "付款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "開戶",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "儲值",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "取款",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "轉帳",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "金額",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "限制",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_YesNoQ",
+                    "text": "嗎",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "忘記金融卡密碼該怎麼辦": {
             "id": "e9d7c7a7-5e78-4436-aac4-7b4c8b04490a",
             "argument": [
@@ -1150,146 +1481,6 @@
                 {
                     "pos": "PUNCTUATION",
                     "text": "」",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "玉山WebATM可以在國外使用嗎": {
-            "id": "749ee3f2-754f-4d99-a0dd-8d6b519118b0",
-            "argument": [
-                {
-                    "pos": "UserDefined",
-                    "text": "玉山",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "WebATM",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "MODAL",
-                    "text": "可以",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "在",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "國",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "RANGE_locality",
-                    "text": "外",
-                    "checked": true,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "利用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "動用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "應用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "採用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "施用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "沿用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "活用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "運用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "假借",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "憑靠",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "使用了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "用",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "選用",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "用到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "改用",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "使用著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "使用過",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "使用",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_YesNoQ",
-                    "text": "嗎",
                     "checked": false,
                     "checkbox": false
                 }
@@ -3343,220 +3534,6 @@
                     "text": "WebATM",
                     "checked": true,
                     "checkbox": true
-                }
-            ]
-        },
-        "「玉山WebATM」有轉帳金額的限制嗎": {
-            "id": "aa34847f-2bf7-49d0-bca8-2f71119262a8",
-            "argument": [
-                {
-                    "pos": "PUNCTUATION",
-                    "text": "「",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "玉山",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "WebATM",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "PUNCTUATION",
-                    "text": "」",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "具有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "兼有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "存有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "懷有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "持有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "擁有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "有了",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "有著",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "保留",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "有同",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "含有",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "有",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "匯款",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "匯錢",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "匯出",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "匯進",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "轉賬",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "電匯",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "充值",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "提領",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "儲值",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳費",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "提款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "付款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "開戶",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "取款",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "轉帳",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "金額",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "的",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "限制",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "CLAUSE_YesNoQ",
-                    "text": "嗎",
-                    "checked": false,
-                    "checkbox": false
                 }
             ]
         },

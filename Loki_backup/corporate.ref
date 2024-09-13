@@ -42,6 +42,7 @@
             "webatm"
         ],
         "as_noun": [
+            "港股",
             "水電費",
             "身分證",
             "應用程式",
@@ -927,6 +928,128 @@
                     "text": "多少",
                     "checked": false,
                     "checkbox": false
+                }
+            ]
+        },
+        "如何匯款至銀行帳戶": {
+            "id": "7b7d5086-319a-4e2a-ac6b-fa5c5c16f38e",
+            "argument": [
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "如何",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "匯錢",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "匯出",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "匯進",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "轉帳",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "轉賬",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "電匯",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "匯回",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "匯寄",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "劃撥",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "提領",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "提款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "付款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "開戶",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "借款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "郵寄",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "取款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "收款",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "匯款",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "至",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "銀行",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_nounHead",
+                    "text": "帳戶",
+                    "checked": true,
+                    "checkbox": true
                 }
             ]
         },
@@ -2844,128 +2967,6 @@
                     "text": "入帳",
                     "checked": false,
                     "checkbox": false
-                }
-            ]
-        },
-        "如何匯款至玉山銀行帳戶": {
-            "id": "b4cca1b1-552f-4fb0-87e1-272dce3268a3",
-            "argument": [
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "如何",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "匯錢",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "匯出",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "匯進",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "轉帳",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "轉賬",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "電匯",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "匯回",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "匯寄",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "劃撥",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "提領",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "提款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "郵寄",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "借款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "收款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "付款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "開戶",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "取款",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "匯款",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "至",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "玉山銀行",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "帳戶",
-                    "checked": true,
-                    "checkbox": true
                 }
             ]
         },
@@ -6470,6 +6471,191 @@
                 }
             ]
         },
+        "如果沒有銀行的授信額度可以辦理開立信用狀業務嗎": {
+            "id": "d749ff78-9e0d-4595-b1af-47f2ebb8a68a",
+            "argument": [
+                {
+                    "pos": "FUNC_inter",
+                    "text": "如果",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_negation",
+                    "text": "沒有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "銀行",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "授信額度",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "可以",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "處理",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "做買賣",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "受理",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "開展",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦理了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "試辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "承辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉行",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "自辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申請",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "實施",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "辦理",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "開具",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳交",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "檢附",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "掛號",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "填寫",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳回",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "交寄",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "簽發",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "核發",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "開立",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "信用狀",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "業務",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_YesNoQ",
+                    "text": "嗎",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "辦理出口信用狀押匯與出口託收都需要申請授信額度嗎": {
             "id": "7cc09cde-e1ee-44ef-afaa-ebbd5db7424f",
             "argument": [
@@ -6854,191 +7040,6 @@
                     "pos": "ENTITY_nouny",
                     "text": "授信額度",
                     "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "CLAUSE_YesNoQ",
-                    "text": "嗎",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "如果沒有玉山銀行的授信額度可以辦理開立信用狀業務嗎": {
-            "id": "1c16f0cf-3194-4604-8c9a-fa992ebe6158",
-            "argument": [
-                {
-                    "pos": "FUNC_inter",
-                    "text": "如果",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "FUNC_negation",
-                    "text": "沒有",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "玉山銀行",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "的",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "授信額度",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "MODAL",
-                    "text": "可以",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "處理",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "做買賣",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "受理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "開展",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "試辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "承辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉行",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "自辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "申請",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "實施",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "辦理",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "開具",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳交",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "檢附",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "掛號",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "填寫",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳回",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "交寄",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "簽發",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "核發",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "開立",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "信用狀",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "業務",
-                    "checked": true,
                     "checkbox": true
                 },
                 {

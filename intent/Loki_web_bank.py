@@ -81,16 +81,16 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "[玉山][個人][網路銀行][使用者名稱]與[密碼]的設定[規則]為何":
+    if utterance == "[個人][網路銀行][使用者名稱]與[密碼]的設定[規則]為何":
         if CHATBOT_MODE:
-            if '玉山' in args[0] and args[2] in ['網路銀行', '網銀'] and (args[3] and args[4]) in ['使用者名稱', '密碼', '用戶名'] and '規'in args[5]:
+            if args[1] in ['網路銀行', '網銀'] and (args[2] and args[3]) in ['使用者名稱', '密碼', '用戶名'] and '規'in args[4]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
-    if utterance == "[玉山]的[網路銀行]何時[可以]開始使用":
+    if utterance == "[網路銀行]何時[可以]開始使用":
         if CHATBOT_MODE:
-            if '玉山' in args[0] and args[1] in  ['網路銀行', '網銀']:
+            if args[0] in  ['網路銀行', '網銀']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
