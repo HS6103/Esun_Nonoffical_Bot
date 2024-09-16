@@ -88,7 +88,14 @@
             "玉山銀行",
             "玉山Wallet",
             "玉山全球通",
+            "全球通",
             "玉山掃碼通",
+            "玉山行動銀行",
+            "玉山信貸債務整合",
+            "玉山理財電子週報",
+            "玉山WebATM",
+            "理財電子週報",
+            "信貸債務整合",
             "現鈔",
             "眾樂樂",
             "綜合對帳單",
@@ -191,6 +198,29 @@
         ]
     },
     "utterance": {
+        "什麼是WebATM": {
+            "id": "354eaf23-580b-44ba-8e57-6ff0a7fc0bed",
+            "argument": [
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "什麼",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "AUX",
+                    "text": "是",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "WebATM",
+                    "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
         "如何安裝pcscd": {
             "id": "e5c11370-7935-4837-ae08-ff86265cffdf",
             "argument": [
@@ -286,35 +316,6 @@
                 {
                     "pos": "ENTITY_oov",
                     "text": "pcscd",
-                    "checked": true,
-                    "checkbox": true
-                }
-            ]
-        },
-        "什麼是玉山WebATM": {
-            "id": "3fd3ed94-13f8-4982-8ead-579ddc69a849",
-            "argument": [
-                {
-                    "pos": "CLAUSE_WhatQ",
-                    "text": "什麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "AUX",
-                    "text": "是",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "玉山",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "WebATM",
                     "checked": true,
                     "checkbox": true
                 }
@@ -1258,6 +1259,161 @@
                 }
             ]
         },
+        "使用WebATM服務的基本條件": {
+            "id": "d1ecaae2-68ac-4126-a49e-610dc29093e4",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "利用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "動用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "應用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "採用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "施用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "沿用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "活用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "運用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "假借",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "憑靠",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "使用了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "用",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "選用",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "用到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "改用",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "使用著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "使用過",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "使用",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "WebATM",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "事奉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "侍奉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "運營",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "營運",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "照護",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "服務",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "基本",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nounHead",
+                    "text": "條件",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
         "忘記金融卡密碼該怎麼辦": {
             "id": "e9d7c7a7-5e78-4436-aac4-7b4c8b04490a",
             "argument": [
@@ -2154,163 +2310,245 @@
                 }
             ]
         },
-        "使用玉山WebATM服務的基本條件": {
-            "id": "c156d5d4-9d97-4306-812c-31d44b74ad6a",
+        "Edge瀏覽器無法正常顯示WebATM": {
+            "id": "62e9a0da-0ad0-48b1-8e9b-3503dcdc9246",
             "argument": [
                 {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "利用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "動用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "應用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "採用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "施用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "沿用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "活用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "運用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "假借",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "憑靠",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "使用了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "用",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "選用",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "用到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "改用",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "使用著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "使用過",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "使用",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "玉山",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
                     "pos": "ENTITY_oov",
-                    "text": "WebATM",
-                    "checked": true,
+                    "text": "Edge",
+                    "checked": false,
                     "checkbox": true
                 },
                 {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "事奉",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "侍奉",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "運營",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "營運",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "照護",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "服務",
+                    "pos": "ENTITY_nouny",
+                    "text": "瀏覽器",
                     "checked": false,
-                    "checkbox": false
+                    "checkbox": true
                 },
                 {
-                    "pos": "FUNC_inner",
-                    "text": "的",
+                    "pos": "FUNC_negation",
+                    "text": "無法",
                     "checked": false,
                     "checkbox": false
                 },
                 {
                     "pos": "MODIFIER",
-                    "text": "基本",
+                    "text": "正常",
                     "checked": false,
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nounHead",
-                    "text": "條件",
-                    "checked": true,
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "展示",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "指示",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "揭示",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "昭示",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "標示",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "演示",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "示例",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "示範",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "表示",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "開示",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "顯出",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "顯露",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "展出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "引領",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "指出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "指引",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "揭發",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "揭破",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "揭穿",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "揭開",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "標注",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "泄漏",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "洩漏",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "演出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "表演",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "說破",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "賣弄",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "走漏",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "透漏",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "露出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "呈現",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "讀取",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "判讀",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "顯示出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "發現",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "縮放",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "顯現",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "預測",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "顯示了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "表明",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "顯示",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "WebATM",
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -2962,6 +3200,173 @@
                 }
             ]
         },
+        "Linux上使用WebATM服務的基本需求": {
+            "id": "363e40a9-c0fc-40be-b618-58d6cb4051c5",
+            "argument": [
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "Linux",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "RANGE_locality",
+                    "text": "上",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "利用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "動用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "應用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "採用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "施用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "沿用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "活用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "運用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "假借",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "憑靠",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "使用了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "用",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "選用",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "用到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "改用",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "使用著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "使用過",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "使用",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "WebATM",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "事奉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "侍奉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "運營",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "營運",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "照護",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "服務",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "基本",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "需求",
+                    "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
         "如何確認讀卡機是否可正常運作": {
             "id": "84caf537-a7b1-4e3a-b99f-08604b5acb3a",
             "argument": [
@@ -3285,255 +3690,6 @@
                     "text": "嗎",
                     "checked": false,
                     "checkbox": false
-                }
-            ]
-        },
-        "Edge瀏覽器無法正常顯示玉山WebATM": {
-            "id": "45f43c9f-725f-4296-8ac1-41385146a992",
-            "argument": [
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "Edge",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "瀏覽器",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "FUNC_negation",
-                    "text": "無法",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "MODIFIER",
-                    "text": "正常",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "展示",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "指示",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "揭示",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "昭示",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "標示",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "演示",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "示例",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "示範",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "表示",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "開示",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "顯出",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "顯露",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "展出",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "引領",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "指出",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "指引",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "揭發",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "揭破",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "揭穿",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "揭開",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "標注",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "泄漏",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "洩漏",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "演出",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "表演",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "說破",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "賣弄",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "走漏",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "透漏",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "露出",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "預測",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "顯示了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "發現",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "縮放",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "讀取",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "顯示出",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "呈現",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "顯現",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "判讀",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "表明",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "顯示",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "玉山",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "WebATM",
-                    "checked": true,
-                    "checkbox": true
                 }
             ]
         },
@@ -4230,179 +4386,6 @@
                     "text": "轉帳",
                     "checked": false,
                     "checkbox": false
-                }
-            ]
-        },
-        "Linux上使用玉山WebATM服務的基本需求": {
-            "id": "44b4aa2c-e756-4f78-be9b-8364d4708116",
-            "argument": [
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "Linux",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "RANGE_locality",
-                    "text": "上",
-                    "checked": true,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "利用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "動用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "應用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "採用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "施用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "沿用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "活用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "運用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "假借",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "憑靠",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "選用",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "用",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "用到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "使用著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "改用",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "使用過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "使用了",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "使用",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "玉山",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "WebATM",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "事奉",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "侍奉",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "照護",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "運營",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "營運",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "服務",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "的",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "MODIFIER",
-                    "text": "基本",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "需求",
-                    "checked": true,
-                    "checkbox": true
                 }
             ]
         },

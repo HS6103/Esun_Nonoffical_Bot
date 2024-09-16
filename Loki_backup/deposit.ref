@@ -88,7 +88,14 @@
             "玉山銀行",
             "玉山Wallet",
             "玉山全球通",
+            "全球通",
             "玉山掃碼通",
+            "玉山行動銀行",
+            "玉山信貸債務整合",
+            "玉山理財電子週報",
+            "玉山WebATM",
+            "理財電子週報",
+            "信貸債務整合",
             "現鈔",
             "眾樂樂",
             "綜合對帳單",
@@ -5272,8 +5279,8 @@
                 }
             ]
         },
-        "晚上8點至ATM存款到玉山帳戶會從當日計算利息嗎": {
-            "id": "94a153c3-932b-4ade-a10a-7d7d748351bc",
+        "晚上8點至ATM存款到銀行帳戶會從當日計算利息嗎": {
+            "id": "82e1bac4-2876-4efc-ad57-7eaa02deb56f",
             "argument": [
                 {
                     "pos": "TIME_day",
@@ -5294,7 +5301,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_oov",
+                    "pos": "UserDefined",
                     "text": "ATM",
                     "checked": true,
                     "checkbox": true
@@ -5302,7 +5309,7 @@
                 {
                     "pos": "ENTITY_oov",
                     "text": "存款",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -5369,13 +5376,13 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "UserDefined",
-                    "text": "玉山",
+                    "pos": "ENTITY_noun",
+                    "text": "銀行",
                     "checked": true,
                     "checkbox": true
                 },
                 {
-                    "pos": "ENTITY_oov",
+                    "pos": "ENTITY_nounHead",
                     "text": "帳戶",
                     "checked": true,
                     "checkbox": true
@@ -5462,32 +5469,22 @@
                             "checked": false
                         },
                         {
-                            "text": "試算",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "測算",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "求解",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "估算",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "換算",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "量度",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "試算",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "求解",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -5502,7 +5499,17 @@
                             "checked": false
                         },
                         {
+                            "text": "換算",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "測量",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "估算",
                             "level": "word2vec",
                             "checked": false
                         }
