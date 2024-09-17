@@ -74,13 +74,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "[代]扣繳服務如遇[帳戶][餘額][不足][是]否[會]動用定存質借":
-        if CHATBOT_MODE:
-            if '代' in args[0] and args[1] in ['帳戶', '帳號', '戶頭'] and args[3] == '不足':
-                resultDICT["response"] = getResponse(utterance, args)   
-        else:
-            pass
-
     if utterance == "[個人][網路銀行][使用者名稱]與[密碼]的設定[規則]為何":
         if CHATBOT_MODE:
             if args[1] in ['網路銀行', '網銀'] and (args[2] and args[3]) in ['使用者名稱', '密碼', '用戶名'] and '規'in args[4]:
@@ -102,19 +95,19 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "[讀卡機]未符合[玉山銀行][晶片金融卡]元件([WebATM]元件)要求":
+    if utterance == "[讀卡機]未符合[銀行][晶片金融卡]元件([WebATM]元件)要求":
         if CHATBOT_MODE:
             if '玉山' in args[1] and (args[2] and args[3] in ['晶片金融卡', 'webatm']):
                 if args[0] in  ['讀卡機', 'smart card service', '作業系統', '瀏覽器', 'os']:
-                    resultDICT["response"] = getResponse("[{}]未符合[玉山銀行][晶片金融卡]元件([WebATM]元件)要求".format(args[0]), args)
+                    resultDICT["response"] = getResponse("[{}]未符合[銀行][晶片金融卡]元件([WebATM]元件)要求".format(args[0]), args)
         else:
             pass
 
-    if utterance == "[讀卡機]未符合[玉山銀行][晶片金融卡]元件要求":
+    if utterance == "[讀卡機]未符合[銀行][晶片金融卡]元件要求":
         if CHATBOT_MODE:
             if args[1] in ['晶片金融卡', 'webatm']:
                 if args[0] in  ['讀卡機', 'smart card service', '作業系統', '瀏覽器', 'os']:
-                    resultDICT["response"] = getResponse("[{}]未符合[玉山銀行][晶片金融卡]元件要求".format(args[0]), args)
+                    resultDICT["response"] = getResponse("[{}]未符合[銀行][晶片金融卡]元件要求".format(args[0]), args)
         else:
             pass
 
@@ -160,9 +153,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
         
-    if utterance == "如何[才能]使用[玉山銀行]的[網路銀行]":
+    if utterance == "如何[才能]使用[銀行]的[網路銀行]":
         if CHATBOT_MODE:
-            if '玉山' in args[1]:
+            if '銀行' in args[1]:
                 if args[2] in  ['網路銀行', '網銀']:
                     resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -392,12 +385,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "為什麼[我][會]收到玉山網路銀行暨行動銀行帳戶[安全]提醒通知":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass
-
     if utterance == "為什麼無法[成功]申請[帳戶]代扣繳":
         if CHATBOT_MODE:
             if args[0] in ['成功', '順利'] and args[1] in ['帳戶', '帳號', '戶頭']:
@@ -433,10 +420,23 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
         
-    if utterance == "[我]與[玉山銀行]往來的[許多]業務[均]有約定密碼":
+    if utterance == "[我]與[銀行]往來的[許多]業務[均]有約定密碼":
         if CHATBOT_MODE:
-            if '玉山' in args[0]:
-                resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
+
+    if utterance == "代扣繳服務如遇[帳戶][餘額][不足][是]否[會]動用定存質借":
+        if CHATBOT_MODE:
+            if args[0] in ['帳戶', '帳號', '戶頭'] and args[2] == '不足':
+                resultDICT["response"] = getResponse(utterance, args)   
+        else:
+            pass
+
+    if utterance == "為什麼[我][會]收到網路銀行暨行動銀行帳戶[安全]提醒通知":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+
     return resultDICT

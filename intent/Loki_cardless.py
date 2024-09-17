@@ -124,20 +124,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "[玉山][ATM][可以]進行跨行無卡提款嗎":
-        if CHATBOT_MODE:
-            if '玉山' in args[0] and args[1] in userDefinedDICT['atm']:
-                resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass
-
-    if utterance == "[玉山][顧客][可以]至[他][行][ATM]進行跨行無卡提款嗎":
-        if CHATBOT_MODE:
-            if '玉山' in args[0] and args[3] == '他' and args[5] in userDefinedDICT['atm']:
-                resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass
-
     if utterance == "[行動]無卡提款的[限額]":
         if CHATBOT_MODE:
             if args[1] == '限額':
@@ -227,6 +213,13 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     if utterance == "開通[行動]無卡提款[成功]但是[我]的金融卡[不見]了":
         if CHATBOT_MODE:
             if args[1] == '成功' and args[3] == '不見':
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+
+    if utterance == "[ATM][可以]進行跨行無卡提款嗎":
+        if CHATBOT_MODE:
+            if args[0] in userDefinedDICT['atm']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass

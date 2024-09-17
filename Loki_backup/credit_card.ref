@@ -96,6 +96,7 @@
             "玉山WebATM",
             "理財電子週報",
             "信貸債務整合",
+            "信用貸款債務整合",
             "現鈔",
             "眾樂樂",
             "綜合對帳單",
@@ -10345,7 +10346,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "年費問題",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -10846,7 +10847,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "帳單",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -11450,8 +11451,8 @@
                 }
             ]
         },
-        "申請個人信貸需要有玉山帳戶嗎": {
-            "id": "f68e720e-de4c-443c-b162-f67ad0f746c7",
+        "申請個人信貸需要有銀行帳戶嗎": {
+            "id": "121475bc-9c83-4943-81fa-e4a8a3526d21",
             "argument": [
                 {
                     "pos": "ACTION_verb",
@@ -11482,7 +11483,7 @@
                             "checked": false
                         },
                         {
-                            "text": "登記",
+                            "text": "註冊",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -11492,7 +11493,12 @@
                             "checked": false
                         },
                         {
-                            "text": "註冊",
+                            "text": "核發",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申訴",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -11507,12 +11513,7 @@
                             "checked": false
                         },
                         {
-                            "text": "申訴",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "核發",
+                            "text": "登記",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -11654,22 +11655,22 @@
                             "checked": false
                         },
                         {
-                            "text": "含有",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "有同",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -11684,13 +11685,13 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "UserDefined",
-                    "text": "玉山",
+                    "pos": "ENTITY_noun",
+                    "text": "銀行",
                     "checked": true,
                     "checkbox": true
                 },
                 {
-                    "pos": "ENTITY_oov",
+                    "pos": "ENTITY_nounHead",
                     "text": "帳戶",
                     "checked": true,
                     "checkbox": true
@@ -16985,7 +16986,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "信貸債務整合",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]

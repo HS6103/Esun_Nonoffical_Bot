@@ -75,9 +75,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
         
-    if utterance == "[TWQR跨機構購物交易]是[甚麼]的[消費]":
+    if utterance == "[TWQR跨機構購物交易]是甚麼的[消費]":
         if CHATBOT_MODE:
-            if 'twqr' in args[0] and '消費' in args[2]:
+            if 'twqr' in args[0] and '消費' in args[1]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -445,14 +445,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
 
     if utterance == "已經有向[銀行]貸款還[可以]再申請嗎":
         if CHATBOT_MODE:
-            if '銀行' or '玉山' in args[0]:
+            if '銀行' in args[0]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
-    if utterance == "拾獲[玉山][信用卡][該][怎麼]做":
+    if utterance == "拾獲[銀行][信用卡][該][怎麼]做":
         if CHATBOT_MODE:
-            if '玉山' in args[0] and args[1] == '信用卡':
+            if args[1] == '信用卡':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -485,13 +485,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "有其他家銀行貸款[是]否[可]申請[玉山][信貸]債務整合":
-        if CHATBOT_MODE:
-            if '玉山' in args[2] and args[3] in ['信貸', '信用貸款']:
-                resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass
-
     if utterance == "為什麼已經刷退卻還沒收到退款":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -505,9 +498,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "申請[個人信貸]需要有[玉山][帳戶]嗎":
+    if utterance == "申請[個人信貸]需要有[銀行][帳戶]嗎":
         if CHATBOT_MODE:
-            if args[0] in ['信貸', '信用貸款', '個人信貸'] and '玉山' in args[1] and args[2] in ['帳戶', '戶頭', '帳號']:
+            if args[0] in ['信貸', '信用貸款', '個人信貸'] and '銀行' in args[1] and args[2] in ['帳戶', '戶頭', '帳號']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -529,6 +522,13 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     if utterance == "繳款[截止日][是]否[可以]更改":
         if CHATBOT_MODE:
             if args[0] == '截止日':
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+        
+    if utterance == "有其他[家][銀行]貸款[是]否[可]申請[信貸債務整合]":
+        if CHATBOT_MODE:
+            if '債務整合' in args[4]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass

@@ -140,21 +140,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
-
-    if utterance == "[玉山][是]否有[親子帳戶]":
-        if CHATBOT_MODE:
-            if args[0] in ['玉山', '玉山銀行'] and '親子' in args[2]:
-                resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass
-
-    if utterance == "[玉山][財富]管理[是]否有[會員][制度]":
-        if CHATBOT_MODE:
-            if args[0] in ['玉山', '玉山銀行'] and args[1] in ['財富', '資產'] and args[3] == '會員':
-                resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass
-
+        
     if utterance == "[財富]管理[會員][可]享何[種][優惠]":
         if CHATBOT_MODE:
             if args[0] in ['財富', '資產'] and args[1] == '會員':
@@ -317,14 +303,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
-
-    if utterance == "如何訂閱[玉山]理財電子週報":
-        if CHATBOT_MODE:
-            if args[0] in ['玉山', '玉山銀行']:
-                resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass
-
+ 
     if utterance == "如何買賣[海外][ETF]":
         if CHATBOT_MODE:
             if args[0] == '海外' and args[1] == 'etf':
@@ -435,6 +414,26 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
         
+    if utterance == "[是]否有[親子帳戶]":
+        if CHATBOT_MODE:
+            if '親子' in args[1]:
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+
+    if utterance == "[財富]管理[是]否有[會員][制度]":
+        if CHATBOT_MODE:
+            if args[0] in ['財富', '資產'] and args[2] == '會員':
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+        
+    if utterance == "如何訂閱理財電子週報":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+
     if utterance == "如何進行金融商品([基金]、[海外][ETF]、[港股]、[美股])比較":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)

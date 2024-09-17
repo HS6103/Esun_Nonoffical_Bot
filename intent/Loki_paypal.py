@@ -80,13 +80,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "[可以]至[玉山銀行][臨櫃][將]PayPal[款項]提領出來嗎":
-        if CHATBOT_MODE:
-            if args[1] in ['玉山', '玉山銀行'] and '櫃' in args[2]:
-                resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass
-
     if utterance == "[數位帳戶][可以]進行PayPal連結及提領服務嗎":
         if CHATBOT_MODE:
             if args[0] == '數位帳戶':
@@ -101,16 +94,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "什麼時候[會]使用[玉山全球通]":
-        if CHATBOT_MODE:
-            if '全球通' in args[1]:
-                resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass
-
     if utterance == "什麼是[PayPal]":
         if CHATBOT_MODE:
-            if args[0] in ['paypal', '玉山全球通'] or '全球通' in args[0]:
+            if args[0] in ['paypal', '全球通'] or '全球通' in args[0]:
                 resultDICT["response"] = getResponse("什麼是{}".format(args[0]), args)
         else:
             pass
@@ -130,13 +116,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     if utterance == "如何查詢PayPal提領[明細]":
         if CHATBOT_MODE:
             if args[0] in ['明細']:
-                resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass
-
-    if utterance == "如何申請[玉山全球通]":
-        if CHATBOT_MODE:
-            if '全球通' in args[0]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -211,13 +190,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "有[玉山銀行][帳戶][我]還[能]申請使用PayPal跨行提領服務嗎":
-        if CHATBOT_MODE:
-            if args[0] in ['玉山', '玉山銀行']:
-                resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass
-
     if utterance == "查無PayPal[帳號權限]":
         if CHATBOT_MODE:
             if '權限' in args[0]:
@@ -260,27 +232,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "[玉山全球通]提供哪些PayPal提領[功能]":
-        if CHATBOT_MODE:
-            if '全球通' in args[0] and args[1] == '功能':
-                resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass
-
-    if utterance == "[玉山全球通]服務[安全]嗎":
-        if CHATBOT_MODE:
-            if '全球通' in args[0] and args[1] == '安全':
-                resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass
-
-    if utterance == "申請[玉山全球通]服務[是]否有[資格]限制":
-        if CHATBOT_MODE:
-            if '全球通' in args[0]:
-                resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass
-
     if utterance == "註冊PayPal跨行[帳戶][基本][資料][成功][將][資料]送出[後][須]等待多[久][會]收到審核[結果]":
         if CHATBOT_MODE:
             if args[0] in ['帳戶', '帳號', '戶頭']:
@@ -301,10 +252,65 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "透過[玉山全球通]確認提領PayPal[款項][後][能]否取消[交易]呢":
+    if utterance == "[可以]至[銀行][臨櫃][將]PayPal[款項]提領出來嗎":
         if CHATBOT_MODE:
-            if '全球通' in args[0] and args[4] == '交易':
+            if  '櫃' in args[2]:
                 resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+
+    if utterance == "什麼時候[會]使用[全球通]":
+        if CHATBOT_MODE:
+            if '全球通' in args[1]:
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+
+    if utterance == "[全球通]提供哪些PayPal提領[功能]":
+        if CHATBOT_MODE:
+            if '全球通' in args[0] and args[1] == '功能':
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+
+    if utterance == "[全球通]服務[安全]嗎":
+        if CHATBOT_MODE:
+            if '全球通' in args[0] and args[1] == '安全':
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+
+    if utterance == "[全球通]服務[是]否有[資格]限制":
+        if CHATBOT_MODE:
+            if '全球通' in args[0]:
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+
+    if utterance == "如何申請[全球通]":
+        if CHATBOT_MODE:
+            if '全球通' in args[0]:
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+
+    if utterance == "提領PayPal[款項]至[銀行][帳戶]或其他[銀行][帳戶]需多[久][時間][才會]入帳":
+        if CHATBOT_MODE:
+            if ('款' or '額' in args[0]) and args[2] in ['帳戶', '帳號', '戶頭'] and args[4] in ['帳戶', '帳號', '戶頭'] and args[6] == '時間':
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+
+    if utterance == "有[銀行][帳戶][我]還[能]申請使用PayPal跨行提領服務嗎":
+        if CHATBOT_MODE:
+            if args[1] in ['帳戶', '帳號']:
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+
+    if utterance == "確認提領PayPal款項[後][能]否取消交易呢":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 

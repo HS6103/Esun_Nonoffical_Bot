@@ -96,6 +96,7 @@
             "玉山WebATM",
             "理財電子週報",
             "信貸債務整合",
+            "信用貸款債務整合",
             "現鈔",
             "眾樂樂",
             "綜合對帳單",
@@ -216,7 +217,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "WebATM",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -1489,7 +1490,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "密碼",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -2316,7 +2317,7 @@
                 {
                     "pos": "ENTITY_oov",
                     "text": "Edge",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -2548,7 +2549,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "WebATM",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -3206,7 +3207,7 @@
                 {
                     "pos": "ENTITY_oov",
                     "text": "Linux",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -3311,7 +3312,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "WebATM",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -3362,7 +3363,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "需求",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]

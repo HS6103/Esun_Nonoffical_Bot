@@ -213,23 +213,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "[晚上8點]至[ATM]存款到[玉山][帳戶][會]從[當日]計算利息嗎":
-        if CHATBOT_MODE:
-            if args[1].lower() in userDefinedDICT['atm'] and args[2] in ['玉山', '玉山銀行']:
-                compareResultDICT = getCorrectTime(args[0], args[5], datetime.time(0, 0, 0), datetime.time(23, 59, 59), weekendOff=False)
-                if compareResultDICT["ans"] == "correct":
-                    resultDICT["response"] = "是的！" + getResponse(utterance, args).format(args[5])
-                else:
-                    if compareResultDICT["correctDate"] == None:
-                        resultDICT["response"] = "營業時段為 9:00 開始，時段外恕不提供服務哦！"
-                    else:
-                        if compareResultDICT["t"] == 't':
-                            resultDICT["response"] = "不是喔！" + getResponse(utterance, args).format('存款當日')
-                        else:
-                            resultDICT["response"] = "不是喔！" + getResponse(utterance, args).format('存款隔日')
-        else:
-            pass
-
     if utterance == "[晚上8點]還[能]用[行動銀行]作[外幣][定存]嗎":
         if CHATBOT_MODE:
             if args[2] in ['行動銀行'] and args[3] == '外幣' and args[4] in ['定存', '定期存款']:
@@ -310,7 +293,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "[金融卡]在[國][外]]提款[每日][限額]及[手續費]為何":
+    if utterance == "[金融卡]在[國][外]提款[每日][限額]及[手續費]為何":
         if CHATBOT_MODE:
             if args[0] == '金融卡' and args[1] in ['國'] and args[2] == '外':
                 if args[3] in ['每天', '每日', '一天', '一日']:
@@ -389,6 +372,29 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             if args[1] in ['存摺'] and args[4] == '明細': 
                 resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+
+    if utterance == "[外]來人口換發「新式統一證號」資料變更提醒事項":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+
+    if utterance == "[晚上8點]至[ATM]存款到[銀行][帳戶][會]從[當日]計算利息嗎":
+        if CHATBOT_MODE:
+            if args[1] in userDefinedDICT['atm'] and args[3] in ['帳戶', '戶頭', '帳號']:
+                compareResultDICT = getCorrectTime(args[0], args[5], datetime.time(0, 0, 0), datetime.time(23, 59, 59), weekendOff=False)
+                if compareResultDICT["ans"] == "correct":
+                    resultDICT["response"] = "是的！" + getResponse(utterance, args).format(args[5])
+                else:
+                    if compareResultDICT["correctDate"] == None:
+                        resultDICT["response"] = "營業時段為 9:00 開始，時段外恕不提供服務哦！"
+                    else:
+                        if compareResultDICT["t"] == 't':
+                            resultDICT["response"] = "不是喔！" + getResponse(utterance, args).format('存款當日')
+                        else:
+                            resultDICT["response"] = "不是喔！" + getResponse(utterance, args).format('存款隔日')
         else:
             pass
 

@@ -96,6 +96,7 @@
             "玉山WebATM",
             "理財電子週報",
             "信貸債務整合",
+            "信用貸款債務整合",
             "現鈔",
             "眾樂樂",
             "綜合對帳單",
@@ -509,7 +510,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "親子帳戶",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -2474,7 +2475,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "淨值",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {

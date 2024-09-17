@@ -96,6 +96,7 @@
             "玉山WebATM",
             "理財電子週報",
             "信貸債務整合",
+            "信用貸款債務整合",
             "現鈔",
             "眾樂樂",
             "綜合對帳單",
@@ -317,7 +318,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "全球通",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -837,7 +838,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "全球通",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -1157,7 +1158,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "全球通",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -1285,7 +1286,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "資格",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -1640,7 +1641,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "全球通",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -1879,7 +1880,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "功能",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -3650,13 +3651,13 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "銀行",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
                     "pos": "ENTITY_nounHead",
                     "text": "臨櫃",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -3674,7 +3675,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "款項",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -8171,13 +8172,13 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "銀行",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
                     "pos": "ENTITY_nounHead",
                     "text": "帳戶",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -9800,7 +9801,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "款項",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -9923,7 +9924,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "時間",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {

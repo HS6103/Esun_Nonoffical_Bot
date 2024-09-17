@@ -96,6 +96,7 @@
             "玉山WebATM",
             "理財電子週報",
             "信貸債務整合",
+            "信用貸款債務整合",
             "現鈔",
             "眾樂樂",
             "綜合對帳單",
@@ -1100,7 +1101,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "信用卡",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -6815,7 +6816,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "銀行",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -6827,7 +6828,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "網路銀行",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -8399,7 +8400,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "銀行",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -8814,7 +8815,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "讀卡機",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -8959,13 +8960,13 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "銀行",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
                     "pos": "UserDefined",
                     "text": "晶片金融卡",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -11177,7 +11178,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "錯誤",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -11188,7 +11189,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "讀卡機",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -11333,13 +11334,13 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "銀行",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
                     "pos": "UserDefined",
                     "text": "晶片金融卡",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -11357,7 +11358,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "WebATM",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
