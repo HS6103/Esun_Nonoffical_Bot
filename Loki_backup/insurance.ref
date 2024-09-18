@@ -556,7 +556,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "網路",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -12997,7 +12997,7 @@
                 {
                     "pos": "ENTITY_nounHead",
                     "text": "帳戶",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -16086,7 +16086,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "銀行",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -16345,7 +16345,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "交易",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -16605,7 +16605,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "保險",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -19365,7 +19365,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "網路",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -19513,7 +19513,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "身分",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -19982,7 +19982,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "網路",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -21029,13 +21029,13 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "帳戶",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
                     "pos": "UserDefined",
                     "text": "餘額",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {

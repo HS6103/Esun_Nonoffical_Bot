@@ -60,7 +60,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "[一定]要完成「網路投保註冊暨[身分]驗證」[才][可以]投保嗎":
+    if utterance == "[一定]要完成「網路投保註冊暨身分驗證」[才][可以]投保嗎":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -372,10 +372,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "在[玉山銀行]查詢或下載[任何]網路投保的[相關][資訊][是]否需要[另][外]付費":
+    if utterance == "查詢或下載[任何]網路投保的[相關][資訊][是]否需要[另][外]付費":
         if CHATBOT_MODE:
-            if args[0] in ['玉山', '玉山銀行']:
-                resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
@@ -428,9 +427,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "如何進行[玉山銀行]網路投保":
+    if utterance == "如何進行[銀行]網路投保":
         if CHATBOT_MODE:
-            if '玉山' in args[0]:
+            if '銀行' in args[0]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -477,9 +476,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "有沒[有][適合][小朋友]的[保險]規劃[產品]":
+    if utterance == "有沒[有][適合][小朋友]的[保險]":
         if CHATBOT_MODE:
-            if args[2] in ['小朋友', '小孩']:
+            if args[2] in ['小朋友', '小孩'] and args[3] == '保險':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -491,23 +490,23 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "沒有[玉山]的[帳戶]還是[可以]透過[玉山][臨櫃]或[網路]投保嗎":
+    if utterance == "沒有[銀行]的[帳戶]還是[可以]透過[銀行][臨櫃]或[網路]投保嗎":
         if CHATBOT_MODE:
-            if args[0] and args[3] in ['玉山', '玉山銀行'] and args[1] in ['帳戶', '帳號', '戶頭'] and args[4] and args[5] in ['網路', '臨櫃']:
+            if args[1] in ['帳戶', '帳號', '戶頭'] and args[4] and args[5] in ['網路', '臨櫃']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
-    if utterance == "沒有[玉山]的[帳戶]還是[可以]透過[玉山][臨櫃]投保嗎":
+    if utterance == "沒有[銀行]的[帳戶]還是[可以]透過[銀行][臨櫃]投保嗎":
         if CHATBOT_MODE:
-            if args[0] and args[3] in ['玉山', '玉山銀行'] and args[1] in ['帳戶', '帳號', '戶頭'] and args[4] in ['網路', '臨櫃']:
+            if args[1] in ['帳戶', '帳號', '戶頭'] and args[4] in ['網路', '臨櫃']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
 
-    if utterance == "沒有[玉山]的[帳戶]還是[可以]透過[網路]投保嗎":
+    if utterance == "沒有[銀行]的[帳戶]還是[可以]透過[網路]投保嗎":
         if CHATBOT_MODE:
-            if args[0] in ['玉山', '玉山銀行'] and args[1] in ['帳戶', '帳號', '戶頭'] and args[3] in ['網路', '臨櫃']:
+            if args[1] in ['帳戶', '帳號', '戶頭'] and args[3] in ['網路', '臨櫃']:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -533,16 +532,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "透過[玉山]投保[只][能]向原[服務人員]所屬[分行]諮詢[保險][相關][問題]嗎":
+    if utterance == "透過[銀行]進行網路投保如何確保[我]的[交易][安全]":
         if CHATBOT_MODE:
-            if args[0] in ['玉山', '玉山銀行'] and '險' in args[5] and args[7] in ['問題', '事宜', '疑問']:
-                resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass
-
-    if utterance == "透過[玉山銀行]進行網路投保如何確保[我]的[交易][安全]":
-        if CHATBOT_MODE:
-            if args[0] in ['玉山', '玉山銀行'] and args[2] == '交易' and args[3] == '安全':
+            if '銀行' in args[0] and args[2] == '交易' and args[3] == '安全':
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
@@ -554,88 +546,11 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
 
-    if utterance == "[一定]要完成「[網路]投保註冊暨[身分]驗證」[才][可以]投保嗎":
+    if utterance == "[只][能]向原[服務人員]所屬分行諮詢[保險][相關][問題]嗎":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if '險' in args[3] and args[5] in ['問題', '事宜', '疑問']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            pass
-
-    if utterance == "[只][能]向原[服務人員]所屬分行諮詢保險[相關][問題]嗎":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "[網路][上]找不到[廠牌]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "如何進行[銀行]網路投保":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "如果帳戶餘額[不足]導致扣款[失敗]續期每月定額[保險費][會]停扣嗎":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "有沒[有][適合][小朋友]的[保險]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "查詢或下載[任何][網路]投保的[相關][資訊][是]否需要[另][外]付費":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "沒有[銀行]的[帳戶]還是[可以]透過[網路]投保嗎":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "沒有[銀行]的[帳戶]還是[可以]透過[銀行][臨櫃]或[網路]投保嗎":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "沒有[銀行]的[帳戶]還是[可以]透過[銀行][臨櫃]投保嗎":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "續期每月定額[保險費][可]否從[他][行]帳戶扣款":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "透過銀行進行網路投保如何確保[我]的交易[安全]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
             pass
 
     if utterance == "非本[國籍][可以]購買[保險]嗎":
