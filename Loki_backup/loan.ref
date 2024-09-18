@@ -634,7 +634,7 @@
                 {
                     "pos": "ENTITY_oov",
                     "text": "IXML",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -730,7 +730,7 @@
                 {
                     "pos": "ENTITY_oov",
                     "text": "IXML",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -1400,7 +1400,7 @@
                 {
                     "pos": "ENTITY_oov",
                     "text": "IXML",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -6147,7 +6147,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "房屋貸款",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -6171,7 +6171,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "部分",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -6871,7 +6871,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "後果",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -7832,7 +7832,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "部分",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -10112,7 +10112,7 @@
                 {
                     "pos": "ENTITY_oov",
                     "text": "住宅",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -11346,7 +11346,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "本金",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -15059,7 +15059,7 @@
                 {
                     "pos": "DegreeP",
                     "text": "比較有利",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -15215,7 +15215,7 @@
                 {
                     "pos": "DegreeP",
                     "text": "較長",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -16468,7 +16468,7 @@
                 {
                     "pos": "DegreeP",
                     "text": "比較容易",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -16642,7 +16642,7 @@
                 {
                     "pos": "DegreeP",
                     "text": "較長",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
