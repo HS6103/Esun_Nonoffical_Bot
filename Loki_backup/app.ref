@@ -4012,6 +4012,123 @@
                 }
             ]
         },
+        "什麼是銀行人臉辨識": {
+            "id": "b14a2d93-7de9-4867-9665-f4bda896179a",
+            "argument": [
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "什麼",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "AUX",
+                    "text": "是",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "銀行",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "人臉",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "認識",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "辨認",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "鑑識",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "指認",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "聞出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "認出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "認得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "偵測",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辨別",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "判讀",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "識別",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "讀取",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "分辨",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "檢測",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "掃瞄",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "檢索",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "辨識",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "如何不顯示圖形密碼": {
             "id": "2d638adb-d921-4efd-b99e-d43926102f89",
             "argument": [
@@ -6317,6 +6434,210 @@
                 }
             ]
         },
+        "如何使用銀行人臉辨識": {
+            "id": "e0cc36de-10bd-4a65-9e1d-6757fc253f78",
+            "argument": [
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "如何",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "利用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "動用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "應用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "採用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "施用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "沿用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "活用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "運用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "假借",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "憑靠",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "使用了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "用",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "選用",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "用到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "改用",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "使用著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "使用過",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "使用",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "銀行",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "人臉",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "認識",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "辨認",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "鑑識",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "指認",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "聞出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "認出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "認得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "辨別",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "識別",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "分辨",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "掃瞄",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "讀取",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "偵測",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "檢測",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "檢索",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "判讀",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "辨識",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "如何取消手機號碼轉帳": {
             "id": "9ca4df03-d566-46ba-8cb6-ca48002015b9",
             "argument": [
@@ -7272,123 +7593,6 @@
                         }
                     ],
                     "text": "轉帳",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "什麼是玉山銀行人臉辨識": {
-            "id": "56f2c8a1-f8fd-41e9-9e19-8ad69724940f",
-            "argument": [
-                {
-                    "pos": "CLAUSE_WhatQ",
-                    "text": "什麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "AUX",
-                    "text": "是",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "玉山銀行",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "人臉",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "認識",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "辨認",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "鑑識",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "指認",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "聞出",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "認出",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "認得",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "辨別",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "識別",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "分辨",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "掃瞄",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "讀取",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "偵測",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "檢測",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "檢索",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "判讀",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "辨識",
                     "checked": false,
                     "checkbox": false
                 }
@@ -8762,210 +8966,6 @@
                 }
             ]
         },
-        "如何使用玉山銀行人臉辨識": {
-            "id": "445ae6e5-f529-4c7c-98dc-25fcecb04505",
-            "argument": [
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "如何",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "利用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "動用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "應用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "採用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "施用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "沿用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "活用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "運用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "假借",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "憑靠",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "選用",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "用",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "用到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "使用著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "改用",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "使用過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "使用了",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "使用",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "玉山銀行",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "人臉",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "認識",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "辨認",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "鑑識",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "指認",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "聞出",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "認出",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "認得",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "偵測",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辨別",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "判讀",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "識別",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "讀取",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "分辨",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "檢測",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "掃瞄",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "檢索",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "辨識",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
         "操作行動銀行出現畫面空白": {
             "id": "0e81ba5a-c113-4ec1-a83c-f29d3dcd0e64",
             "argument": [
@@ -9085,7 +9085,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "行動銀行",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -9274,7 +9274,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "畫面",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -9286,7 +9286,7 @@
                 {
                     "pos": "MODIFIER_color",
                     "text": "白",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -12652,7 +12652,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "行動銀行",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -12728,7 +12728,7 @@
                 {
                     "pos": "ENTITY_nounHead",
                     "text": "裝置",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -12818,7 +12818,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "行動銀行",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -13039,7 +13039,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "時間",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -15309,6 +15309,296 @@
                 }
             ]
         },
+        "Android如何將銀行快捷功能加入小工具": {
+            "id": "e04c60ec-e837-4155-ba70-df3719f024f4",
+            "argument": [
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "Android",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "如何",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "將",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "銀行",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "快捷",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "功能",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "加上",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "加添",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "加盟",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "加總",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "加進",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "添加",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "交結",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "交融",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "併吞",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "侵吞",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼併",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "合併",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "吞併",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "吸取",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "吸收",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "團結",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "增添",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "增補",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "投入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "拼接",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "接合",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "搭接",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "搭配",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "攙兌",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "攙合",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "攝取",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "攪混",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "新增",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "歸併",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "混合",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "混搭",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "相接",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "積聚",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "總合",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "聯合",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "融入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "連接",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "銜接",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "轉投",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "加入過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "重返",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退出了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進入",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "加入了",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "加入",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "小工具",
+                    "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
         "如何產製行動銀行之QR Code轉帳收款碼": {
             "id": "154831d4-56cb-42cb-b708-7f44922756d8",
             "argument": [
@@ -15482,7 +15772,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "碼",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -16637,7 +16927,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "功能",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -17010,296 +17300,6 @@
                     "pos": "UserDefined",
                     "text": "手機號碼",
                     "checked": true,
-                    "checkbox": true
-                }
-            ]
-        },
-        "Android如何將玉山銀行快捷功能加入小工具": {
-            "id": "5ecbd5ee-85cc-4cd5-a453-cd6c9e930af5",
-            "argument": [
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "Android",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "如何",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "MODAL",
-                    "text": "將",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "玉山銀行",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "快捷",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "功能",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "加上",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "加添",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "加盟",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "加總",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "加進",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "參加",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "添加",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "交結",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "交融",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "併吞",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "侵吞",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "兼併",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "合併",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "吞併",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "吸取",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "吸收",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "團結",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "增添",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "增補",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "投入",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "拼接",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "接合",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "搭接",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "搭配",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "攙兌",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "攙合",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "攝取",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "攪混",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "新增",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "歸併",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "混合",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "混搭",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "相接",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "積聚",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "總合",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "聯合",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "融入",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "連接",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "銜接",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "參與",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "重返",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "進入",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "退出了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "加入過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "加入了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "轉投",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "退出",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "加入",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "小工具",
-                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -20155,7 +20155,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "銀行",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -20390,7 +20390,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "碼",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
