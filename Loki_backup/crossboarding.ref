@@ -2977,7 +2977,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "獨樂樂",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -3758,13 +3758,13 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "無案件",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
                     "pos": "ENTITY_noun",
                     "text": "資訊",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -3862,7 +3862,7 @@
                 {
                     "pos": "ENTITY_oov",
                     "text": "電支帳戶姓名",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -4055,13 +4055,13 @@
                 {
                     "pos": "ENTITY_oov",
                     "text": "PayPay",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
                     "pos": "ENTITY_nouny",
                     "text": "掃碼",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -8629,7 +8629,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "訂單",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -10286,6 +10286,334 @@
                 }
             ]
         },
+        "如何查詢電子支付—跨境網購交易": {
+            "id": "b74197b9-b84e-4541-a430-4686ab6322a7",
+            "argument": [
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "如何",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "徵詢",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "探查",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "探詢",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "查問",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "查找",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "查探",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "查明",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "查看",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "查究",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "查考",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "檢查",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "質詢",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "追詢",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "勘測",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "反問",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "叩問",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "尋找",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "尋求",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "扣問",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "探勘",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "探問",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "探尋",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "探討",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "探訪",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "提問",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "搜尋",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "檢視",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "檢驗",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "詰問",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "質問",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "質疑",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "追問",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "查閱",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "傳真",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "閱覽",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "訂票",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "電洽",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "洽詢",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "推播",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "檢索",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "查詢",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "電子支付",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": "—",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "便利化",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "走私",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "跨州",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "自由化",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "通關",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "跨境",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "購物",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "團購",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "代購",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "促銷",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "預購",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "消費",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "量販",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "結帳",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "採買",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "刷卡",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "網購",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "交易",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
         "為什麼我沒收到電子支付帳戶推播": {
             "id": "0fff2a54-f335-4b09-afc6-b329ca0632ce",
             "argument": [
@@ -10537,7 +10865,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "身分證",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -13728,7 +14056,7 @@
                 {
                     "pos": "ENTITY_oov",
                     "text": "限",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -19355,7 +19683,7 @@
                 {
                     "pos": "LOCATION",
                     "text": "日本",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -20773,7 +21101,7 @@
                 {
                     "pos": "LOCATION",
                     "text": "日本",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -20785,7 +21113,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "掃碼",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -21602,7 +21930,7 @@
                 {
                     "pos": "LOCATION",
                     "text": "日本",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -21614,7 +21942,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "掃碼",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -21971,7 +22299,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "信用卡",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -22254,7 +22582,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "信用卡",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -22434,7 +22762,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "信用卡",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -22631,7 +22959,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "交易",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -22706,7 +23034,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "限額",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -23067,359 +23395,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "方式",
-                    "checked": true,
-                    "checkbox": true
-                }
-            ]
-        },
-        "如何查詢電子支付—跨境網購交易紀錄與訂單狀況": {
-            "id": "f95a9b2e-f988-4aea-916f-27d9616b62f7",
-            "argument": [
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "如何",
                     "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "徵詢",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "探查",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "探詢",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "查問",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "查找",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "查探",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "查明",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "查看",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "查究",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "查考",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "檢查",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "質詢",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "追詢",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "勘測",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "反問",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "叩問",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "尋找",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "尋求",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "扣問",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "探勘",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "探問",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "探尋",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "探討",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "探訪",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "提問",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "搜尋",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "檢視",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "檢驗",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "詰問",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "質問",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "質疑",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "追問",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "查閱",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "傳真",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "閱覽",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "訂票",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "電洽",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "洽詢",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "推播",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "檢索",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "查詢",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "電子支付",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "PUNCTUATION",
-                    "text": "—",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "便利化",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "走私",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "跨州",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "自由化",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "通關",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "跨境",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "購物",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "團購",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "代購",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "促銷",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "預購",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "消費",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "量販",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "結帳",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "採買",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "刷卡",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "網購",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "交易",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "紀錄",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "FUNC_conjunction",
-                    "text": "與",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "訂單",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "狀況",
-                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -25274,7 +25250,7 @@
                 {
                     "pos": "LOCATION",
                     "text": "日本",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -25286,7 +25262,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "掃碼",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -27194,7 +27170,7 @@
                 {
                     "pos": "LOCATION",
                     "text": "日本",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -27206,7 +27182,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "掃碼",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -27717,7 +27693,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "信用卡",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -28013,7 +27989,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "信用卡",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -28116,7 +28092,7 @@
                 {
                     "pos": "LOCATION",
                     "text": "日本",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
