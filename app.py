@@ -5,8 +5,9 @@ from flask import Flask, request
 from sys import path
 import os
 import logging
-
+import subprocess
 from esun_qa import execLoki
+#from bank_toaster import getCopyToasterResult, getInfo
 
 # 載入 json 標準函式庫，處理回傳的資料格式
 import json
@@ -72,7 +73,9 @@ def linebot():
                             line_bot_api.reply_message(tk,TextSendMessage(reply))                                           # 回傳訊息
                             
                     else:
-                        reply = "抱歉，我只是個機器人，沒辦法回答喔"    # 回傳沒有答案時的預設回覆字串
+                        test = subprocess.run(['python','toaster_line.py',"--msg", msg],capture_output=True, text=True, encoding="utf-8").stdout
+                        print(test)
+                        reply = test    # 回傳沒有答案時的預設回覆字串
                         line_bot_api.reply_message(tk,TextSendMessage(reply)) # 回傳訊息
                             
                 except Exception as e:
