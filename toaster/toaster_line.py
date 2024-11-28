@@ -3,7 +3,6 @@
 
 import argparse
 import json
-import sys
 
 # 載入 username 和 loki_key
 # 若找不到 account.info 則設為 None

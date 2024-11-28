@@ -4,10 +4,10 @@
 from flask import Flask, request
 from sys import path
 import os
+import re
 import logging
 import subprocess
 from esun_qa import execLoki
-#from bank_toaster import getCopyToasterResult, getInfo
 
 # 載入 json 標準函式庫，處理回傳的資料格式
 import json
@@ -73,16 +73,15 @@ def linebot():
                             line_bot_api.reply_message(tk,TextSendMessage(reply))                                           # 回傳訊息
                             
                     else:
-                        test = subprocess.run(['python','toaster_line.py',"--msg", msg],capture_output=True, text=True, encoding="utf-8").stdout
-                        print(test)
-                        reply = test    # 回傳沒有答案時的預設回覆字串
+                        toaster_resultSTR = subprocess.run(['python',os.path.join('toaster','toaster_line.py'),"--msg", msg],capture_output=True, text=True, encoding="utf-8").stdout # 從copytoaster取得文件
+                        reply = re.sub(r"^[a-z_]+>>\n.+?:", "", toaster_resultSTR).strip("\n")    # 去除頭尾格式字符和換行
                         line_bot_api.reply_message(tk,TextSendMessage(reply)) # 回傳訊息
                             
                 except Exception as e:
                     print("[ERROR] => {}".format(str(e)))
-                    print(body)                                                                        # 如果發生錯誤，印出收到的內容                    
-                    reply = "抱歉發生一些問題\n請再試一次"   # 錯誤時回覆
-                    line_bot_api.reply_message(tk,TextSendMessage(reply)) # 回傳訊息
+                    print(body)                                             # 如果發生錯誤，印出收到的內容                    
+                    reply = "抱歉發生一些問題，請再試一次！"                   # 回傳發生錯誤時預設回覆
+                    line_bot_api.reply_message(tk,TextSendMessage(reply))   # 回傳訊息
                         
         else:
             reply = '不是文字，我可是不吃的喔!\n請再試一次~'   # 非文字訊息時回覆
@@ -92,7 +91,7 @@ def linebot():
         print("[ERROR] => {}".format(str(e)))
         print(body)                                                                        # 如果發生錯誤，印出收到的內容
         json_data = json.loads(body)                                                       # json 格式化訊息內容
-        reply = "抱歉發生一些問題~\n請再試一次"   # 錯誤時回覆
+        reply = "抱歉發生一些問題，請再試一次"   # 錯誤時回覆
         if json_data['events'] != []:
             line_bot_api.push_message(json_data['events'][0]['source']['userId'],TextSendMessage(reply)) # 回傳訊息
         
