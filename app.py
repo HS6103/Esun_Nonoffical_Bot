@@ -73,8 +73,7 @@ def linebot():
                             line_bot_api.reply_message(tk,TextSendMessage(reply))                                           # 回傳訊息
                             
                     else:
-                        toaster_resultSTR = subprocess.run(['python',os.path.join('toaster','toaster_line.py'),"--msg", msg],capture_output=True, text=True, encoding="utf-8").stdout # 從copytoaster取得文件
-                        reply = re.sub(r"^[a-z_]+>>\n.+?:", "", toaster_resultSTR).strip("\n")    # 去除頭尾格式字符和換行
+                        reply = subprocess.run(['python','bank_toaster.py',"--msg", msg],capture_output=True, text=True, encoding="utf-8").stdout # 從copytoaster取得文件
                         line_bot_api.reply_message(tk,TextSendMessage(reply)) # 回傳訊息
                             
                 except Exception as e:

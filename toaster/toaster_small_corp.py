@@ -10,7 +10,7 @@ try:
     with open("account.info", encoding="utf-8") as f:
         accountDICT = json.load(f)
         username = accountDICT['username']
-        toaster_key = accountDICT['toaster_key_line']
+        toaster_key = accountDICT['toaster_key_small_corp']
         
 except Exception:
     username = None
@@ -23,7 +23,7 @@ def main():
     args = parser.parse_args()
 
     # 傳入的字串參數
-    categorySTR = "line"  # 預設分類
+    categorySTR = "small_corp"  # 預設分類
     inputSTR = args.msg   # 接收的 msg 參數
     countINT = 1          # 預設數量
 
